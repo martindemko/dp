@@ -1,0 +1,18 @@
+\documentclass[12pt,draft,oneside]{fithesis}
+\usepackage[plainpages=false, pdfpagelabels]{hyperref}
+
+
+\thesislang{sk}
+\thesistitle{Názov diplomovej práce}
+\thesissubtitle{Diplomová práca}
+\thesisstudent{Martin Demko}
+\thesiswoman{false}
+\thesisfaculty{fi}
+\thesisyear{2014}
+\thesisadvisor{RNDr. David Šafránek Ph.D.}
+
+\begin{document}
+\FrontMatter
+\ThesisTitlePage
+
+\end{document}

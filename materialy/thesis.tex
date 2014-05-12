@@ -1,0 +1,205 @@
+\documentclass[11pt,twoside,utf8,final]{fithesis} %twoside
+\usepackage{amsmath,amssymb,amsthm, amsfonts}
+\usepackage{booktabs}
+\usepackage{graphics}
+\usepackage{caption} 
+\usepackage[hang]{subfigure}
+\usepackage[pdftex]{graphicx}
+\usepackage[czech]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{url}
+\usepackage{tikz}
+\usepackage{amsthm}
+\usepackage{float}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{comment}
+\usetikzlibrary{calc,trees,positioning,arrows,chains,shapes.geometric,%
+    decorations.pathreplacing,decorations.pathmorphing,shapes,%
+    matrix,shapes.symbols, decorations.markings}
+
+\floatname{algorithm}{Pseudokód}
+\renewcommand{\algorithmicrequire}{\textbf{Vstup:}}
+\renewcommand{\algorithmicensure}{\textbf{Výstup:}}
+\renewcommand{\lstlistingname}{Zdrojový kód}
+
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}[chapter] % reset theorem numbering for each chapter
+
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definice} % definition numbers are dependent on theorem numbers
+\newtheorem{exmp}[thm]{Example} % same for example numbers
+
+\definecolor{src-bck}{RGB}{240, 240, 240}
+\hypersetup{
+    bookmarks=true,         % show bookmarks bar?
+    unicode=true,           % non-Latin characters in Acrobat bookmarks
+    pdftoolbar=true,        % show Acrobat toolbar?
+    pdfmenubar=true,        % show Acrobat menu?
+    pdffitwindow=false,     % window fit to page when opened
+    pdfstartview={FitH},    % fits the width of the page to the window
+    pdftitle={Bakalářská práce},    
+                            % title
+    pdfauthor={Jan Papoušek},% author
+    pdfsubject={Paralelizace metod pro analýzu dynamických systémů pomocí grafické karty},
+                            % subject of the document    
+    pdfkeywords={keyword1} {key2} {key3}, % list of keywords
+    pdfnewwindow=true,      % links in new window
+    colorlinks=false,       % false: boxed links; true: colored links
+    linkcolor=blue,         % color of internal links
+    citecolor=green,        % color of links to bibliography
+    filecolor=magenta,      % color of file links
+    urlcolor=cyan,          % color of external links
+    linkbordercolor={1 1 0}
+}
+
+\thesislang{cs}
+\thesistitle{Analýza robustnosti spojitých dynamických systémů v~distribuovaném prostředí}
+\thesissubtitle{Diplomová práce}
+\thesisstudent{Jan Papoušek}
+\thesiswoman{false}
+\thesisfaculty{fi}
+\thesisyear{Jaro 2013}
+\thesisadvisor{RNDr. David Šafránek, Ph.D.}
+
+\setcounter{tocdepth}{2}
+
+
+\definecolor{javared}{rgb}{0.6,0,0} % for strings
+\definecolor{javagreen}{rgb}{0.25,0.5,0.35} % comments
+\definecolor{javapurple}{rgb}{0.5,0,0.35} % keywords
+\definecolor{javadocblue}{rgb}{0.25,0.35,0.75} % javadoc
+\definecolor{sourcebackground}{RGB}{250, 250, 250} % javadoc
+
+\lstdefinestyle{Java}{
+	language=Java,
+	basicstyle=\ttfamily,
+	keywordstyle=\color{javapurple}\bfseries,
+	stringstyle=\color{javared},
+	commentstyle=\color{javagreen},
+	morecomment=[s][\color{javadocblue}]{/**}{*/},
+	numbers=left,
+	frame=leftline,
+	backgroundcolor=\color{sourcebackground},
+	numberstyle=\tiny\color{black},
+	stepnumber=1,
+	tabsize=4,
+	showspaces=false,
+	showstringspaces=false,
+	captionpos=b
+}
+
+\lstdefinestyle{Bash}{
+	language=Bash,
+	basicstyle=\ttfamily,
+	numbers=left,
+	frame=leftline,
+	numberstyle=\tiny\color{black},
+	stepnumber=1,
+	tabsize=4,
+	showspaces=false,
+	showstringspaces=false,
+	captionpos=b
+}
+
+\begin{document}
+
+\FrontMatter
+\ThesisTitlePage
+
+\begin{ThesisDeclaration}
+\DeclarationText
+
+\medskip
+\begin{flushright}
+\begin{minipage}{0.36\textwidth}
+V Brně dne \today\\
+Jan Papoušek
+\end{minipage}
+\end{flushright}
+
+\AdvisorName
+\end{ThesisDeclaration}
+
+\begin{ThesisThanks}
+Děkuji vedoucímu své práce Davidu Šafránkovi za odborné vedení
+a~pos\-kyt\-nu\-tí cenných rad, Svenu Dražanovi za inspirativní konzultace, Tomáši Vejpustkovi za spolupráci 
+při implementaci nástroje Parasim a celé Laboratoři sys\-té\-mo\-vé biologie za poskytnutí
+technického zázemí.
+
+\vspace{0.5cm}
+\noindent
+Děkuji svým rodičum Janu a Evě Papouškovým za podporu, kterou mi poskytli během studia a vůbec v celém
+mém dosavadním životě. Děkuji své nastávající manželce Tereze Doležalové za naše dlouhé
+rozpravy formující mé životní směřování, jenž vy\-ústi\-lo nejen v tuto práci.
+
+\vspace{0.5cm}
+\noindent
+Bez Vás by tato práce nevznikla.
+
+\end{ThesisThanks}
+
+\begin{ThesisAbstract}
+Práce prezentuje algoritmus pro analýzu dynamických systémů zadaných pomocí soustavy
+obyčejných diferenciálních rovnic vzhledem k~cho\-vání charakterizovanému vlastností
+temporální logiky signálů. Výsled\-kem a\-na\-lý\-zy je představa o tom,
+jakým způsobem ovlivňují změny modelu jeho chování. Popisovaná metoda se zakládá
+na již existujícím algoritmu a výpoč\-tu lokální robustnosti.
+
+Algoritmus byl implementován v programovacím jazyce Java do podoby nástroje Parasim tak,
+aby analýzu bylo možno spustit v prostředí se sdílenou nebo distribuovanou pamětí.
+Výpočetní model a architektura nástroje umožňují komponenty odpovídající jednotlivým
+částem algoritmu snadno nahrazovat, případně použít tuto platformu pro jiný typ
+vý\-poč\-tu.
+
+Vlastnosti algoritmu a škálovatelnost implementace pro sdílenou i distribuovanou paměť
+byly ověřeny spuštěním analýzy nad vybranými modely.
+
+
+\begin{comment}
+The work presents an algorithm for the analysis of dynamic systems specified by the ordinary differential equations.
+The system behavior is characterized by the formula of signal temporal logic. The result of the analysis is the idea of
+how the changes affect the model's behavior. The described method is based on an existing algorithm and calculation of local robustnes.
+
+The algorithm has been implemented in the Java programming language into the tool called Parasim
+so that the analysis could be executed in an environment with shared or distributed memory.
+Computational model and tool architecture allow components corresponding to parts of the algorithm
+easy to replace, or use this platform to another type of calculation.
+
+Properties of the algorithm implementation and scalability for both shared and
+distributed memory has been verified by running analyzes on selected models.
+\end{comment}
+
+\end{ThesisAbstract}
+
+\begin{ThesisKeyWords}
+dynamický systém, soustava diferenciálních rovnic, STL, monitoring, analýza vlastnosti, robustnost
+\end{ThesisKeyWords}
+
+\MainMatter
+\tableofcontents
+
+%------------------------------- CHAPTERS --------------------------------------
+
+\include{chapter-introduction}
+\include{chapter-preliminaries}
+\include{chapter-algorithm}
+\include{chapter-implementation}
+\include{chapter-evaluation}
+\include{chapter-conclusion}
+
+\bibliographystyle{czechiso}
+\bibliography{literature}
+
+\appendix
+\include{appendix-usage}
+\include{appendix-extension}
+\include{appendix-configuration}
+\include{appendix-extensions}
+\include{appendix-measurement}
+
+\end{document}
+

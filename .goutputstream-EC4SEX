@@ -1,0 +1,25 @@
+\documentclass[12pt,final,oneside]{fithesis}
+\usepackage[plainpages=false, pdfpagelabels]{hyperref}
+\usepackage[latin2]{inputenc}
+\usepackage[slovak]{babel}
+%\usepackage{hyperref}
+\thesislang{sk}
+\thesistitle{Názov diplomovej práce}
+\thesissubtitle{Diplomová práca}
+\thesisstudent{Martin Demko}
+\thesiswoman{false}
+\thesisfaculty{fi}
+\thesisyear{2014}
+\thesisadvisor{RNDr. David ¦afránek, Ph.D.}
+
+\begin{document}
+\FrontMatter
+\ThesisTitlePage
+
+\begin{ThesisDeclaration}
+\DeclarationText
+\AdvisorName
+\end{ThesisDeclaration}
+
+\begin{ThesisThanks}
+Rád by som po
