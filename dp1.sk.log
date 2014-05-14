@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.26)  12 MAY 2014 18:14
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.26)  14 MAY 2014 01:56
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -282,27 +282,27 @@ Package babel Info: Making - an active character on input line 294.
 )) (./dp1.sk.aux)
 \openout1 = `dp1.sk.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Try loading font information for T1+ppl on input line 21.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 22.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
 \AtBeginShipoutBox=\box28
-Package hyperref Info: Link coloring OFF on input line 21.
+Package hyperref Info: Link coloring OFF on input line 22.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -312,9 +312,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count113
 )
-LaTeX Info: Redefining \ref on input line 21.
-LaTeX Info: Redefining \pageref on input line 21.
-LaTeX Info: Redefining \nameref on input line 21.
+LaTeX Info: Redefining \ref on input line 22.
+LaTeX Info: Redefining \pageref on input line 22.
+LaTeX Info: Redefining \nameref on input line 22.
 
 (./dp1.sk.out) (./dp1.sk.out)
 \@outlinefile=\write3
@@ -336,14 +336,14 @@ LaTeX Info: Redefining \nameref on input line 21.
 \everyMPtoPDFconversion=\toks24
 )
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 23.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 24.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 23.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 24.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 28.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 29.
  [2
 
 ] [3
@@ -374,113 +374,164 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ]
 Kapitola 1.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 47.
-[3
-
-]
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 84.
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsppl.fd
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 48.
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 75.
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsppl.fd
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 84.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 75.
 
-<images/Buchi01.PNG, id=148, 243.91125pt x 107.40125pt>
-File: images/Buchi01.PNG Graphic file (type png)
+Underfull \hbox (badness 10000) in paragraph at lines 79--83
 
-<use images/Buchi01.PNG>
-Package pdftex.def Info: images/Buchi01.PNG used on input line 109.
-(pdftex.def)             Requested size: 216.8122pt x 95.47043pt.
+ []
+
+[3
+
+] [4] <images/buchi1.png, id=162, 243.91125pt x 131.49126pt>
+File: images/buchi1.png Graphic file (type png)
+
+<use images/buchi1.png>
+Package pdftex.def Info: images/buchi1.png used on input line 137.
+(pdftex.def)             Requested size: 216.8122pt x 116.88438pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 123--125
-
- []
-
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 141--145
-
- []
-
-[5 <./images/Buchi01.PNG>]
-Underfull \hbox (badness 10000) in paragraph at lines 146--149
-
+[5]
+Overfull \hbox (3.16002pt too wide) in paragraph at lines 171--176
+[]\T1/ppl/m/n/10.95 Je nutné za-£a´ od en-zý-mo-vej ki-ne-tiky, pre-toºe práve 
+tá bola hlav-ným kataly-
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 3229) has occurred while \output is active []
 
- [6]
-[7] [8]
+ [6 <./images/buchi1.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 200--202
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 203--206
+
+ []
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 230--234
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 235--238
+
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 279--283
+
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 284--287
+
+ []
+
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 351--353
+
+ []
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 369--373
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 374--377
+
+ []
+
+[12] [13] [14]
+Overfull \hbox (0.99815pt too wide) in paragraph at lines 482--488
+\OML/cmm/m/it/10.95 ^^Z\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 x[]\OT1/cmr/m/n/
+10.95 ) = \OML/cmm/m/it/10.95 x[]$\T1/ppl/m/n/10.95 ). „al-²ou ne-vy-hnut-nou s
+ú-£as-´ou mo-delu sú ini-ciálne pod-mienky,
+ []
+
+[15]
 Kapitola 2.
-[9
+[16
 
 ]
 Kapitola 3.
-[10
+[17
 
 ]
 Kapitola 4.
-[11
+[18
 
 ]
 Kapitola 5.
-[12
+[19
 
 ]
 Kapitola 6.
-[13
+[20
 
 ]
 Kapitola 7.
-[14
+(./dp1.sk.bbl [21
 
 ]
-Kapitola 8.
-[15
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 7.
+ (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+))
+[22
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 296.
- [16
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 527.
+ [23
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 296.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 527.
  (./dp1.sk.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 296.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 296.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 527.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 527.
 Package rerunfilecheck Info: File `dp1.sk.out' has not changed.
-(rerunfilecheck)             Checksum: 9148AE8615690E44BB1389FA1A9CDFAF;1127.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 296.
+(rerunfilecheck)             Checksum: 00C59A06E7311D1404D259DC34065772;1153.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 527.
  ) 
 Here is how much of TeX's memory you used:
- 6890 strings out of 494998
- 95356 string characters out of 6180421
- 184348 words of memory out of 5000000
- 9955 multiletter control sequences out of 15000+600000
- 27489 words of font info for 56 fonts, out of 8000000 for 9000
+ 6993 strings out of 494998
+ 96815 string characters out of 6180421
+ 186417 words of memory out of 5000000
+ 10007 multiletter control sequences out of 15000+600000
+ 33114 words of font info for 66 fonts, out of 8000000 for 9000
  24 hyphenation exceptions out of 8191
- 29i,16n,28p,246b,462s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,16n,28p,293b,466s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc} <./fi-logo.514pk>
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/ms
-bm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on dp1.sk.pdf (21 pages, 253175 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/font
+s/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
+palatino/uplri8a.pfb>
+Output written on dp1.sk.pdf (28 pages, 334451 bytes).
 PDF statistics:
- 333 PDF objects out of 1000 (max. 8388607)
- 49 named destinations out of 1000 (max. 500000)
+ 452 PDF objects out of 1000 (max. 8388607)
+ 93 named destinations out of 1000 (max. 500000)
  158 words of extra memory for PDF output out of 10000 (max. 10000000)
 

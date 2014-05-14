@@ -1,0 +1,53 @@
+\begin{thebibliography}{1}
+
+\bibitem{wiki:ltl}
+Linear temporal logic [online].
+\newblock Wikipedia, The Free Encyclopedia, [cit. 13. maja 2014].
+\newblock Dostupn\'e na:
+  $<$\url{http://en.wikipedia.org/wiki/Linear_temporal_logic}$>$.
+
+\bibitem{Clarke:MC:LTL}
+Edmund~M. Clarke, Jr., Orna Grumberg, and Doron~A. Peled.
+\newblock {\em Model Checking}, chapter 3 Temporal Logics, pages 27--33.
+\newblock MIT Press, Cambridge, MA, USA, 1999.
+
+\bibitem{Clarke:MC:BA}
+Edmund~M. Clarke, Jr., Orna Grumberg, and Doron~A. Peled.
+\newblock {\em Model Checking}, chapter 9 Model Checking and Automata Theory,
+  pages 121--140.
+\newblock MIT Press, Cambridge, MA, USA, 1999.
+
+\bibitem{wiki:BA}
+B\"uchi utomaton [online].
+\newblock Wikipedia, The Free Encyclopedia, [cit. 13. maja 2014].
+\newblock Dostupn\'e na:
+  $<$\url{http://en.wikipedia.org/wiki/B%C3%BCchi_automaton}$>$.
+
+\bibitem{Keener:1998:MP:MassAction}
+James~P. Keener and James Sneyd.
+\newblock {\em Mathematical Physiology}, volume~8 of {\em Interdisciplinary
+  Applied Mathematics}, chapter 1.1 The Law of Mass Action, pages 3--4.
+\newblock Springer-Verlag, Berlin, Germany~/ Heidelberg, Germany~/ London, UK~/
+  etc., 1998.
+
+\bibitem{Keener:1998:MP:Enzymes}
+James~P. Keener and James Sneyd.
+\newblock {\em Mathematical Physiology}, volume~8 of {\em Interdisciplinary
+  Applied Mathematics}, chapter 1.2 Enzyme kinetics, pages 5--16.
+\newblock Springer-Verlag, Berlin, Germany~/ Heidelberg, Germany~/ London, UK~/
+  etc., 1998.
+
+\bibitem{Keener:1998:MP:MathBackground}
+James~P. Keener and James Sneyd.
+\newblock {\em Mathematical Physiology}, volume~8 of {\em Interdisciplinary
+  Applied Mathematics}, chapter 1.4 Appendix: Math Background, pages 24--30.
+\newblock Springer-Verlag, Berlin, Germany~/ Heidelberg, Germany~/ London, UK~/
+  etc., 1998.
+
+\bibitem{wiki:ODE}
+Ordinary differential equation [online].
+\newblock Wikipedia, The Free Encyclopedia, [cit. 10. maja 2014].
+\newblock Dostupn\'e na:
+  $<$\url{http://en.wikipedia.org/wiki/Ordinary_differential_equation}$>$.
+
+\end{thebibliography}

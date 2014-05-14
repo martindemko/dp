@@ -1,0 +1,89 @@
+@misc(wiki:ltl,
+title = {Linear temporal logic [online]},
+howpublished = {Wikipedia, The Free Encyclopedia},
+year = {[cit. 13. maja 2014]},
+note = {Dostupn\'e na: $<$\url{http://en.wikipedia.org/wiki/Linear_temporal_logic}$>$}
+)
+
+@book(Clarke:MC,
+ author = {Clarke,Jr., Edmund M. and Grumberg, Orna and Peled, Doron A.},
+ title = {Model Checking},
+ year = {1999},
+ isbn = {0-262-03270-8},
+ publisher = {MIT Press},
+ address = {Cambridge, MA, USA}
+) 
+
+@inbook(Clarke:MC:LTL,
+ author = {Clarke,Jr., Edmund M. and Grumberg, Orna and Peled, Doron A.},
+ title = {Model Checking},
+ chapter = {3 Temporal Logics},
+ pages = {27-33},
+ year = {1999},
+ isbn = {0-262-03270-8},
+ publisher = {MIT Press},
+ address = {Cambridge, MA, USA}
+) 
+
+@inbook(Clarke:MC:BA,
+ author = {Clarke,Jr., Edmund M. and Grumberg, Orna and Peled, Doron A.},
+ title = {Model Checking},
+ chapter = {9 Model Checking and Automata Theory},
+ pages = {121-140},
+ year = {1999},
+ isbn = {0-262-03270-8},
+ publisher = {MIT Press},
+ address = {Cambridge, MA, USA}
+)
+ 
+@misc(wiki:BA,
+title = {B\"uchi utomaton [online]},
+howpublished = {Wikipedia, The Free Encyclopedia},
+year = {[cit. 13. maja 2014]},
+note = {Dostupn\'e na: $<$\url{http://en.wikipedia.org/wiki/B%C3%BCchi_automaton}$>$}
+)
+
+@Book{Keener:1998:MP,
+  author =       "James P. Keener and James Sneyd",
+  title =        "Mathematical Physiology",
+  volume =       "8",
+  publisher =    "Springer-Verlag",
+  address = 	 "Berlin, Germany~/ Heidelberg, Germany~/ London, UK~/ etc.",
+  year =         "1998",
+  ISBN =         "0-387-98381-3",
+  series =       "Interdisciplinary Applied Mathematics"
+}
+
+@inBook{Keener:1998:MP:MassAction,
+  author =       "James P. Keener and James Sneyd",
+  title =        "Mathematical Physiology",
+  chapter =		 "1.1 The Law of Mass Action",
+  pages =		 "3-4",
+  volume =       "8",
+  publisher =    "Springer-Verlag",
+  address = 	 "Berlin, Germany~/ Heidelberg, Germany~/ London, UK~/ etc.",
+  year =         "1998",
+  ISBN =         "0-387-98381-3",
+  series =       "Interdisciplinary Applied Mathematics"
+}
+
+@inBook{Keener:1998:MP:MathBackground,
+  author =       "James P. Keener and James Sneyd",
+  title =        "Mathematical Physiology",
+  chapter =		 "1.4 Appendix: Math Background",
+  pages =		 "24-30",
+  volume =       "8",
+  publisher =    "Springer-Verlag",
+  address = 	 "Berlin, Germany~/ Heidelberg, Germany~/ London, UK~/ etc.",
+  year =         "1998",
+  ISBN =         "0-387-98381-3",
+  series =       "Interdisciplinary Applied Mathematics"
+}
+
+@misc(wiki:ODE,
+title = {Ordinary differential equation [online]},
+howpublished = {Wikipedia, The Free Encyclopedia},
+year = {[cit. 10. maja 2014]},
+note = {Dostupn\'e na: $<$\url{http://en.wikipedia.org/wiki/Ordinary_differential_equation}$>$}
+)
+
