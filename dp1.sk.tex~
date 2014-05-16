@@ -11,7 +11,7 @@
 %\bibliographystyle{plain}
 
 \thesislang{sk}
-\thesistitle{N\' azov diplomovej pr\' ace}
+\thesistitle{Roz\v s\'irenie a refaktoriz\'acia n\'astroja BioDiVinE}
 \thesissubtitle{Diplomov\' a pr\' aca}
 \thesisstudent{Martin Demko}
 \thesiswoman{false}
@@ -44,13 +44,14 @@
 %====================================UVOD===================================================
 \chapter*{\' Uvod}
 
-
+%================================ZAKLADNE=POJMY=============================================
 \chapter{Z\' akladn\' e pojmy}
 Ne\v z za\v cneme zach\' adza\v t hlb\v sie do problematiky tejto pr\' ace a opisova\v t postupy a n\' astroje v nej pou\v zit\' e, 
 je potrebn\' e vysvetli\v t na po\v ciatku nieko\v lko pojmov. Tieto sa v pr\' aci mnohokr\' at opakuj\' u a ich v\v casn\' ym uveden\' im
 pred\' ideme nepochopite\v lnosti textu.
 
 \section{LTL - Line\' arna Tempor\' alna Logika}
+\label{sec:logika}
 Tempor\' alna logika obecne je \v speci\' alna vetva logiky zaoberaj\' uca sa logickou \v strukt\' urou v\' yrokov v \v case. 
 Je to formalizmus vhodn\' y pre overovanie vlastnost\' i form\' alnych dynamick\' ych syst\' emov resp. matematick\' ych modelov.
 
@@ -113,9 +114,10 @@ paletu oper\'atorov za predpokladu platnosti predch\'adzaj\'ucich pravidiel:
 \item $\mathbf{G} \phi \ \equiv \ \neg \mathbf{F} \neg \phi$,
 \end{itemize}
 Napriek tomu, \v ze je LTL tou najprimit\' ivnej\v sou tempor\'alnou logikou, jej prevod do B\"uchiho automatu je v najhor\v som pr\' ipade 
-exponenci\' alne zlo\v zit\' y. D\^ ovod tohto prevodu bude vysvetlen\' y v kapitole \ref{model_checking}. \cite{wiki:ltl}\cite{Clarke:MC:LTL}
+exponenci\' alne zlo\v zit\' y. D\^ ovod tohto prevodu bude vysvetlen\' y v kapitole \ref{model_checking}. \cite{Clarke:MC:LTL}
 
 \section{B\"uchiho automat}	%kniha Model checking str. 121
+\label{sec:buchi}
 Automat obecne je matematick\' y model stroja s kone\v cn\' ym mno\v zstvom pam\" ate spracov\' avaj\' uci vstup o nezn\' amej ve\v lkosti. 
 Kv\^ oli obmedzeniu pam\" ate ho naz\' yvame kone\v cn\' ym automatom. Vstup sa naz\' yva slovo a m\^ o\v ze by\v t kone\v cn\' y aj nekone\v cn\' y.
 B\" uchiho automat je potom najjednoduch\v s\' im kone\v cn\'ym automatom nad nekone\v cn\'ym slovom a preto patr\'i do skupiny {$\omega$"~au\-to\-matov}.
@@ -128,20 +130,30 @@ Form\'alne je kone\v cn\' y automat $\mathcal{A}$ p\" atica $(\Sigma, Q, \Delta,
 \item $Q_0 \subseteq Q$ je podmno\v zina mno\v ziny stavov, naz\' yvan\' a inici\' alne stavy
 \item $F \subseteq Q$ je podmno\v zina mno\v ziny stavov, naz\'yvan\'a akceptuj\'uce stavy
 \end{itemize}
-Pr\'iklad jednoduch\'eho automatu je dan\'y na obr\'azku \ref{fig:buchi}.Automat nad kone\v cn\'ym slovom akceptuje toto slovo, ak po prejden\' i poslen\'eho znaku slova zodpovedaj\' uceho prechodu medzi dvoma stavami, 
+Pr\'iklad jednoduch\'eho automatu je dan\'y na obr\'azku \ref{fig:buchi}.
+
+Automat nad kone\v cn\'ym slovom akceptuje toto slovo, ak po prejden\' i poslen\'eho znaku slova zodpovedaj\' uceho prechodu medzi dvoma stavami, 
 je tento posledn\' y stav v mno\v zine $F$. Av\v sak automat nad nekone\v cn\' ym slovom nem\^ o\v ze nikdy prejs\v t cez posledn\' y znak. Preto tak\' yto 
 automat akceptuje nekone\v cn\' e slovo len v pr\' ipade, \v ze po\v cas prech\' adzania slova je aspo\v n jeden stav nav\v st\'iven\'y nekone\v cne \v casto 
-a z\'arove\v n tento stav patr\'i aj do mno\v ziny $F$. \cite{Clarke:MC:BA} \cite{wiki:BA}
+a z\'arove\v n tento stav patr\'i aj do mno\v ziny $F$.
+
+Automaty m\^ o\v zeme e\v ste rozl\'i\v si\v t na deterministick\'e a nedeterministick\'e. Deterministick\' y automat m\'a jednozna\v cne ur\v cen\'e prechody 
+medzi stavmi. T\'ym sa mysl\'i, \v ze zo stavu $q \in Q$ sa pod znakom $s \in \Sigma$ d\'a prejs\v t maxim\'alne do jednoho stavu $q^{'} \in Q$. Naproti tomu
+nedeterministick\'e automaty umo\v z\v nuj\'u prechod zo stavu $q$ pod slovom $s$ do stavov $Q^{'} \subseteq Q$. Na\v s\v tastie existuje algoritmus prevodu 
+nedeterministick\'eho kone\v cn\'eho automatu  na deterministick\'y, ale iba nad kone\v cn\'ym slovom. Nev\'yhodou je ale ve\'lk\'y n\'arast po\v ctu stavov.
+\cite{Clarke:MC:BA}
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.6\textwidth]{buchi1}
-	\caption{Jednoduch\'y automat $\mathcal{A} :$ $\Sigma = \{a,b\},$ $Q = \{q_0,q_1\},$ $\Delta = \{(q_0,a,q_1),(q_0,b,q_0),(q_1,a,q_1),(q_1,b,q_0)\},$ 
+	\includegraphics[width=0.4\textwidth]{buchi1}
+	\caption{Jednoduch\'y deterministick\'y automat $\mathcal{A} :$ $\Sigma = \{a,b\},$ $Q = \{q_0,q_1\},$ $\Delta = \{(q_0,a,q_1),(q_0,b,q_0),(q_1,a,q_1),(q_1,b,q_0)\},$ 
 	$Q_0 = \{q_0\}$, $F = \{q_1\}$}
 	\label{fig:buchi}
 \end{figure}
 
 \section{Z\'akon o mass action kinetike}
 \label{sec:massAction}
+%T\'ato kapitola je z\'u\v zen\'y v\'y\v ta\v zok z knihy \textit{Mathematical Physiology}, kapitola \textit{1.1 The Law of Mass Action}. \cite{Keener:1998:MP:MassAction}
+%
 Tento z\'akon vyjadruje z\'akladn\'e pravidlo fungovania chemick\'ych reakci\'i. Konkr\'etne r\'ychlos\v t s akou chemick\'e substancie, \v ci u\v z 
 ve\v lk\'e makromolekuly alebo mal\'e i\'ony, do seba nar\'a\v zaj\'u a interaguj\'u za tvorby nov\'ych chemick\'ych l\'atok. Predpokladajme, \v ze
 substr\'aty $A$ a $B$ spolu reaguj\'u za vzniku novej l\'atky, produktu $C$,
@@ -236,7 +248,8 @@ hovor\'ime o aproxim\'acii. \cite{Keener:1998:MP:Enzymes}
 \textit{B: \ Aproxim\'acia kv\'azistacion\'arneho stavu}
 \\
 
-Inou alternat\'ivou anal\'yzi tejto enzymatickej reakcie je pr\'ave aproxim\'acia kv\'azistacion\'arneho stavu, ktor\'a je v dne\v snej dobe aj
+Inou alternat\'ivou anal\'yzi tejto enzymatickej reakcie je pr\'ave aproxim\'acia kv\'azistacion\'arneho stavu 
+(z \textit{ang.} Quasi-steady state aproximation), ktor\'a je v dne\v snej dobe aj
 najpou\v z\'ivanej\v sia. Jej tvorcovia, George Briggs a J.B.S. Haldane predpokladali, \v ze r\'ychlos\v t tvorby en\-z\'ym"~substr\'atov\'eho komplexu 
 aj jeho disoci\'acia s\'u si od po\v ciatku rovn\'e. Tak\v ze plat\'i $\frac{d[C]}{dt} = 0$.
 
@@ -335,28 +348,136 @@ V = \frac{V_{max}[S]^n}{K_m^n + [S]^n},
 \end{equation}
 kde $K_m^n = \prod_{i=1}^n{K_i}$. T\'ato rovnica je zn\'ama ako Hillova rovnica alebo Hillova kinetika a kon\v stanta $K_m^n$ vyjadruje koncentr\'aciu, 
 pri ktorej je r\'ychlos\v t reakcie v polovi\v cke svojho maxima, tj. $\frac{V_{max}}{2}$. Typicky faktor $n$, vyjadruj\'uci strmos\v t reak\v cnej krivky 
+(obr. \ref{fig:factor})
 b\'yva men\v s\'i ako skuto\v cn\'y po\v cet viazac\'ich miest na enz\'yme, \v casto to dokonca nie je ani cel\'e \v c\'islo. Stoj\'i za zmienku, \v ze 
 v pr\'ipade $n = 1$ zodpoved\'a Hillova kinetika Michaelis"~Mentenovej kinetike, preto n\'a\v s n\'astroj pon\'uka iba mo\v znos\v t zadania Hillovej rovnice 
 (vi\v d kapitolu \ref{sec:model}.B). \cite{Keener:1998:MP:Enzymes}
-
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1\textwidth]{hill_factor}
+	\caption{Faktor $n$ Hillovej kinetiky pre ve\v lkosti $1, 2$ a $4.5$ ($K_m = 2$)}
+	\label{fig:factor}
+\end{figure}
  
 \section{Model checking}
 \label{model_checking}
+Model checking alebo overovanie modelov je automatizovan\'a technika form\'alnej verifik\'acie \v specifikovan\'ych vlastnost\'i kone\v cn\'eho stavov\'eho 
+syst\'emu. Hlavnou v\'yzvou tejto problematiky je \'uspe\v sne si poradi\v t s probl\'emom expl\'ozie stavov\'eho priestoru (z \textit{ang.} state space
+explosion).
 
-\section{Farebn\' y model checking}
+Proces overovania modelov pozost\'ava z nasleduj\'ucich pod\'uloh:
+\begin{description}
+\item[Modelovanie] 
+Prvou \'ulohou je prevedenie sk\'uman\'eho syst\'emu do form\'alneho matematick\'eho modelu, ktor\'y bude akceptovan\'y vybran\'ym overovac\'im n\'astrojom.
+V niektor\'ych pr\'ipadoch je to \v lahk\'a \'uloha, av\v sak v in\'ych je potreba pou\v zi\v t vhodn\'e abstrakcie za \'u\v celom odstr\'anenia 
+irelevantn\'ych detailov alebo naopak zv\'yraznenia ist\'ych \v crtov sk\'uman\'eho syst\'emu.
+\item[\v Specifik\'acia]
+E\v ste pred samotn\'ym overovan\'im, je nevyhnutn\'e \v specifikova\v t vlastnosti, ktor\'e m\'a sk\'uman\'y syst\'em sp\'l\v na\v t, preto\v ze pr\'ave tie
+budeme \v dalej overova\v t. \v Specifik\'aciou sa mysl\'i pou\v zitie nejak\'eho vhodn\'eho formalismu. Typicky napr\'iklad tempor\'alnej logiky, ktor\'a
+umo\v z\v nuje sk\'uma\v t spr\'avanie syst\'emu v \v case. My budeme pou\v z\'iva\v t LTL (vi\v d \ref{sec:logika}).
+\item[Overovanie]
+Model checking dok\'a\v ze overi\v t, \v ci model vyhovuje danej \v specifik\'acii, ale nedok\'a\v ze rozhodn\'u\v t, \v ci dan\'a \v specifik\'acia 
+pokr\'yva v\v setky vlastnosti, ktor\'ym sk\'uman\'y syst\'em vyhovuje. Toto je ve\v lmi v\'yznamn\'y probl\'em form\'alneho overovania modelov.
 
-\section{Vstupn\'y model}% ako po \v castiach multi"~afinn\'y ODE syst\'em}
+V\'ysledkom overovanie modelu je bu\v d tvrdenie \'ano (v zmysle model sp\'l\v na vlastnos\v t) alebo nie (model nesp\'l\v na vlastnos\v t) a v tomto pr\'ipade
+by mal pou\v zit\'y n\'astroj poskytn\'u\v t mo\v znos\v t trasovania chyby (z~\textit{ang.} error trace). T\'ato chybov\'a trasa grafom sa obvykle 
+pou\v z\'iva ako protipr\'iklad k overovanej vlastnosti. S jej pomocou m\^ o\v zeme lep\v sie pochopi\v t d\^ ovod a miesto vzniku chyby a upravi\v t syst\'em 
+pod\v la toho. \cite{Clarke:MC:Process}
+\end{description}
+
+Prv\'e algoritmy pre overovanie modelov pou\v z\'ivali ako formalizmus matematick\'eho modelu dan\'eho syst\'emu Kripkeho \v strukt\'uru. Je to obdoba 
+nedeterministick\'eho kone\v cn\'eho automatu (vi\v d kapitolu \ref{sec:buchi}), ktor\'eho stavy s\'u ozna\v cen\'e v\'yrazmi z mno\v ziny $2^{AP}$, kde 
+$AP$ s\'u atomick\'e propoz\'icie formule $f$ (vi\v d kapitolu \ref{sec:logika}). V\v setky tieto stavy s\'u akceptuj\'uce.
+
+Nesk\^ or sa pou\v z\'ival $\mu$-kalkulus, ale v s\'u\v casnosti s\'u najroz\v s\'irenej\v s\'im formalizmom automaty. Konkr\'etne budeme pojedn\'ava\v t 
+o pou\v zit\'i B\"uchiho automatu (vi\v d kapitolu \ref{sec:buchi}). Tento je ve\v lmi vhodn\'y, preto\v ze sa s jeho pomocou d\'a vyjadri\v t rovnako
+model syst\'emu, ako aj po vynalo\v zen\'i ur\v cit\'eho v\'ypo\v ctov\'eho \'usilia, \v specifik\'acia vlastnosti.
+
+Prvou f\'azou tvorby modelu syst\'emu je vytvorenie Kripkeho \v strukt\'ury, ktor\'a sa ale ve\v lmi jednoducho prevedie na automat $\mathcal{A}$. 
+\v Specifik\'aciu vlastnosti m\^ o\v zeme vyjadri\v t ako automat $\mathcal{S}$. Potom s\'u oba tieto automaty vytvoren\'e nad rovnakou abecedou 
+$\Sigma = 2^{AP}$. Overenie modelu teraz znamen\'a jednoducho zisti\v t, \v ci plat\'i $\mathcal{L(A)} \subseteq \mathcal{L(S)}$, kde $\mathcal{L(A)}$ je 
+jazyk zodpovedaj\'uci automatu $\mathcal{A}$ a 
+$\mathcal{L(S)}$ je jazyk zodpovedaj\'uci automatu $\mathcal{S}$ (Jazyk je mno\v zina v\v setk\'ych slov, ktor\'e je mo\v zno vygenerova\v t 
+pr\'islu\v sn\'ym automatom.). To znamen\'a, \v ze ka\v zd\'e chovanie modelovan\'eho syst\'emu, ur\v cen\'eho jazykom $\mathcal{L(A)}$ sa nach\'adza medzi
+povolen\'ymi chovaniami, ur\v cen\'ymi jazykom \v specifik\'acie $\mathcal{L(S)}$.
+
+Toto tvrdenie m\^ o\v zeme preformulova\v t. Nech $\overline{\mathcal{L(S)}}$ je komplement k $\mathcal{L(S)}$, potom pri overovan\'i modelu dokazujeme, \v ci
+plat\'i $\mathcal{L(A)} \cap \overline{\mathcal{L(S)}} = \emptyset$. Ak je tento prienik nepr\'azdny, predstavuje to chovanie, ktor\'e je protipr\'ikladom 
+k overovanej vlastnosti. Pou\v zi\v t predch\'adzaj\'ucu formul\'aciu n\'am umo\v z\v nuje vedomos\v t, \v ze B\"uchiho automaty s\'u uzavret\'e na prienik
+a doplnok (komplement). V\v daka tomu m\^ o\v zeme urobi\v t nasledovn\'e:
+\begin{align*}
+\emptyset =\ &\mathcal{L(A)} \cap \mathcal{L(S^{'})} = \mathcal{L(A \cap S^{'})} = \mathcal{L(M)},\\
+&\textrm{kde } \mathcal{M} = \mathcal{A \cap S^{'}} \textrm{ a }\ \mathcal{S^{'}}= \mathcal{S(\neg\phi)},\\
+&\textrm{kde } \mathcal{\phi} \textrm{ je LTL formula a } \mathcal{\neg\phi} \textrm{ jej neg\'acia},
+\end{align*}
+potom $\mathcal{S^{'}}$ je komplement $\mathcal{S(\phi)}$ a v skuto\v cnosti dokazujeme pr\'azdnos\v t jazyka $\mathcal{L(M)}$ 
+(Pre \'uplnos\v t treba doda\v t, \v ze $\mathcal{S(\phi)}$ je automat $\mathcal{S}$ zkon\v struovan\'y zo \v specifik\'acie vlastnosti $\phi$.).
+
+V\'yhodou pou\v zitia automatov pre vyjadrenie modelu sk\'uman\'eho syst\'emu aj  \v specifik\'acie vlastnosti je, \v ze sta\v c\'i skon\v struova\v t automat
+pre vlastnos\v t (vi\v d kapitolu \ref{sec:ltltoba}) a automat modelu sa kon\v struuje za behu samotn\'eho overovania pomocou algoritmu pre prienik automatov. 
+To znamen\'a, \v ze v mnoh\'ych pr\'ipadoch m\^ o\v zeme vyvr\'ati\v t splnite\v lnos\v t ove\v la sk\^ or, ne\v z sa vytvor\'i cel\'y stavov\'y priestor
+automatu modelu n\'ajden\'im prv\'eho protipr\'ikladu. \v Co zna\v cne \v setr\'i \v cas a priestor. T\'ato technika sa naz\'yva overovanie modelu za behu (z \textit{ang.} on"~the"~fly model checking).
+\cite{Clarke:MC:BA}
+
+\subsection{Prevod LTL do BA}
+\label{sec:ltltoba}
+Ako sme u\v z predt\'ym nieko\v lko kr\'at spomenuli, prevod LTL formule na B\"uchiho automat nie je primit\'ivny algoritmus. V skuto\v cnosti je pr\'ili\v s
+rozsiahly pre na\v se potreby zoznamovania sa s problematikou. Z tohto d\^ ovodu ho tu nebudeme rozobera\v t, av\v sak uvedieme nieko\v lko d\^ ole\v zit\'ych 
+inform\'acii, ktor\'e sa tohto probl\'emu t\'ykaj\'u.
+
+E\v ste pred za\v ciatkom sa mus\'i samotn\'a LTL formula $\phi$ previes\v t do negat\'ivnej norm\'alnej formy (z \textit{ang.} negation normal form). 
+Najsk\^ or sa preformuluj\'u niektor\'e tempor\'alne oper\'atory:
+\begin{itemize}
+\item $\mathbf{F}\ \phi \ \Rightarrow \ \mathbf{true\ U}\ \phi$
+\item $\mathbf{G}\ \phi \ \Rightarrow \ \mathbf{false\ R}\ \phi$
+\end{itemize}
+a tie\v z logick\'e oper\'atory, tak aby zostali iba $\wedge$, $\vee$ a $\neg$. V poslednom kroku pr\'ipravy s\'u v\v setky neg\'acie presunut\'e dovn\'utra:
+\begin{itemize}
+\item $\neg(\psi\ \mathbf{U}\ \phi) \ \Rightarrow \ (\neg\psi)\ \mathbf{R}\ (\neg\phi)$
+\item $\neg(\psi\ \mathbf{R}\ \phi) \ \Rightarrow \ (\neg\psi)\ \mathbf{U}\ (\neg\phi)$
+\item $\neg(\mathbf{X}\ \phi) \ \Rightarrow \ \mathbf{X}\ (\neg\phi)$
+\end{itemize}
+
+\v Dalej pokra\v cuje dlh\'y algoritmus \cite{Clarke:MC:LTLtoBA}, ktor\'eho v\'ysledkom je B\"uchiho automat $\mathcal{S}$. Jeho kon\v strukcia m\'a exponenci\'alnu \v casov\'u
+aj priestorov\'u zlo\v zitos\v t z\'avisl\'u od ve\v lkosti formule $\phi$. Av\v sak v praxi b\'yva takto skon\v struovan\'y automat ovykle men\v s\'i.
+
+Je d\^ ole\v zit\'e e\v ste raz pripomen\'u\v t, \v ze pri overovan\'i modelu vlastne nezis\v tujeme, \v ci model sp\'l\v na vlastnos\v t, ale naopak 
+zis\v tujeme, \v ci model nesp\'l\v na opak vlastnosti. D\^ ovodom k tomu je, \v ze je v\'ypo\v ctovo \v lah\v sie vytvori\v t automat z neg\'acie vlastnosti,
+ako vytvori\v t komplement automatu z p\^ ovodnej vlastnosti, ktor\'y by mohol ma\v t a\v z dvojn\'asobne exponenci\'alnu priestorov\'u zlo\v zitos\v t.
+\cite{Clarke:MC:LTLtoBA}
+
+
+\subsection{Farebn\' y model checking}
+Farebn\'y model checking alebo tie\v z paraleln\'y sa sna\v z\'i vysporiada\v t s parametriz\'aciou form\'alneho modelu, ktor\'a ho roz\v siruje o nov\'y
+rozmer. Ak sa budeme na jednotliv\'e parametre $p_i \in P$, kde $P$ je mno\v zina v\v setk\'ych nezn\'amych parametrov d\'iva\v t ako na intervaly alebo 
+sk\^ or ako na mno\v ziny hodn\^ ot, v\v daka diskretiz\'acii. Potom kombin\'acia evaluaci\'i v\v setk\'ych nezn\'amych parametrov tvor\'i parametrick\'y
+priestor $\mathcal{P} = \prod_{i = 1}^n [min(p_i),max(p_i)]$, kde $n = |P|$. Tento roz\v siruje model syst\'emu o parametrizovan\'e multi"~afinn\'e funkcie 
+$f_i(x,\pi_i)$, kde $\pi_i \in \mathcal{P}$ namiesto be\v zn\'ych multi"~afinn\'ych funkci\'i $f_i(x)$, kde $x = (x_1,\dots{},x_n)$ je vektor premenn\'ych
+a $f = (f_i,\dots{},f_n) : \mathbb{R}^n \rightarrow \mathbb{R}^n$ je vektor multi"~afinn\'ych funkci\'i (vi\v d kapitolu \ref{sec:model}). Hodnota $\pi_i$
+vyjadruje konkr\'etnu evalu\'aciu parametrov v celom modeli a ozna\v cujeme ju ako farba.
+
+Aby sa zabr\'anilo opakovan\'emu vytv\'araniu automatu pre ka\v zd\'u evalu\'aciu $\pi_i$ za \'u\v celom overenia modelu, bola vytvoren\'a nov\'a pomocn\'a
+\v strukt\'ura pomenovan\'a parametrizovan\'a Kripkeho \v strukt\'ura (\v dalej len PKS). T\'a v sebe tradi\v cne uchov\'ava cel\'y stavov\'y priestor modelu,
+ale navy\v se s novou inform\'aciou, ktor\'a rozhoduje pod ktorou farbou, resp. konkr\'etnou evalu\'aciou parametrov sa d\'a prejs\v t z prechodu $s$ 
+do prechodu $s^{'}$. Ka\v zd\'y prechod mus\'i by\v t uschopnen\'y aspon pod jednou farbou, ale z\'arove\v n m\^ o\v ze by\v t aj pod v\v setk\'ymi. Cel\'y
+stavov\'y priestor je tak zjednotenie v\v setk\'ych jednofarebn\'ych stavov\'ych priestorov.
+
+V\v daka tomu prebieha overovanie v\v setk\'ych parametriz\'aci\'i modelu naraz. V\'ysledkom je najv\"a\v c\v sia mno\v zina parametriz\'aci\'i, v ktor\'ych
+model sp\'l\v na dan\'u vlastnos\v t. \cite{TCBB-2010}
+
+%====================================MODEL==================================================
+\chapter{Biochemick\'y dynamick\'y vstupn\'y model}
 \label{sec:model}
 
 \it A. \ Multi-afinn\'y ODE model\rm
 \\
 
-Vstupn\'ym modelom sa u n\'as mysl\'i model biochemick\'ych reakci\'i, ktor\'y je v na\v som po\v nat\'i bran\'y ako po \v castiach linearizovan\'y 
+Vstupn\'ym modelom sa u n\'as mysl\'i model biochemick\'ych reakci\'i, ktor\'y je v na\v som po\v nat\'i bran\'y ako po \v castiach 
 multi"~afinn\'y syst\'em diferenci\'alnych rovn\'ic. Ale za\v cnime od po\v ciatku a postupne sa dopracujme k tomuto v\'ysledku.
 
 Na z\'aklade pravidla o mass~action kinetike (vi\v d \ref{sec:massAction}) je mo\v zn\'e modelova\v t \v lubovoln\'u biochemick\'u reakciu alebo dokonca 
 s\'ustavu tak\'ychto reakci\'i pomocou s\'ustavy neline\'arnych oby\v cajn\'ych diferenci\'alnych rovn\'ic 
-(Ordinary Differential Equations alebo ODEs) \cite{wiki:ODE}.
+(Ordinary Differential Equations alebo ODEs) [odkaz na ODE ale nie wiki].
 
 Uva\v zujme multi"~afinn\'y syst\'em vo forme $\dot{x} = f(x)$, kde $x = (x_1,\dots{},x_n)$ je vektor premenn\'ych a $f = (f_1,\dots{},f_n)$ \ : \ 
 $\mathbb{R}^n \rightarrow \mathbb{R}^n$ je vektor multi"~afin\-n\'ych funkci\'i. Tieto funkcie s\'u vlastne polyn\'omy, v ktor\'ych je stupe\v n premenn\'ych 
@@ -372,7 +493,7 @@ n\'a\v s spojit\'y stavov\'y priestor $\mathcal{D}$ e\v ste viac. A s\'ice na $n
 \\
 
 \noindent
-\it B. \ Po \v castiach linearizovan\'y multi"~afinn\'y ODE model\rm
+\it B. \ Po \v castiach multi"~afinn\'y ODE model\rm
 \\
 
 Multi"~afinn\'y syst\'em diferenci\'alnych rovn\'ic dok\'a\v ze pokry\v t skoro cel\'u mass~action kinetiku s jedinou v\'ynimkou. A tou s\'u 
@@ -386,9 +507,9 @@ v niektor\'ych pr\'ipadoch experiment\'alne nerie\v site\v ln\'y. \v Ci u\v z id
 kr\'atkou existenciou / o ve\v lmi r\'ychlo degraduj\'ujce l\'atky).
 
 Pr\'ave preto sa pon\'ukaj\'u mo\v znosti aproxim\'acie, ktor\'e nie len zmen\v suj\'u syst\'em a t\'ym aj dimenzionalitu matematick\'eho modelu, 
-ale zjednodu\v suj\'u aj v\'ypo\v ctov\'u zlo\v zitos\v t. Takouto mo\v znos\v tou je aj aproxim\'acia kv\'azistacion\'arneho stavu 
-(Quasi-steady state aproximation) [odkaz na Quasi-steady-state.pdf a LectureNotes.pdf]. Napr\'iklad Michaelis"~Mentenovej kinetika (vi\v d. \ref{kinetiky}), 
-\v ci obecnej\v sia Hillova kinetika (vi\v d. \ref{kinetiky}) a tie\v z sigmoid\'alne prep\'ina\v ce publikovan\'e na konferencii CAV (Grosu et al. 2011) [], 
+ale zjednodu\v suj\'u aj v\'ypo\v ctov\'u zlo\v zitos\v t. Takouto mo\v znos\v tou je aj aproxim\'acia kv\'azistacion\'arneho stavu (vi\v d \ref{kinetiky}.B). 
+Napr\'iklad Michaelis"~Mentenovej kinetika (vi\v d. \ref{kinetiky}), 
+\v ci obecnej\v sia Hillova kinetika (vi\v d. \ref{kinetiky}.C) a tie\v z sigmoid\'alne prep\'ina\v ce publikovan\'e na konferencii CAV (Grosu et al. 2011) [], 
 ktor\'e n\'a\v s n\'astroj pon\'uka. Takto redukovan\' e difernci\'alne rovnice maj\'u formu 
 racion\'alnych polyn\'omov, z\'iskan\'ych ako line\'arna kombin\'acia t\'ychto regula\v cn\'ych funkc\'i% [mozno odkaz na 22 z hibi2010]
 , medzi ktor\'e patria aj Heavisideove alebo schodov\'e funkcie []. 
@@ -397,10 +518,10 @@ matematick\'y model nie je multi"~afinn\'y, ale na druh\'u stranu je ho mo\v zn\
 A to tak, \v ze nahrad\'ime v\v setky regula\v cn\'e funkcie s\'ustavou vhodn\'ych po \v castiach line\'arnych rampov\'ych funkci\'i. Tieto s\'u definovan\'e 
 nasledovne:
 \begin{align*}
-	r^+coor (x_i,\theta{}_i,\theta{}_i^{'},x_j,x_j^{'}) \ = \left\{ \begin{array}{cl}
-x_j, & \textrm{pre} \ x_i < \theta_i,\\
-x_j + (x_j^{'} - x_j)\frac{x_i - \theta_i}{\theta_i^{'} - \theta_i}, & \textrm{pre} \ \theta_i < x_i < \theta_i^{'},\\
-x_j^{'}, & \textrm{pre} \ x_i > \theta_i^{'}.
+	r^+coor (x_i,\theta{}_i,\theta{}_i^{'},y,y^{'}) \ = \left\{ \begin{array}{cl}
+y, & \textrm{pre} \ x_i < \theta_i,\\
+y + (y^{'} - y)\frac{x_i - \theta_i}{\theta_i^{'} - \theta_i}, & \textrm{pre} \ \theta_i < x_i < \theta_i^{'},\\
+y^{'}, & \textrm{pre} \ x_i > \theta_i^{'}.
 	\end{array}
 	\right.;
 	\\
@@ -408,14 +529,15 @@ x_j^{'}, & \textrm{pre} \ x_i > \theta_i^{'}.
 	\centerline{$r^+ (x_i, \theta{}_i, \theta{}_i^{'}, a,b) \ = \ r^+coor (x_i,\theta{}_i,\theta{}_i^{'},a\theta_i + b,a\*\theta_i^{'} + b)$;}
 \end{align*}
 \begin{align*}
-	\textrm{kde} \ &i, j \in \{1,\dots{},n\} \ \textrm{a} \ i \neq j,\\
+	\textrm{kde} \ &i \in \{1,\dots{},n\},\\
+	&y = x_j, y^{'} = x_j^{'}; j \in \{1,\dots{},n\} \wedge j \neq i,\\
 	&\theta_i, \theta_i^{'} \in \mathbb{R}^+, \ \theta_i < \theta_i^{'} \leq max_i,\\
 	&a, b \in \mathbb{R}.
 \end{align*}
 
 Potom klesaj\'uce rampov\'e funkcie s\'u definovan\'e ako kvantitat\'ivny doplnok rast\'ucich:
 \begin{align*}
-r^-coor (x_i,\theta{}_i,\theta{}_i^{'},x_j,x_j^{'}) &\ = \ 1 - r^+coor (x_i,\theta{}_i,\theta{}_i^{'},x_j,x_j^{'})\\
+r^-coor (x_i,\theta{}_i,\theta{}_i^{'},y,y^{'}) &\ = \ 1 - r^+coor (x_i,\theta{}_i,\theta{}_i^{'},y,y^{'})\\
 r^- (x_i, \theta{}_i, \theta{}_i^{'}, a,b) &\ = \ 1 - r^+ (x_i, \theta{}_i, \theta{}_i^{'}, a,b)
 \end{align*}
 
@@ -473,7 +595,7 @@ c, &c \in \mathbb{R}\\
 p, &p \in \langle g,h \rangle; \ g,h \in \mathbb{R}\\
 x_k, & k \in \{1,\dots{},n\}\\
 r^*(x_k,\theta_m^k,\theta_{m+1}^k,a^{'},b^{'}), &m \in \{1,\dots{},\eta_k-1\}; a^{'},b^{'} \in \mathbb{R}\\
-r^*coor(x_k,\theta_m^k,\theta_{m+1}^k,x_l,x_l^{'}), &l \in \{1,\dots{},n\}\\
+r^*coor(x_k,\theta_m^k,\theta_{m+1}^k,x_l,x_l^{'}), &l \in \{1,\dots{},n\} \wedge l \neq i\\
 s^*(x_k,e,\theta_m^k,a,b), &e \in \mathbb{R}^+; \ a,b \in \mathbb{R}_0^+\\
 s^*inv(x_k,e,\theta_m^k,a,b),\\
 hill^*(x_k,d,\theta_m^k,a,b), &d \in \mathbb{R}^+\\
@@ -492,15 +614,14 @@ Takto vytvoren\'y model je prakticky pou\v zite\v ln\'y pre \v lubovoln\'y biolo
 \section{Abstrakcia}
 
 
-\chapter{Podobn\' e n\'astroje}
+%====================================NASTROJE===============================================
+\chapter{V\'ychodiskov\'y stav a podobn\' e n\'astroje}
 
 \section{BioDiVinE 1.0}
 
 \section{PEPMC}
 
 \section{RoverGene}
-
-\section{ParaSim}
 
 
 \chapter{BioDiVinE 1.1}
@@ -518,7 +639,7 @@ Takto vytvoren\'y model je prakticky pou\v zite\v ln\'y pre \v lubovoln\'y biolo
 \chapter{Z\' aver}
 
 
-\bibliographystyle{unsrt} 
+\bibliographystyle{plain} 
 \bibliography{dp1}
 
 \chapter*{Pr\' iloha}

@@ -1,46 +1,46 @@
 This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: dp1.sk.aux
-The style file: unsrt.bst
+The style file: plain.bst
 Database file #1: dp1.bib
 You've used 8 entries,
-            1791 wiz_defined-function locations,
-            491 strings with 4582 characters,
-and the built_in function-call counts, 2015 in all, are:
-= -- 182
-> -- 49
-< -- 13
-+ -- 20
-- -- 12
-* -- 121
-:= -- 252
+            2118 wiz_defined-function locations,
+            543 strings with 4916 characters,
+and the built_in function-call counts, 3444 in all, are:
+= -- 313
+> -- 144
+< -- 17
++ -- 56
+- -- 48
+* -- 252
+:= -- 511
 add.period$ -- 24
 call.type$ -- 8
-change.case$ -- 3
+change.case$ -- 41
 chr.to.int$ -- 0
 cite$ -- 8
-duplicate$ -- 111
-empty$ -- 226
-format.name$ -- 12
-if$ -- 511
+duplicate$ -- 159
+empty$ -- 288
+format.name$ -- 48
+if$ -- 782
 int.to.chr$ -- 0
 int.to.str$ -- 8
-missing$ -- 10
+missing$ -- 15
 newline$ -- 43
-num.names$ -- 5
-pop$ -- 48
+num.names$ -- 16
+pop$ -- 78
 preamble$ -- 1
-purify$ -- 0
+purify$ -- 40
 quote$ -- 0
-skip$ -- 69
+skip$ -- 112
 stack$ -- 0
-substring$ -- 95
-swap$ -- 52
-text.length$ -- 13
+substring$ -- 196
+swap$ -- 68
+text.length$ -- 17
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
+type$ -- 18
 warning$ -- 0
-while$ -- 15
+while$ -- 31
 width$ -- 9
-write$ -- 95
+write$ -- 93
