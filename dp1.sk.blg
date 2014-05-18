@@ -3,44 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: dp1.sk.aux
 The style file: plain.bst
 Database file #1: dp1.bib
-You've used 8 entries,
+You've used 23 entries,
             2118 wiz_defined-function locations,
-            543 strings with 4916 characters,
-and the built_in function-call counts, 3444 in all, are:
-= -- 313
-> -- 144
-< -- 17
-+ -- 56
-- -- 48
-* -- 252
-:= -- 511
-add.period$ -- 24
-call.type$ -- 8
-change.case$ -- 41
+            636 strings with 8265 characters,
+and the built_in function-call counts, 9958 in all, are:
+= -- 945
+> -- 421
+< -- 26
++ -- 167
+- -- 144
+* -- 751
+:= -- 1473
+add.period$ -- 67
+call.type$ -- 23
+change.case$ -- 136
 chr.to.int$ -- 0
-cite$ -- 8
-duplicate$ -- 159
-empty$ -- 288
-format.name$ -- 48
-if$ -- 782
+cite$ -- 23
+duplicate$ -- 354
+empty$ -- 838
+format.name$ -- 144
+if$ -- 2203
 int.to.chr$ -- 0
-int.to.str$ -- 8
-missing$ -- 15
-newline$ -- 43
-num.names$ -- 16
-pop$ -- 78
+int.to.str$ -- 23
+missing$ -- 25
+newline$ -- 115
+num.names$ -- 40
+pop$ -- 204
 preamble$ -- 1
-purify$ -- 40
+purify$ -- 121
 quote$ -- 0
-skip$ -- 112
+skip$ -- 274
 stack$ -- 0
-substring$ -- 196
-swap$ -- 68
-text.length$ -- 17
+substring$ -- 861
+swap$ -- 131
+text.length$ -- 26
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 18
+type$ -- 76
 warning$ -- 0
-while$ -- 31
-width$ -- 9
-write$ -- 93
+while$ -- 72
+width$ -- 25
+write$ -- 249

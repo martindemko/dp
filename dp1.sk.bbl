@@ -1,50 +1,150 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{TCBB-2010}
-J.~Barnat, L.~Brim, A.~Krejci, A.~Streck, M.~Vejnar, and T.~Vejpustek.
+J.~Barnat, L.~Brim, A.~Krej\v c\'i, D.~\v{S}afr\'anek, A.~Streck, M.~Vejn\'ar,
+  and T.~Vejpustek.
 \newblock On parameter synthesis by parallel model checking.
 \newblock {\em IEEE/ACM Transactions on Computational Biology and
-  Bioinformatics}, 9(3):693--705, May-June 2012.
+  Bioinformatics (TCBB)}, 9(3):693--705. IEEE Computer Society Press, May-June
+  2012.
+
+\bibitem{RATS}
+J.~Barnat, L.~Brim, I.~\v{C}ern\'{a}, S.~Dra\v{z}an, J.~Fabrikov\'{a}, and
+  D.~\v{S}afr\'{a}nek.
+\newblock {On algorithmic analysis of transcriptional regulation by LTL model
+  checking}.
+\newblock {\em Theoretical Computer Science}, 410(33-34):3128--3148, 2009.
+
+\bibitem{divine}
+J.~Barnat, L.~Brim, I.~\v{C}ern\'{a}, and P.~\v{S}ime\v{c}ek.
+\newblock {D}i{V}in{E} -- {T}he {D}istributed {V}erification {E}nvironment.
+\newblock In {\em Proceedings of 4th International Workshop on Parallel and
+  Distributed Methods in verifiCation}, pages 89--94, July 2005.
+
+\bibitem{BIODIVINE}
+J.~Barnat, L.~Brim, I.~\v{C}ern\'a, S.~Dra\v zan, J.~Fabrikov\'a, J.~L\'an\'ik,
+  H.~Ma, and D.~\v{S}afr\'anek.
+\newblock Biodivine: A framework for parallel analysis of biological models.
+\newblock {\em In Proceedings of 2nd International Workshop on Computational
+  Models for Cell Processes (COMPMOD 2009)}, pages 31--45. EPTCS 6, 2009.
+
+\bibitem{HIBI-2009}
+J.~Barnat, L.~Brim, I.~\v{C}ern\'a, S.~Dra\v zan, J.~Fabrikov\'a, and
+  D.~\v{S}afr\'anek.
+\newblock Computational analysis of large-scale multi-affine ode models.
+\newblock {\em In Proceedings of High performance computational systems Biology
+  (HiBi 2009)}, pages 81--99. IEEE Computer Society Press, 2009.
+
+\bibitem{HIBI-2010}
+J.~Barnat, L.~Brim, D.~\v{S}afr\'anek, and M.~Vejn\'ar.
+\newblock Parameter scanning by parallel model checking with applications in
+  systems biology.
+\newblock {\em In Proceedings of High performance computational systems Biology
+  (HiBi 2010)}, pages 95--104. IEEE Computer Society Press, 2010.
+
+\bibitem{rovergene-site}
+G.~Batt and C.~Belta.
+\newblock Rovergene: A tool for the robust verification of gene networks, [cit.
+  17. m\'aja 2014].
+\newblock Dostupn\'e na:
+  $<$\url{http://iasi.bu.edu/~batt/rovergene/rovergene.htm}$>$.
+
+\bibitem{rovergene}
+G.~Batt, C.~Belta, and R.~Weiss.
+\newblock Model checking liveness properties of genetic regulatory networks.
+\newblock In {\em Tools and Algorithms for the Construction and Analysis of
+  Systems (TACAS'07)}, volume 4424 of {\em Lecture Notes in Computer Science},
+  pages 323--338. Springer, 2007.
+
+\bibitem{CAV-2011}
+R.~Grosu, G.~Batt, F.H. Fenton, J.~Glimm, C.~Le Guernic, S.A. Smolka, and
+  E.~Bartocci.
+\newblock From cardiac cells to genetic regulatory networks.
+\newblock {\em In Proceedings of CAV'11, the 23rd International Conference on
+  Computer Aided Verification, Lecture Notes in Computer Science},
+  6806:396--411. Springer, July 2011.
 
 \bibitem{Clarke:MC:LTL}
-Edmund~M. Clarke, Jr., Orna Grumberg, and Doron~A. Peled.
-\newblock {\em Model Checking}, chapter 3 Temporal Logics, pages 27--33.
+E.M.~Clarke Jr., O.~Grumberg, and D.A. Peled.
+\newblock {\em Model Checking}, chapter 3. Temporal Logics, pages 27--33.
 \newblock MIT Press, 1999.
 
 \bibitem{Clarke:MC:BA}
-Edmund~M. Clarke, Jr., Orna Grumberg, and Doron~A. Peled.
-\newblock {\em Model Checking}, chapter 9 Model Checking and Automata Theory,
+E.M.~Clarke Jr., O.~Grumberg, and D.A. Peled.
+\newblock {\em Model Checking}, chapter 9. Model Checking and Automata Theory,
   pages 121--140.
 \newblock MIT Press, 1999.
 
 \bibitem{Clarke:MC:Process}
-Edmund~M. Clarke, Jr., Orna Grumberg, and Doron~A. Peled.
-\newblock {\em Model Checking}, chapter 1.3 The Process of Model Checking,
+E.M.~Clarke Jr., O.~Grumberg, and D.A. Peled.
+\newblock {\em Model Checking}, chapter 1.3. The Process of Model Checking,
   pages 4--4.
 \newblock MIT Press, 1999.
 
 \bibitem{Clarke:MC:LTLtoBA}
-Edmund~M. Clarke, Jr., Orna Grumberg, and Doron~A. Peled.
-\newblock {\em Model Checking}, chapter 9.4 Translating LTL into Automata,
+E.M.~Clarke Jr., O.~Grumberg, and D.A. Peled.
+\newblock {\em Model Checking}, chapter 9.4. Translating LTL into Automata,
   pages 132--138.
 \newblock MIT Press, 1999.
 
 \bibitem{Keener:1998:MP:MassAction}
-James~P. Keener and James Sneyd.
+J.P. Keener and J.~Sneyd.
 \newblock {\em Mathematical Physiology}, volume~8 of {\em Interdisciplinary
-  Applied Mathematics}, chapter 1.1 The Law of Mass Action, pages 3--4.
+  Applied Mathematics}, chapter 1.1. The Law of Mass Action, pages 3--4.
 \newblock Springer-Verlag, 1998.
 
 \bibitem{Keener:1998:MP:Enzymes}
-James~P. Keener and James Sneyd.
+J.P. Keener and J.~Sneyd.
 \newblock {\em Mathematical Physiology}, volume~8 of {\em Interdisciplinary
-  Applied Mathematics}, chapter 1.2 Enzyme kinetics, pages 5--16.
+  Applied Mathematics}, chapter 1.2. Enzyme kinetics, pages 5--16.
 \newblock Springer-Verlag, 1998.
 
 \bibitem{Keener:1998:MP:MathBackground}
-James~P. Keener and James Sneyd.
+J.P. Keener and J.~Sneyd.
 \newblock {\em Mathematical Physiology}, volume~8 of {\em Interdisciplinary
-  Applied Mathematics}, chapter 1.4 Appendix: Math Background, pages 24--30.
+  Applied Mathematics}, chapter 1.4. Appendix: Math Background, pages 24--30.
 \newblock Springer-Verlag, 1998.
+
+\bibitem{mpt}
+M.~Kvasnica, P.~Grieder, and M.~Baoti\'{c}.
+\newblock {Multi-Parametric Toolbox (MPT)}, [cit. 17. m\'aja 2014].
+\newblock Dostupn\'e na: $<$\url{http://control.ee.ethz.ch/~mpt/}$>$.
+
+\bibitem{paradise}
+{Laborat\'orium paraleln\'ych a distribuovan\'ych syst\'emov, Fakulta
+  informatiky Masarykovej univerzity, Brno, \v Cesk\'a republika}, [cit. 17.
+  m\'aja 2014].
+\newblock Dostupn\'e na: $<$\url{http://paradise.fi.muni.cz/index.html}$>$.
+
+\bibitem{CURVES}
+J.C. Perez and E.~Vidal.
+\newblock Optimum polygonal approximation of digitized curves.
+\newblock {\em Pattern Recognition Letters}, 15(8):743--750. Elsevier Science
+  Inc., August 1994.
+
+\bibitem{sybila}
+{Laborat\'orium syst\'emovej biol\'ogie, Fakulta informatiky Masarykovej
+  univerzity, Brno, \v Cesk\'a republika}, [cit. 17. m\'aja 2014].
+\newblock Dostupn\'e na: $<$\url{http://sybila.fi.muni.cz/home}$>$.
+
+\bibitem{sybila-biodivine}
+{N\'astroj {BioDiVinE} 1.0, Fakulta informatiky Masarykovej univerzity, Brno,
+  \v Cesk\'a republika}, [cit. 17. m\'aja 2014].
+\newblock Dostupn\'e na:
+  $<$\url{http://sybila.fi.muni.cz/tools/biodivine/v1/index}$>$.
+
+\bibitem{ODE}
+G.~Teschl.
+\newblock {\em Ordinary Differential Equations and Dynamical Systems}, volume
+  140 of {\em Graduate Studies in Mathematics}, chapter 1. Introduction, pages
+  3--31.
+\newblock American Mathematical Society, 2012.
+
+\bibitem{step}
+E.W. Weisstein.
+\newblock {Heaviside Step Function, From MathWorld--A Wolfram Web Resource},
+  [cit. 17. m\'aja 2014].
+\newblock Dostupn\'e na:
+  $<$\url{http://mathworld.wolfram.com/HeavisideStepFunction.html}$>$.
 
 \end{thebibliography}

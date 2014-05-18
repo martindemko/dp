@@ -3,6 +3,7 @@
 \usepackage{amssymb}
 \usepackage{amsmath}
 \usepackage{graphicx}
+\usepackage{wrapfig}
 \usepackage[T1]{fontenc}
 \usepackage[latin2]{inputenc}
 \usepackage[slovak]{babel}
@@ -48,7 +49,8 @@
 \chapter{Z\' akladn\' e pojmy}
 Ne\v z za\v cneme zach\' adza\v t hlb\v sie do problematiky tejto pr\' ace a opisova\v t postupy a n\' astroje v nej pou\v zit\' e, 
 je potrebn\' e vysvetli\v t na po\v ciatku nieko\v lko pojmov. Tieto sa v pr\' aci mnohokr\' at opakuj\' u a ich v\v casn\' ym uveden\' im
-pred\' ideme nepochopite\v lnosti textu.
+pred\' ideme nepochopite\v lnosti textu. Je tie\v z d\^ ole\v zit\'e poznamena\v t, \v ze t\'ato kapitola je z ve\v lkej miery doslovne citovan\'a
+zo zdrojov uveden\'ych v\v zdy na konci ka\v zdej podkapitoly.
 
 \section{LTL - Line\' arna Tempor\' alna Logika}
 \label{sec:logika}
@@ -67,7 +69,7 @@ $C \neq "nie"$ \\
 {\it at\v d$\dots{}$}
 \end{center}
 \item[Logick\' e oper\' atory] \hfill
-\begin{align*}	%ZISTIT CI STACIA IBA -------NEGACIA, KONJUNKCIA, DISJUKCIA--------
+\begin{align*}
 &\neg, \ \vee &-& \ \textrm{\it z\' akladn\' e logick\' e oper\' atory}\\
 &\wedge , \ \rightarrow , \ \leftrightarrow , \ \mathbf{true} , \ \mathbf{false} \hfil &-& \ \textrm{\it odvoden\' e logick\' e oper\' atory}
 \end{align*}
@@ -114,7 +116,8 @@ paletu oper\'atorov za predpokladu platnosti predch\'adzaj\'ucich pravidiel:
 \item $\mathbf{G} \phi \ \equiv \ \neg \mathbf{F} \neg \phi$,
 \end{itemize}
 Napriek tomu, \v ze je LTL tou najprimit\' ivnej\v sou tempor\'alnou logikou, jej prevod do B\"uchiho automatu je v najhor\v som pr\' ipade 
-exponenci\' alne zlo\v zit\' y. D\^ ovod tohto prevodu bude vysvetlen\' y v kapitole \ref{model_checking}. \cite{Clarke:MC:LTL}
+exponenci\' alne zlo\v zit\' y. D\^ ovod tohto prevodu bude vysvetlen\' y v kapitole \ref{sec:modelChecking}. 
+\cite{Clarke:MC:LTL}
 
 \section{B\"uchiho automat}	%kniha Model checking str. 121
 \label{sec:buchi}
@@ -152,8 +155,6 @@ nedeterministick\'eho kone\v cn\'eho automatu  na deterministick\'y, ale iba nad
 
 \section{Z\'akon o mass action kinetike}
 \label{sec:massAction}
-%T\'ato kapitola je z\'u\v zen\'y v\'y\v ta\v zok z knihy \textit{Mathematical Physiology}, kapitola \textit{1.1 The Law of Mass Action}. \cite{Keener:1998:MP:MassAction}
-%
 Tento z\'akon vyjadruje z\'akladn\'e pravidlo fungovania chemick\'ych reakci\'i. Konkr\'etne r\'ychlos\v t s akou chemick\'e substancie, \v ci u\v z 
 ve\v lk\'e makromolekuly alebo mal\'e i\'ony, do seba nar\'a\v zaj\'u a interaguj\'u za tvorby nov\'ych chemick\'ych l\'atok. Predpokladajme, \v ze
 substr\'aty $A$ a $B$ spolu reaguj\'u za vzniku novej l\'atky, produktu $C$,
@@ -165,13 +166,14 @@ A + B \overset{k}{\longrightarrow} C.
 R\'ychlos\v t tejto reakcie predstavuje r\'ychlos\v t tvorby produktu $C$, a s\'ice $\frac{d[C]}{dt}$, ktor\'a steles\v nuje po\v cet kol\'izi\'i za jednotku 
 \v casu medzi reaktantami $A$ a $B$ a z\'arove\v n pravdepodobnos\v t, \v ze tieto kol\'izie maj\'u dostato\v cn\'u energiu na prekonannie aktiva\v cnej 
 energie reakcie. To samozrejme z\'ale\v z\'i po prv\'e na koncentr\'acii reaktantov, ale aj na ich tvare a ve\v lkosti a tie\v z na teplote a ph roztoku. 
-Kombin\'aciou t\'ychto a aj \v dal\v s\'ich faktorov dost\'avame:
+Kombin\'aciou t\'ychto a aj \v dal\v s\'ich faktorov dost\'avame neline\'arnu ordin\'arnu diferenci\'alnu rovnicu (z \textit{ang.} ordinary differential 
+equation, skr\'atene ODE) \cite{ODE}:
 \begin{equation}
 \label{eq:differentialReaction}
 \frac{d[C]}{dt} = k[A][B]
 \end{equation}
 
-Identifik\'acia vz\v tahu \ref{eq:differentialReaction} s rovnicou \ref{eq:simpleReaction} sa naz\'yva z\'akon mass action kinetiky (z \textit{ang.} law of mass action) a kon\v stanta $k$ 
+Identifik\'acia vz\v tahu \ref{eq:simpleReaction} s rovnicou \ref{eq:differentialReaction} sa naz\'yva z\'akon mass action kinetiky (z \textit{ang.} law of mass action) a kon\v stanta $k$ 
 je potom r\'ychlostn\'a kon\v stanta (z \textit{ang.} rate constant) tejto reakcie.
 
 V skuto\v cnosti nejde o z\'akon ako tak\'y. Nie je to neporu\v site\v ln\'e pravidlo ako Newtonov gravita\v cn\'y z\'akon, ale sk\^ or ve\v lmi 
@@ -360,7 +362,7 @@ v pr\'ipade $n = 1$ zodpoved\'a Hillova kinetika Michaelis"~Mentenovej kinetike,
 \end{figure}
  
 \section{Model checking}
-\label{model_checking}
+\label{sec:modelChecking}
 Model checking alebo overovanie modelov je automatizovan\'a technika form\'alnej verifik\'acie \v specifikovan\'ych vlastnost\'i kone\v cn\'eho stavov\'eho 
 syst\'emu. Hlavnou v\'yzvou tejto problematiky je \'uspe\v sne si poradi\v t s probl\'emom expl\'ozie stavov\'eho priestoru (z \textit{ang.} state space
 explosion).
@@ -448,6 +450,7 @@ ako vytvori\v t komplement automatu z p\^ ovodnej vlastnosti, ktor\'y by mohol m
 
 
 \subsection{Farebn\' y model checking}
+\label{sec:coloredMC}
 Farebn\'y model checking alebo tie\v z paraleln\'y sa sna\v z\'i vysporiada\v t s parametriz\'aciou form\'alneho modelu, ktor\'a ho roz\v siruje o nov\'y
 rozmer. Ak sa budeme na jednotliv\'e parametre $p_i \in P$, kde $P$ je mno\v zina v\v setk\'ych nezn\'amych parametrov d\'iva\v t ako na intervaly alebo 
 sk\^ or ako na mno\v ziny hodn\^ ot, v\v daka diskretiz\'acii. Potom kombin\'acia evaluaci\'i v\v setk\'ych nezn\'amych parametrov tvor\'i parametrick\'y
@@ -468,7 +471,10 @@ model sp\'l\v na dan\'u vlastnos\v t. \cite{TCBB-2010}
 %====================================MODEL==================================================
 \chapter{Biochemick\'y dynamick\'y vstupn\'y model}
 \label{sec:model}
+T\'ato kapitola je z ve\v lkej miery doslovne citovan\'a z ni\v z\v sie uveden\'ych zdrojov.
+\\
 
+\noindent
 \it A. \ Multi-afinn\'y ODE model\rm
 \\
 
@@ -476,8 +482,7 @@ Vstupn\'ym modelom sa u n\'as mysl\'i model biochemick\'ych reakci\'i, ktor\'y j
 multi"~afinn\'y syst\'em diferenci\'alnych rovn\'ic. Ale za\v cnime od po\v ciatku a postupne sa dopracujme k tomuto v\'ysledku.
 
 Na z\'aklade pravidla o mass~action kinetike (vi\v d \ref{sec:massAction}) je mo\v zn\'e modelova\v t \v lubovoln\'u biochemick\'u reakciu alebo dokonca 
-s\'ustavu tak\'ychto reakci\'i pomocou s\'ustavy neline\'arnych oby\v cajn\'ych diferenci\'alnych rovn\'ic 
-(Ordinary Differential Equations alebo ODEs) [odkaz na ODE ale nie wiki].
+s\'ustavu tak\'ychto reakci\'i pomocou s\'ustavy neline\'arnych ODE \cite{ODE}.
 
 Uva\v zujme multi"~afinn\'y syst\'em vo forme $\dot{x} = f(x)$, kde $x = (x_1,\dots{},x_n)$ je vektor premenn\'ych a $f = (f_1,\dots{},f_n)$ \ : \ 
 $\mathbb{R}^n \rightarrow \mathbb{R}^n$ je vektor multi"~afin\-n\'ych funkci\'i. Tieto funkcie s\'u vlastne polyn\'omy, v ktor\'ych je stupe\v n premenn\'ych 
@@ -489,7 +494,8 @@ matematick\'eho syst\'emu obmedzi\v t iba na prv\'y, resp. kladn\'y kvadrant {$\
 
 Ak uva\v zujeme o premenn\'ych ako o nestabiln\'ych chemick\'ych l\'atkach, ktor\'e sami od seba degraduj\'u v \v case, m\^ o\v zme s k\v ludom obmedzi\v t 
 n\'a\v s spojit\'y stavov\'y priestor $\mathcal{D}$ e\v ste viac. A s\'ice na $n$"~dimenzion\'alny obd\'l\v znik $\mathcal{D} = \prod_{i=1}^n[0,max_i] 
-\subset \mathbb{R}^n$, kde $max_i$ je horn\'a hranica koncentr\'acie pre\-men\-nej $x_i$. [odkaz na hibi2010 a hibi2009]
+\subset \mathbb{R}^n$, kde $max_i$ je horn\'a hranica koncentr\'acie pre\-men\-nej $x_i$.
+\cite{HIBI-2009}\cite{HIBI-2010}
 \\
 
 \noindent
@@ -509,10 +515,14 @@ kr\'atkou existenciou / o ve\v lmi r\'ychlo degraduj\'ujce l\'atky).
 Pr\'ave preto sa pon\'ukaj\'u mo\v znosti aproxim\'acie, ktor\'e nie len zmen\v suj\'u syst\'em a t\'ym aj dimenzionalitu matematick\'eho modelu, 
 ale zjednodu\v suj\'u aj v\'ypo\v ctov\'u zlo\v zitos\v t. Takouto mo\v znos\v tou je aj aproxim\'acia kv\'azistacion\'arneho stavu (vi\v d \ref{kinetiky}.B). 
 Napr\'iklad Michaelis"~Mentenovej kinetika (vi\v d. \ref{kinetiky}), 
-\v ci obecnej\v sia Hillova kinetika (vi\v d. \ref{kinetiky}.C) a tie\v z sigmoid\'alne prep\'ina\v ce publikovan\'e na konferencii CAV (Grosu et al. 2011) [], 
-ktor\'e n\'a\v s n\'astroj pon\'uka. Takto redukovan\' e difernci\'alne rovnice maj\'u formu 
-racion\'alnych polyn\'omov, z\'iskan\'ych ako line\'arna kombin\'acia t\'ychto regula\v cn\'ych funkc\'i% [mozno odkaz na 22 z hibi2010]
-, medzi ktor\'e patria aj Heavisideove alebo schodov\'e funkcie []. 
+\v ci obecnej\v sia Hillova kinetika (vi\v d. \ref{kinetiky}.C) a tie\v z sigmoid\'alne prep\'ina\v ce publikovan\'e na konferencii CAV (Grosu et al. 2011)
+\cite{CAV-2011}. 
+V\v setky vy\v s\v sie zmienen\'e abstrakcie n\'a\v s n\'astroj pon\'uka a budeme ich jednotne ozna\v cova\v t ako regula\v cn\'e funkcie $\rho(x)$, ktor\'e
+budeme matematicky definova\v t nesk\^ or. 
+
+Takto redukovan\' e difernci\'alne rovnice maj\'u formu 
+racion\'alnych polyn\'omov, z\'iskan\'ych ako line\'arna kombin\'acia t\'ychto regula\v cn\'ych funkc\'i, 
+medzi ktor\'e patria aj Heavisideove alebo schodov\'e funkcie \cite{step}. 
 V skuto\v cnosti v\'ysledn\'y 
 matematick\'y model nie je multi"~afinn\'y, ale na druh\'u stranu je ho mo\v zn\'e aproximova\v t v zmysle po \v castiach mul\-ti"~afin\-n\'eho syst\'emu. 
 A to tak, \v ze nahrad\'ime v\v setky regula\v cn\'e funkcie s\'ustavou vhodn\'ych po \v castiach line\'arnych rampov\'ych funkci\'i. Tieto s\'u definovan\'e 
@@ -543,9 +553,8 @@ r^- (x_i, \theta{}_i, \theta{}_i^{'}, a,b) &\ = \ 1 - r^+ (x_i, \theta{}_i, \the
 
 U\v z zmienen\'e regula\v cn\'e funkcie maj\'u nasleduj\'uce formy:
 \begin{align*}
-hill^+(x_i, d, \theta_i, a, b) &\ = \ a + (b - a)\frac{[x_i]^d}{[\theta_i]^d + [x_i]^d};\\
-%hill^-(x_i, d, \theta_i, a, b) &\ = \ b + (a - b)\frac{x_i^d}{\theta_i^d + x_i^d};\\
-hill^+(x_i, d, \theta_i, a, b) &\ = \ 1 - hill^+(x_i, d, \theta_i, a, b);\\
+hill^+(x_i, \theta_i, d, a, b) &\ = \ a + (b - a)\frac{[x_i]^d}{[\theta_i]^d + [x_i]^d};\\
+hill^+(x_i, \theta_i, d, a, b) &\ = \ 1 - hill^+(x_i, \theta_i, d, a, b);\\
 \\
 s^+(x_i, e, \theta_i, a, b) &\ = \ a + (b - a)\frac{1 + tanh(e(x_i - \theta_i))}{2};\\
 s^-(x_i, e, \theta_i, a, b) &\  = \ 1 - s^+(x_i, e, \theta_i, a, b);\\
@@ -570,9 +579,9 @@ s^+(x_i, e, \theta_i, a, b)^{-1} \ = \ s^-(x_i, e, \theta_i + \frac{ln(\frac{a}{
 ktor\'u ozna\v cujeme ako $s^+inv(x_i, e, \theta_i, a, b)$. Potom klesaj\'ucu recipro\v cn\'u funkciu ozna\v c\'ime obdobne ako doplnok rast\'ucej:
 \begin{align*}
 \centerline{$s^-inv(x_i, e, \theta_i, a, b) \ = \ 1 - s^+(x_i, e, \theta_i, a, b)$.}
-\end{align*}D\^ okaz mo\v zno n\'ajs\v t v \v cl\'anku \textit{From cardiac cells to genetic regulatory network} na strane 6 [].
+\end{align*}D\^ okaz mo\v zno n\'ajs\v t v \v cl\'anku \textit{From cardiac cells to genetic regulatory network} na strane 6 \cite{CAV-2011}.
 
-Teraz u\v z m\^ o\v zeme zadefinova\v t \'upln\'y form\'at n\'a\v sho po \v castiach linearizovan\'eho multi"~a\-fin\-n\'eho ODE modelu 
+Teraz u\v z m\^ o\v zeme zadefinova\v t \'upln\'y form\'at n\'a\v sho po \v castiach multi"~a\-fin\-n\'eho ODE modelu 
 (\v dalej len PMA model z \textit{ang.} piece"~wise multi"~affine ODE model). PMA model $\mathcal{M}$ je dan\'y ako $\dot{x} = f(x)$, 
 kde $x$ je st\'ale vektor premenn\'ych $(x_1,\dots{},x_n)$, ale $f = (f_1,\dots{},f_n)$ : $\mathbb{R}^n \rightarrow \mathbb{R}^n$ je tentokr\'at vektor 
 po \v castiach multi"~afinn\'ych funkci\'i. Nevyhnutnou s\'u\v cas\v tou modelu $\mathcal{M}$ je mno\v zina prahov\'ych hodn\^ ot (z \textit{ang.} threshold)
@@ -584,44 +593,159 @@ $g : \mathbb{R}^n \rightarrow \mathbb{R}^+$ je vtedy po \v castiach multi"~afinn
 $(\theta_{j_1}^1,\theta_{j_1 + 1}^1)\times \dots{} \times (\theta_{j_n}^n,\theta_{j_n + 1}^n)$, kde $(j_1,\dots{},j_n) \in \Omega$ a z\'arove\v n 
 $\forall{}i, 1 \leq i \leq n, j_i < max_i$. Potom dost\'avame $n$-dimenzion\'alny PMA model pozost\'avaj\'uci z funkci\'i $f$ v nasleduj\'ucom tvare:
 \begin{align*}
-f_i(x) = \underset{j \in I^+}\sum{\rho_i^j(x)} - \underset{j \in I^-}\sum{\rho_i^j(x)},
+f_i(x) = \sum (s\underset{j \in I}\prod{\rho_i^j(x)}),
 \end{align*}
-kde $i \in \{1,\dots{},n\}$, $I^+$ a $I^-$ s\'u kone\v cn\'e mno\v ziny indexov, pre ktor\'e plat\'i\ $I^+ \cap I^- \neq \emptyset$ a $\rho_i^j$ je 
-\v lubovoln\'a hodnota z 
+kde $i \in \{1,\dots{},n\}$, $s \in \{-1,1\}$, $I$ je nepr\'azdna podmno\v zina kone\v cnej mno\v ziny indexov v\v setk\'ych pou\v zit\'ych regula\v cn\'ych
+funkci\'i a $\rho_i^j$ je pr\'islu\v sn\'a regula\v cn\'a funkcia, ktor\'a m\^ o\v ze nadob\'uda\v t tieto hodnoty:
 \begin{align*}
-\rho(x_l) = 
+\rho(x_t) = 
 \left\{ \begin{array}{cl}
 c, &c \in \mathbb{R}\\
-p, &p \in \langle g,h \rangle; \ g,h \in \mathbb{R}\\
+%p, &p \in \langle g,h \rangle; \ g,h \in \mathbb{R}\\
 x_k, & k \in \{1,\dots{},n\}\\
 r^*(x_k,\theta_m^k,\theta_{m+1}^k,a^{'},b^{'}), &m \in \{1,\dots{},\eta_k-1\}; a^{'},b^{'} \in \mathbb{R}\\
-r^*coor(x_k,\theta_m^k,\theta_{m+1}^k,x_l,x_l^{'}), &l \in \{1,\dots{},n\} \wedge l \neq i\\
+r^*coor(x_k,\theta_m^k,\theta_{m+1}^k,x_t,x_t^{'}), &t \in \{1,\dots{},n\} \wedge t \neq i\\
 s^*(x_k,e,\theta_m^k,a,b), &e \in \mathbb{R}^+; \ a,b \in \mathbb{R}_0^+\\
 s^*inv(x_k,e,\theta_m^k,a,b),\\
-hill^*(x_k,d,\theta_m^k,a,b), &d \in \mathbb{R}^+\\
+hill^*(x_k,\theta_m^k,d,a,b), &d \in \mathbb{R}^+\\
 h^*(x_k,theta_m^k,a,b)
 \end{array} \right. ,
 \end{align*}
-kde $* \in \{+,-\}$. Pr\'iklad PMA modelu mo\v zno n\'ajs\v t na obr\'azku ... Do modelu je priamo zaveden\'a aj mo\v znos\v t zadania kon\v stantnej funkcie 
-(v pr\'ipade, \v ze $\rho(x_l) = c$), line\'arnej funkcie (v pr\'ipade $\rho(x_l) = x_k$) a mo\v znos\v t parametriz\'azie prostredn\'ictvom hodnoty 
-kinetick\'eho parametru (v pr\'ipade $\rho(x_l) = x_k$). \v Dal\v sou nevyhnutnou s\'u\v cas\v tou modelu s\'u inici\'alne podmienky, vyjadruj\'uce 
+kde $* \in \{+,-\}$. Ak $\rho_i^{j_1}, \rho_i^{j_2}$ s\'u regula\v cn\'e funkcie, ktor\'e patria do jednoho produktu $s\underset{j \in I}\prod\rho_i^j(x)$,
+tak \v ze $j_1, j_2 \in I$, mus\'i plati\v t $dep(\rho_i^{j_1})\ \cap\ dep(\rho_i^{j_2}) = \emptyset$, kde $dep(\rho)$ je mno\v zina premenn\'ych $x$,
+na ktor\'ych je $\rho$ z\'avysl\'a.
+Pr\'iklad PMA modelu mo\v zno n\'ajs\v t na obr\'azku ... 
+
+Do modelu je priamo zaveden\'a aj mo\v znos\v t zadania kon\v stantnej funkcie (v pr\'ipade, \v ze $\rho(x_t) = c$) a line\'arnej funkcie 
+(v pr\'ipade $\rho(x_t) = x_k$). \v Dal\v sou nevyhnutnou s\'u\v cas\v tou modelu s\'u inici\'alne podmienky, vyjadruj\'uce 
 po\v ciato\v cn\'e koncentr\'acie jednotliv\'ych l\'atok. Tieto nie s\'u vyjadren\'e presne, ale namiesto toho s\'u ur\v cen\'e intervalom, ktor\'eho
 hranice musia by\v t z mno\v ziny $\{ \theta_1^i,\dots{},\theta_{\eta_i}^i \}$.
 
-Takto vytvoren\'y model je prakticky pou\v zite\v ln\'y pre \v lubovoln\'y biologick\'y syst\'em [odkaz na HiBi2010].
+Takto vytvoren\'y model je prakticky pou\v zite\v ln\'y pre \v lubovoln\'y biologick\'y syst\'em.
+\cite{HIBI-2009}\cite{HIBI-2010}
 
 
 \section{Abstrakcia}
+\label{sec:abstraction}
+
+\noindent
+\textit{A. \ Optim\'alna line\'arna abstrakcia}
+\\
+
+V minulej \v casti sme objasnili, pre\v co je potrebn\'e prev\'adza\v t regula\v cn\'e funkcie $\rho(x_i)$, kde $x_i$ je premenn\'a na po \v castiach line\'arne 
+rampov\'e funkcie. V tejto \v casti sa pok\'usime objasni\v t princ\'ip tohto prevodu. Vyn\'ara sa hne\v d nieko\v lko probl\'emov:
+\begin{enumerate}
+\item Ako vhodne rozdeli\v t \v lubovoln\'u krivku na zadan\'y po\v cet r\'amp.
+\item Ako vhodne rozdeli\v t nieko\v lko kriviek rovnakej dimenzie na zadan\'y po\v cet r\'amp.
+\item Ako vybra\v t spr\'avny po\v cet r\'amp, tak aby stavov\'y syst\'em nebol pr\'ili\v s ve\v lk\'y a z\'arove\v n tak, aby abstrakcia nebola 
+pr\'ili\v s hrub\'a.
+\end{enumerate}
+Na prv\'u ot\'azku d\'ava odpove\v d algoritmus dynamick\'eho programovania vyvinut\'y pre po\v c\'ita\v cov\'u grafiku, konkr\'etne pre aproxim\'aciu
+digitalizovan\'ych polygon\'alnych kriviek s minim\'alnou chybou \cite{CURVES}. Tento bol upraven\'y a roz\v s\'iren\'y pre viacero kriviek naraz v 
+\v cl\'anku \textit{From Cardiac Cells to Genetic Regulatory Network} (Grosu et al.) \cite{CAV-2011} a to tak, \v ze zmienen\'a chyba sa po\v c\'ita pre
+v\v setky krivky naraz. Aby to bolo mo\v zn\'e, musia by\v t v\v setky krivky diskretizovan\'e v rovnak\'ych $x$-ov\'ych bodoch. 
+V na\v som pr\'ipade sa krivkami myslia Hillove funkcie (vi\v d \ref{kinetiky}.C) a sigmoid\'alne funckie pop\'isan\'e, tie\v z v \v cl\'anku \cite{CAV-2011}.
+
+\' U\v celom tejto abstrakcie je n\'ajs\v t tak\'e body $x_i$, kde $i \in \{1,\dots{},n\}$ a $n$ je po\v cet diskretiza\v cn\'ych bodov, ktor\'e bud\'u 
+seka\v t krivky na line\'arne segmenty s minim\'alnou odch\'ylkou (chybou). Chyba sa po\v c\'ita ako s\'u\v cet druh\'ych mocn\'in vzdialenost\'i dvoch bodov 
+na $y$-ovej ose. T\'ymito bodmi s\'u funk\v cn\'a hodnota krivky a funk\v cn\'a honota rampy pre konkr\'etny bod $x_i$ na \'useku ohrani\v cenom bodmi 
+$x_a$ a $x_b$, kde $x_i \in \langle x_a,x_b\rangle$. Rampa je v tomto zmysle bran\'a ako line\'arna spojnica medzi funk\v cn\'ymi hodnotami t\'ychto
+hrani\v cn\'ych bodov. Ak sa n\'ajde vyhovuj\'uca hodnota chyby, potom mo\v zno s istotou tvrdi\v t, \v ze body $x_a$ a $x_b$ s\' u z\'arove\v n 
+hrani\v cn\'ymi bodmi nov\'eho segmentu. So v\v setk\'ymi takto z\'iskan\'ymi bodmi u\v z nie je probl\'em previes\v t ka\v zd\'u funkciu na jej po \v castiach 
+line\'arnu formu. Z\'arove\v n treba tieto body ulo\v zi\v t ako nov\'e prahov\'e hodnoty modelu (vi\v d kapitolu \ref{sec:model}.B). 
+Pr\'iklad abstrakcie mo\v zno vidie\v t na obr\'azku \ref{fig:noabstract}.
+\begin{figure}[t]
+	\label{fig:noabstract}
+    \centering
+    \includegraphics[width=1\textwidth]{abstractNO}
+    \includegraphics[width=1\textwidth]{abstractYES}
+    \caption{Tri krivky s popisom. V prvom pr\'ipade bez pou\v zitia abstrakcie a v druhom preveden\'e na s\'ustavu r\'amp po pou\v zit\'i abstrakcie 
+    s parametrami: diskretiza\v cn\'ych bodov $500$, po\v zadovan\'y po\v cet segmentov $7$.}
+\end{figure}
+
+Odpove\v d na tretiu ot\'azku oh\v ladom spr\'avneho po\v ctu r\'amp je tak\'ato.
+U\v z\'ivate\v l mus\'i nastavi\v t po\v zadovan\'y po\v cet s\'am, to mu v\v sak umo\v z\v nuje, aby sk\'u\v sal r\^ ozne \'urovne abstrakcie osobne.
+\cite{CAV-2011}
+\\
+
+\noindent
+\textit{B. \ Obd\'l\v znikov\'a abstrakcia}
+\\
+
+V\'yhodou multi"~afinn\'eho syst\'emu je, \v ze ho mo\v zno abstrahova\v t do podoby obd\'l\v znikov\'eho prechodov\'eho syst\'emu (z \textit{ang.}
+Rectangular Abstraction Transition System, skr\'atene RATS) \cite{RATS}. K tomu je potreba p\^ ovodn\'y $n$-dimenzion\'alny syst\'em, kde $n$ je po\v cet 
+premenn\'ych najsk\^ or rozdeli\v t na men\v sie $n$-dimenzion\'alne oddiely. Ka\v zd\'a premenn\'a m\'a priraden\'u mno\v zinu prahov\'ych hodn\^ ot alebo
+thresholdov, ktor\'e vyjadruj\'u v\'yznamn\'e, \v ci zauj\'imav\'e koncentra\v cn\'e hladiny. Ka\v zdej premennej s\'u priraden\'e aspo\v n dve tak\'eto 
+hodnoty a to minim\'alna a maxim\'alna. \v Dal\v sie m\^ o\v zu by\v t zadefinovan\'e vo vstupnom modeli, alebo m\^ o\v zu poch\'adza\v t z predch\'adzaj\'ucej
+line\'arnej abstrakcie.
+
+Teraz u\v z nie je probl\'em rozdeli\v t multi"~afinn\'y syst\'em pod\v la t\'ychto prahov na men\v sie $n$-rozmern\'e ohrani\v cen\'e \v casti nazvan\'e 
+obd\'l\v zniky. Tieto si m\^ o\v zeme predstavi\v t ako uzly grafu. Ak s\'u dva obd\'l\v zniky susedmi, m\^ o\v ze medzi nimi vznikn\'u\v t prechod v zmysle
+hrany medzi dvoma uzlami. Takto dost\'avame diskr\'etny prechodov\'y syst\'em (RATS) z p\^ ovodne dynamick\'eho syst\'emu. 
+
+Prechody s\'u samozrejme orientovan\'e. Hodnotu orient\'acie dostaneme zo smerov\'ych vektorov vypo\v c\'itan\'ych vo v\v setk\'ych rohoch $n$-rozmern\'eho 
+obd\'l\v znika. A to tak, \v ze ak aspo\v n jeden vektor v rohoch spolo\v cn\'ych so susediacim obd\'l\v znikom m\'a smer k tomuto susedovi, prid\'ame 
+odch\'adzaj\'ucu hranu z tohto tohto uzla do susedn\'eho. Ak aspo\v n jeden vektor v rohoch spolo\v cn\'ych so susediacim obd\'l\v znikom m\'a smer od tohto
+suseda, prid\'ame prich\'adzaj\'ucu hranu zo susediaceho uzla k tomuto uzlu. To znamen\'a, \v ze hrany m\^ o\v zu by\v t aj obojsmern\'e. Podmienkou je, \v ze
+ak nastane situ\'acia, kedy uzol nebude ma\v t \v ziadnu odch\'adzaj\'ucu hranu, mus\'ime mu prida\v t slu\v cku. Tento jav symbolizuje rovnov\'a\v zny stav
+v dan\'ych podmienkach.
+
+Je zn\'amy fakt, \v ze obd\'l\v znikov\'a absrakcia je nadaproxim\'aciou vzh\v ladom k trajekt\'oriam p\^ ovodn\'eho dynamick\'eho modelu.
+\cite{BIODIVINE}
+
+mozno dorobit obrazok podobne ako v \cite{BIODIVINE} pomocou latex/picture
 
 
 %====================================NASTROJE===============================================
 \chapter{V\'ychodiskov\'y stav a podobn\' e n\'astroje}
 
 \section{BioDiVinE 1.0}
+P\^ ovodn\'y n\'astroj BioDiVinE bol vyvinut\'y v laborat\'oriu syst\'emovej biol\'ogie (SyBiLa)\cite{sybila} v spolupr\'aci s laborat\'oriom paraleln\'ych 
+a distribuovan\'ych syst\'emov (ParaDiSe)\cite{paradise}. Obe s\'idlom na fakulte informatiky Masarykovej univerzity. 
+
+BioDiVinE 1.0 je n\'astroj vytvoren\'y pre verifik\'aciu vlastnost\'i biochemick\'ych syst\'emov zadan\'ych ako syst\'em ODE (vi\v d kapitolu \ref{sec:model}).
+Je to nadstavba n\'astroja DiVinE \cite{divine}, ur\v cen\'eho na model checking (vi\v d kapitolu \ref{sec:modelChecking}). K tomuto 
+\'u\v celu pon\'uka nieko\v lko odli\v sn\'ych algoritmov.
+
+Vstupom je, ako u\v z bolo povedan\'e biochemick\'y model v tzv. .bio form\'ate (podrobnosti v \cite{sybila-biodivine}), ktor\'y 
+m\^ o\v ze predstavova\v t genov\'u regula\v cn\'u sie\v t alebo vz\'ajomn\'u interakciu prote\'inov, \v ci in\'e. D\^ ole\v zitou s\'u\v cas\v tou je aj
+s\'ubor s jednou alebo viacer\'ymi vlastnos\v tami zap\'isan\'ymi ako LTL formule (vi\v d kapitolu \ref{sec:logika}). Tieto dva s\'ubory sa musia skombinova\v t
+do jednoho pou\v zit\'im pr\'islu\v sn\'eho n\'astroja, pri\v com vlastnos\v t sa z\'arove\v n prevedie z LTL formule na B\" uchiho automat (vi\v d kapitolu 
+\ref{sec:buchi}). Takto hotov\'y vstup sa m\^ o\v ze preda\v t jednomu z overovac\'ich algoritmov.
+
+Je vidno, \v ze postup nie je ve\v lmi u\v z\'iva\v te\v lsky pr\'ivetiv\'y. U\v z\'ivate\v l mus\'i najsk\^ or pou\v zi\v t jeden n\'astroj 
+pre vytvorenie vstupn\'eho s\'uboru, potom ho ru\v cne premenova\v t, aby ho \v dal\v s\'i n\'astroj, tentokr\'at overovac\'i spr\'avne rozpoznal. V\'ysledky
+v podobe protipr\'ikladu alebo podrobn\'y v\'ypis priebehu procesu s\'u vygenerovan\'e do nov\'ych s\'uborov .trail alebo .report po zadan\'i pr\'islu\v sn\'eho
+vstupn\'eho prep\'ina\v ca vybran\'eho algoritmu. Jedinou v\'yhodou je, \v ze v\"a\v c\v sina prep\'ina\v cov je unifikovan\'a, preto\v ze n\'astroje boli vytvoren\'e
+jedn\'ym v\'yvoj\'arskym t\'imom.
+
+Cel\'y n\'astroj BioDiVinE pritom obsahuje zbyto\v cne ve\v la \v dal\v s\'ich roz\v s\'iren\'i pre in\'e typy modelov, preto\v ze p\^ ovodn\'y n\'astroj 
+DiVinE bol prevzat\'y ako celok aj s t\'ymito predch\'adzaj\'ucimi roz\v s\'ireniami.
+
+Kv\^ oli vy\v s\v sie spomenut\'ym d\^ ovodom sme si dali za cie\v l okrem roz\v s\'irenia vstupn\'eho modelu aj refaktoriz\'aciu star\'eho n\'astroja.
+\cite{BIODIVINE}
 
 \section{PEPMC}
+N\'astroj vyvinut\'y v laborat\'oriu syst\'emovej biol\'ogie (SYBILA)\cite{sybila} pre overovanie modelov s oh\v ladom na odhad parametrov (z \textit{ang.}
+Parameter Estimation by Parallel Model Checking, skr\'atene PEPMC). Funguje na princ\'ipe paraleln\'eho overovania modelov alebo tie\v z farebn\'eho 
+overovania modelov (vi\v d kapitolu \ref{sec:coloredMC}). Modelom je syst\'em ODE podobne ako v n\'astroji BioDiVinE 1.0, ale roz\v s\'iren\'y o mo\v znos\v t
+zad\'avania po \v castiach line\'arnych ramp funkci\'i (vi\v d kapitolu \ref{sec:model}). D\^ ole\v zit\'ym rozdielom oproti BioDiVinE-u a s\'u\v casne hlavnou
+podstatou n\'astroja PEPMC v\v sak je parametriz\'acia modelu a s t\'ym s\'uvisiace preh\v lad\'avanie parametrick\'eho priestoru.
 
-\section{RoverGene}
+Existuje my\v slienka zl\'u\v ci\v t tieto dva n\'astroje, br\'ani tomu v\v sak mierne odli\v sn\'y vstup, datov\'y model a samozrejme rozdielne jadr\'a 
+programov. Nebudeme tu v\v sak tento probl\'em \v dalej rozobera\v t, preto\v ze nie je s\'u\v cas\v tou na\v sej t\'emy.
+\cite{HIBI-2010}
+
+\section{RoVerGeNe}
+RoVerGeNe je podobne ako PEPMC n\'astroj pre anal\'yzu genetick\'ych regula\v cn\'ych siet\'i s neur\v cit\'ymi parametrami. Model siete je zap\'isan\'y ako
+po \v castiach multi"~afinn\'y syst\'em diferenci\'alnych rovn\'ic. Vlastnosti, proti ktor\'ym sa model overuje, maj\'u formu LTL formule a prametre s\'u 
+zadan\'e ako intervaly. N\'astroj sa sna\v z\'i overi\v t, \v ci model sp\'l\v na dan\'u vlastnos\v t pre v\v setky parametre.
+
+Na rozdiel od PEPMC v\v sak RoVerGeNe dok\'a\v ze pracova\v t aj s line\'arnymi kombin\'aciami parametrov. To v praxi znamen\'a, \v ze RATS u neho nie je
+pou\v zite\v ln\'y, preto\v ze vy\v zaduje, aby $n$-dimenzion\'alne \v stvoruholn\'iky s ktor\'ymi pracuje, boli ortogon\'alne, \v ci\v ze obd\'l\v zniky.
+Namiesto toho pou\v z\'iva tento n\'astroj \v standardn\'e polyhedr\'alne oper\'acie bal\'ika MPT \cite{mpt} a cel\'y je naprogramovan\'y v Matlabe.
+\cite{rovergene}
+\cite{rovergene-site}
 
 
 \chapter{BioDiVinE 1.1}

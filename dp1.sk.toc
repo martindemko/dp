@@ -8,13 +8,13 @@
 \contentsline {subsection}{\numberline {1.5.1}\rmfamily Prevod LTL do BA}{14}{subsection.1.5.1}
 \contentsline {subsection}{\numberline {1.5.2}\rmfamily Farebn\' y model checking}{14}{subsection.1.5.2}
 \contentsline {chapter}{\numberline {2}\bfseries Biochemick\'y dynamick\'y vstupn\'y model}{16}{chapter.2}
-\contentsline {section}{\numberline {2.1}\slshape Abstrakcia}{19}{section.2.1}
-\contentsline {chapter}{\numberline {3}\bfseries V\'ychodiskov\'y stav a podobn\' e n\'astroje}{20}{chapter.3}
-\contentsline {section}{\numberline {3.1}\slshape BioDiVinE 1.0}{20}{section.3.1}
-\contentsline {section}{\numberline {3.2}\slshape PEPMC}{20}{section.3.2}
-\contentsline {section}{\numberline {3.3}\slshape RoverGene}{20}{section.3.3}
-\contentsline {chapter}{\numberline {4}\bfseries BioDiVinE 1.1}{21}{chapter.4}
-\contentsline {chapter}{\numberline {5}\bfseries Implement\' acia}{22}{chapter.5}
-\contentsline {chapter}{\numberline {6}\bfseries Pou\v zitie programu}{23}{chapter.6}
-\contentsline {chapter}{\numberline {7}\bfseries Case study}{24}{chapter.7}
-\contentsline {chapter}{\numberline {8}\bfseries Z\' aver}{25}{chapter.8}
+\contentsline {section}{\numberline {2.1}\slshape Abstrakcia}{20}{section.2.1}
+\contentsline {chapter}{\numberline {3}\bfseries V\'ychodiskov\'y stav a podobn\' e n\'astroje}{23}{chapter.3}
+\contentsline {section}{\numberline {3.1}\slshape BioDiVinE 1.0}{23}{section.3.1}
+\contentsline {section}{\numberline {3.2}\slshape PEPMC}{24}{section.3.2}
+\contentsline {section}{\numberline {3.3}\slshape RoVerGeNe}{24}{section.3.3}
+\contentsline {chapter}{\numberline {4}\bfseries BioDiVinE 1.1}{25}{chapter.4}
+\contentsline {chapter}{\numberline {5}\bfseries Implement\' acia}{26}{chapter.5}
+\contentsline {chapter}{\numberline {6}\bfseries Pou\v zitie programu}{27}{chapter.6}
+\contentsline {chapter}{\numberline {7}\bfseries Case study}{28}{chapter.7}
+\contentsline {chapter}{\numberline {8}\bfseries Z\' aver}{29}{chapter.8}

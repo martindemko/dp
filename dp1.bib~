@@ -1,32 +1,81 @@
-@misc(wiki:ltl,
-title = {Linear temporal logic [online]},
-howpublished = {Wikipedia, The Free Encyclopedia},
-year = {[cit. 13. maja 2014]},
-note = {Dostupn\'e na: $<$\url{http://en.wikipedia.org/wiki/Linear_temporal_logic}$>$}
+@MISC{mpt,
+  author  = {M. Kvasnica and P. Grieder and M. Baoti\'{c}},
+  title   = {{Multi-Parametric Toolbox (MPT)}},
+  note     = {Dostupn\'e na: $<$\url{http://control.ee.ethz.ch/~mpt/}$>$},
+  year    = {[cit. 17. m\'aja 2014]},
+}
+
+@MISC{step,
+  author  = {E.W. Weisstein},
+  title   = {{Heaviside Step Function, From MathWorld--A Wolfram Web Resource}},
+  note     = {Dostupn\'e na: $<$\url{http://mathworld.wolfram.com/HeavisideStepFunction.html}$>$},
+  year    = {[cit. 17. m\'aja 2014]},
+}
+
+@misc{rovergene-site,
+	author =	{G. Batt and C. Belta},
+	title = 	{RoVerGeNe: A tool for the Robust Verification of Gene Networks},
+	note = 		{Dostupn\'e na: $<$\url{http://iasi.bu.edu/~batt/rovergene/rovergene.htm}$>$},
+	year =		{[cit. 17. m\'aja 2014]},
+}
+
+@misc(sybila,
+title = 	{Laborat\'orium syst\'emovej biol\'ogie, Fakulta informatiky Masarykovej univerzity, Brno, \v Cesk\'a republika},
+key =		{SYBILA},
+year = 		{[cit. 17. m\'aja 2014]},
+note = 		{Dostupn\'e na: $<$\url{http://sybila.fi.muni.cz/home}$>$}
 )
 
+@misc(sybila-biodivine,
+title = 	{{N\'astroj {BioDiVinE} 1.0, Fakulta informatiky Masarykovej univerzity, Brno, \v Cesk\'a republika}},
+key =		{SYBILA-BIODIVINE},
+year = 		{[cit. 17. m\'aja 2014]},
+note = 		{Dostupn\'e na: $<$\url{http://sybila.fi.muni.cz/tools/biodivine/v1/index}$>$}
+)
+
+@misc(paradise,
+title = 	{Laborat\'orium paraleln\'ych a distribuovan\'ych syst\'emov, Fakulta informatiky Masarykovej univerzity, Brno, \v Cesk\'a republika},
+key =		{ParaDiSe},
+year = 		{[cit. 17. m\'aja 2014]},
+note = 		{Dostupn\'e na: $<$\url{http://paradise.fi.muni.cz/index.html}$>$}
+)
+
+@incollection{rovergene,
+year=		{2007},
+ISBN=		{978-3-540-71208-4},
+booktitle=	{Tools and Algorithms for the Construction and Analysis of Systems (TACAS'07)},
+volume=		{4424},
+series=		{Lecture Notes in Computer Science},
+title=		{Model Checking Liveness Properties of Genetic Regulatory Networks},
+publisher=	{Springer},
+author=		{G. Batt and C. Belta and R. Weiss},
+pages=		{323-338},
+}
+
 @book(Clarke:MC,
- author = {Clarke,Jr., Edmund M. and Grumberg, Orna and Peled, Doron A.},
- title = {Model Checking},
- year = {1999},
- isbn = {0-262-03270-8},
- publisher = {MIT Press},
+ author = 		{E.M. Clarke Jr. and O. Grumberg and D.A. Peled},
+ title = 		{Model Checking},
+ year = 		{1999},
+ isbn = 		{0-262-03270-8},
+ publisher = 	{MIT Press},
 ) 
 
 @inbook(Clarke:MC:Process,
- author = {Clarke,Jr., Edmund M. and Grumberg, Orna and Peled, Doron A.},
- title = {Model Checking},
- chapter = {1.3 The Process of Model Checking},
- pages = {4-4},
- year = {1999},
- isbn = {0-262-03270-8},
- publisher = {MIT Press},
+ author = 		{E.M. Clarke Jr. and O. Grumberg and D.A. Peled},
+ title = 		{Model Checking},
+ chapter = 		{1.3. The Process of Model Checking},
+ pages = 		{4-4},
+ year = 		{1999},
+ isbn = 		{0-262-03270-8},
+ publisher = 	{MIT Press},
 )
 
+%treba zohnat nejaku literaturu k Heavisidovym funkciam a k ODE systemu
+
 @inbook(Clarke:MC:LTL,
- author = {Clarke,Jr., Edmund M. and Grumberg, Orna and Peled, Doron A.},
+ author = {E.M. Clarke Jr. and O. Grumberg and D.A. Peled},
  title = {Model Checking},
- chapter = {3 Temporal Logics},
+ chapter = {3. Temporal Logics},
  pages = {27-33},
  year = {1999},
  isbn = {0-262-03270-8},
@@ -34,9 +83,9 @@ note = {Dostupn\'e na: $<$\url{http://en.wikipedia.org/wiki/Linear_temporal_logi
 ) 
 
 @inbook(Clarke:MC:BA,
- author = {Clarke,Jr., Edmund M. and Grumberg, Orna and Peled, Doron A.},
+ author = {E.M. Clarke Jr. and O. Grumberg and D.A. Peled},
  title = {Model Checking},
- chapter = {9 Model Checking and Automata Theory},
+ chapter = {9. Model Checking and Automata Theory},
  pages = {121-140},
  year = {1999},
  isbn = {0-262-03270-8},
@@ -44,24 +93,17 @@ note = {Dostupn\'e na: $<$\url{http://en.wikipedia.org/wiki/Linear_temporal_logi
 )
 
 @inbook(Clarke:MC:LTLtoBA,
- author = {Clarke,Jr., Edmund M. and Grumberg, Orna and Peled, Doron A.},
+ author = {E.M. Clarke Jr. and O. Grumberg and D.A. Peled},
  title = {Model Checking},
- chapter = {9.4 Translating LTL into Automata},
+ chapter = {9.4. Translating LTL into Automata},
  pages = {132-138},
  year = {1999},
  isbn = {0-262-03270-8},
  publisher = {MIT Press},
 )
 
-@misc(wiki:BA,
-title = {B\"uchi utomaton [online]},
-howpublished = {Wikipedia, The Free Encyclopedia},
-year = {[cit. 13. maja 2014]},
-note = {Dostupn\'e na: $<$\url{http://en.wikipedia.org/wiki/B%C3%BCchi_automaton}$>$}
-)
-
 @Book{Keener:1998:MP,
-  author =       "James P. Keener and James Sneyd",
+  author =       "J.P. Keener and J. Sneyd",
   title =        "Mathematical Physiology",
   volume =       "8",
   publisher =    "Springer-Verlag",
@@ -71,9 +113,9 @@ note = {Dostupn\'e na: $<$\url{http://en.wikipedia.org/wiki/B%C3%BCchi_automaton
 }
 
 @inBook{Keener:1998:MP:MassAction,
-  author =       "James P. Keener and James Sneyd",
+  author =       "J.P. Keener and J. Sneyd",
   title =        "Mathematical Physiology",
-  chapter =		 "1.1 The Law of Mass Action",
+  chapter =		 "1.1. The Law of Mass Action",
   pages =		 "3-4",
   volume =       "8",
   publisher =    "Springer-Verlag",
@@ -83,9 +125,9 @@ note = {Dostupn\'e na: $<$\url{http://en.wikipedia.org/wiki/B%C3%BCchi_automaton
 }
 
 @inBook{Keener:1998:MP:Enzymes,
-  author =       "James P. Keener and James Sneyd",
+  author =       "J.P. Keener and J. Sneyd",
   title =        "Mathematical Physiology",
-  chapter =		 "1.2 Enzyme kinetics",
+  chapter =		 "1.2. Enzyme kinetics",
   pages =		 "5-16",
   volume =       "8",
   publisher =    "Springer-Verlag",
@@ -95,9 +137,9 @@ note = {Dostupn\'e na: $<$\url{http://en.wikipedia.org/wiki/B%C3%BCchi_automaton
 }
 
 @inBook{Keener:1998:MP:MathBackground,
-  author =       "James P. Keener and James Sneyd",
+  author =       "J.P. Keener and J. Sneyd",
   title =        "Mathematical Physiology",
-  chapter =		 "1.4 Appendix: Math Background",
+  chapter =		 "1.4. Appendix: Math Background",
   pages =		 "24-30",
   volume =       "8",
   publisher =    "Springer-Verlag",
@@ -106,13 +148,87 @@ note = {Dostupn\'e na: $<$\url{http://en.wikipedia.org/wiki/B%C3%BCchi_automaton
   series =       "Interdisciplinary Applied Mathematics"
 }
 
+@inBook{ODE,
+  author =       "G. Teschl",
+  title =        "Ordinary Differential Equations and Dynamical Systems",
+  chapter =		 "1. Introduction",
+  pages =		 "3-31",
+  volume =       "140",
+  publisher =    "American Mathematical Society",
+  year =         "2012",
+  ISBN =         "0-8218-8328-3",
+  series =       "Graduate Studies in Mathematics"
+}
+
+@article(CURVES,
+title = 	{Optimum polygonal approximation of digitized curves},
+author = 	{J.C. Perez and E. Vidal},
+year = 		{August 1994},
+journal =	{Pattern Recognition Letters},
+pages =		{743-750. Elsevier Science Inc.},
+volume = 	{15},
+number =	{8},
+)
+
+@InProceedings{divine,
+  author =       "J. Barnat and L. Brim and I. \v{C}ern\'{a} and P. \v{S}ime\v{c}ek",
+  title =        "{D}i{V}in{E} -- {T}he {D}istributed {V}erification {E}nvironment",
+  booktitle =    "Proceedings of 4th International Workshop on Parallel and Distributed Methods in verifiCation",
+  pages =        "89--94",
+  year =         "2005",
+  month =        "July"
+}
+
 @article(TCBB-2010,
 title = 	{On Parameter Synthesis by Parallel Model Checking},
-author = 	{J. Barnat and L. Brim and A. Krejci and A. Streck and M. Vejnar and T. Vejpustek},
+author = 	{J. Barnat and L. Brim and A. Krej\v c\'i and D. \v{S}afr\'anek and A. Streck and M. Vejn\'ar and T. Vejpustek},
 year = 		{May-June 2012},
-journal =	{IEEE/ACM Transactions on Computational Biology and Bioinformatics},
-pages =		{693-705},
+journal =	{IEEE/ACM Transactions on Computational Biology and Bioinformatics (TCBB)},
+pages =		{693-705. IEEE Computer Society Press},
 volume = 	{9},
 number =	{3},
+)
+
+@article(BIODIVINE,
+title = 	{BioDiVinE: A Framework for Parallel Analysis of Biological Models},
+author = 	{J. Barnat and L. Brim and  I. \v{C}ern\'a and S. Dra\v zan and J. Fabrikov\'a and J. L\'an\'ik and H. Ma and D. \v{S}afr\'anek},
+year = 		{2009},
+journal =	{In Proceedings of 2nd International Workshop on Computational Models for Cell Processes (COMPMOD 2009)},
+pages =		{31-45. EPTCS 6},
+)
+
+@article(HIBI-2010,
+title = 	{Parameter Scanning by Parallel Model Checking with Applications in Systems Biology},
+author = 	{J. Barnat and L. Brim and D. \v{S}afr\'anek and M. Vejn\'ar},
+year = 		{2010},
+journal =	{In Proceedings of High performance computational systems Biology (HiBi 2010)},
+pages =		{95-104. IEEE Computer Society Press},
+)
+
+@article(HIBI-2009,
+title = 	{Computational Analysis of Large-Scale Multi-Affine ODE Models},
+author = 	{J. Barnat and L. Brim and I. \v{C}ern\'a and S. Dra\v zan and J. Fabrikov\'a and D. \v{S}afr\'anek},
+year = 		{2009},
+journal =	{In Proceedings of High performance computational systems Biology (HiBi 2009)},
+pages =		{81-99. IEEE Computer Society Press},
+)
+
+@article{RATS,
+  author =       "J. Barnat and L. Brim and I. \v{C}ern\'{a} and S. Dra\v{z}an and J. Fabrikov\'{a} and D. \v{S}afr\'{a}nek",
+  title =        "{On algorithmic analysis of transcriptional regulation by LTL model checking}",
+  journal =      "Theoretical Computer Science",
+  volume =       "410",
+  number =       "33-34",
+  pages =        "3128--3148",
+  year =         "2009",
+}
+
+@article(CAV-2011,
+title = 	{From Cardiac Cells to Genetic Regulatory Networks},
+author = 	{R. Grosu and G. Batt and F.H. Fenton and J. Glimm and C. Le Guernic and S.A. Smolka and E. Bartocci},
+year = 		{July 2011},
+journal =	{In Proceedings of CAV'11, the 23rd International Conference on Computer Aided Verification, Lecture Notes in Computer Science},
+pages =		{396-411. Springer},
+volume =	{6806},
 )
 
