@@ -1,44 +1,67 @@
+@misc{flexc++,
+author =	{F.B. Brokken and  J.P. van Oosten and R. Berendsen},
+title =		{{Flexc++ (Version 2.01.00) User Guide [online]. University of Groningen, The Netherlands}},
+year =		{[cit. 2014-05-21]},
+note =		{Dostupn\'e na: $<$\url{http://flexcpp.sourceforge.net/flexc++.html}$>$},
+}
+
+@misc{bisonc++,
+author =	{F.B. Brokken},
+title =		{{Bisonc++ (Version 4.09.01) User Guide [online]. Center for Information Technology, University of Groningen, The Netherlands}},
+year =		{[cit. 2014-05-21]},
+note =		{Dostupn\'e na: $<$\url{http://bisoncpp.sourceforge.net/bisonc++.html}$>$},
+}
+
 @MISC{mpt,
   author  = {M. Kvasnica and P. Grieder and M. Baoti\'{c}},
-  title   = {{Multi-Parametric Toolbox (MPT)}},
+  title   = {{Multi-Parametric Toolbox (MPT) [online]}},
   note     = {Dostupn\'e na: $<$\url{http://control.ee.ethz.ch/~mpt/}$>$},
-  year    = {[cit. 17. m\'aja 2014]},
+  year    = {[cit. 2014-05-17]},
 }
 
 @MISC{step,
   author  = {E.W. Weisstein},
-  title   = {{Heaviside Step Function, From MathWorld--A Wolfram Web Resource}},
+  title   = {{Heaviside Step Function, From MathWorld--A Wolfram Web Resource [online]}},
   note     = {Dostupn\'e na: $<$\url{http://mathworld.wolfram.com/HeavisideStepFunction.html}$>$},
-  year    = {[cit. 17. m\'aja 2014]},
+  year    = {[cit. 2014-05-17]},
 }
 
 @misc{rovergene-site,
 	author =	{G. Batt and C. Belta},
-	title = 	{RoVerGeNe: A tool for the Robust Verification of Gene Networks},
+	title = 	{{RoVerGeNe: A tool for the Robust Verification of Gene Networks [online]}},
 	note = 		{Dostupn\'e na: $<$\url{http://iasi.bu.edu/~batt/rovergene/rovergene.htm}$>$},
-	year =		{[cit. 17. m\'aja 2014]},
+	year =		{[cit. 2014-05-17]},
 }
 
 @misc(sybila,
-title = 	{Laborat\'orium syst\'emovej biol\'ogie, Fakulta informatiky Masarykovej univerzity, Brno, \v Cesk\'a republika},
+title = 	{{Laborat\'orium syst\'emovej biol\'ogie [online]. Fakulta informatiky Masarykovej univerzity, Brno, \v Cesk\'a republika}},
 key =		{SYBILA},
-year = 		{[cit. 17. m\'aja 2014]},
+year = 		{[cit. 2014-05-17]},
 note = 		{Dostupn\'e na: $<$\url{http://sybila.fi.muni.cz/home}$>$}
 )
 
 @misc(sybila-biodivine,
-title = 	{{N\'astroj {BioDiVinE} 1.0, Fakulta informatiky Masarykovej univerzity, Brno, \v Cesk\'a republika}},
+title = 	{{N\'astroj {BioDiVinE} 1.0 [online]. Fakulta informatiky Masarykovej univerzity, Brno, \v{C}esk\'a republika}},
 key =		{SYBILA-BIODIVINE},
-year = 		{[cit. 17. m\'aja 2014]},
+year = 		{[cit. 2014-05-17]},
 note = 		{Dostupn\'e na: $<$\url{http://sybila.fi.muni.cz/tools/biodivine/v1/index}$>$}
 )
 
 @misc(paradise,
-title = 	{Laborat\'orium paraleln\'ych a distribuovan\'ych syst\'emov, Fakulta informatiky Masarykovej univerzity, Brno, \v Cesk\'a republika},
+title = 	{{Laborat\'orium paraleln\'ych a distribuovan\'ych syst\'emov [online]. Fakulta informatiky Masarykovej univerzity, Brno, \v Cesk\'a republika}},
 key =		{ParaDiSe},
-year = 		{[cit. 17. m\'aja 2014]},
+year = 		{[cit. 2014-05-17]},
 note = 		{Dostupn\'e na: $<$\url{http://paradise.fi.muni.cz/index.html}$>$}
 )
+
+@MastersThesis{Jaros-thesis,
+AUTHOR = "M. Jaro\v{s}",
+TITLE = "P\v{r}evod formul\'i LTL na automaty [online]",
+YEAR = "2004 [cit. 2014-05-19]",
+TYPE = "Diplomov\'a pr\'aca",
+SCHOOL = "{Fakulta informatiky Masarykovej univerzity, Brno, \v{C}esk\'a republika}",
+note = "Dostupn\'e na : $<$\url{http://is.muni.cz/th/4017/fi_m/}$>$",
+}
 
 @incollection{rovergene,
 year=		{2007},
@@ -51,6 +74,14 @@ publisher=	{Springer},
 author=		{G. Batt and C. Belta and R. Weiss},
 pages=		{323-338},
 }
+
+@book{MPI,
+ author = {M. Snir and S.W. Otto and D.W. Walker and J. Dongarra and S. Huss-Lederman},
+ title = {MPI: The Complete Reference},
+ year = {1995},
+ isbn = {0262691841},
+ publisher = {MIT Press},
+} 
 
 @book(Clarke:MC,
  author = 		{E.M. Clarke Jr. and O. Grumberg and D.A. Peled},

@@ -14,7 +14,13 @@
 \contentsline {section}{\numberline {3.2}\slshape PEPMC}{24}{section.3.2}
 \contentsline {section}{\numberline {3.3}\slshape RoVerGeNe}{24}{section.3.3}
 \contentsline {chapter}{\numberline {4}\bfseries BioDiVinE 1.1}{25}{chapter.4}
-\contentsline {chapter}{\numberline {5}\bfseries Implement\' acia}{26}{chapter.5}
-\contentsline {chapter}{\numberline {6}\bfseries Pou\v zitie programu}{27}{chapter.6}
-\contentsline {chapter}{\numberline {7}\bfseries Case study}{28}{chapter.7}
-\contentsline {chapter}{\numberline {8}\bfseries Z\' aver}{29}{chapter.8}
+\contentsline {section}{\numberline {4.1}\slshape Vstupn\'y s\'ubor s modelom}{26}{section.4.1}
+\contentsline {section}{\numberline {4.2}\slshape Vstupn\'y s\'ubor s vlastnos\v tou}{29}{section.4.2}
+\contentsline {section}{\numberline {4.3}\slshape Priebeh procesu}{30}{section.4.3}
+\contentsline {chapter}{\numberline {5}\bfseries Implement\' acia}{32}{chapter.5}
+\contentsline {section}{\numberline {5.1}\slshape Parser}{32}{section.5.1}
+\contentsline {section}{\numberline {5.2}\slshape D\'atov\'y model}{32}{section.5.2}
+\contentsline {section}{\numberline {5.3}\slshape Konzolov\'e u\v z\'ivate\v lsk\'e prostredie CLI}{32}{section.5.3}
+\contentsline {chapter}{\numberline {6}\bfseries Pou\v zitie programu}{33}{chapter.6}
+\contentsline {chapter}{\numberline {7}\bfseries Case study}{34}{chapter.7}
+\contentsline {chapter}{\numberline {8}\bfseries Z\' aver}{35}{chapter.8}

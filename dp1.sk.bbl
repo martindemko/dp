@@ -44,8 +44,8 @@ J.~Barnat, L.~Brim, D.~\v{S}afr\'anek, and M.~Vejn\'ar.
 
 \bibitem{rovergene-site}
 G.~Batt and C.~Belta.
-\newblock Rovergene: A tool for the robust verification of gene networks, [cit.
-  17. m\'aja 2014].
+\newblock {RoVerGeNe: A tool for the Robust Verification of Gene Networks
+  [online]}, [cit. 2014-05-17].
 \newblock Dostupn\'e na:
   $<$\url{http://iasi.bu.edu/~batt/rovergene/rovergene.htm}$>$.
 
@@ -56,6 +56,21 @@ G.~Batt, C.~Belta, and R.~Weiss.
   Systems (TACAS'07)}, volume 4424 of {\em Lecture Notes in Computer Science},
   pages 323--338. Springer, 2007.
 
+\bibitem{bisonc++}
+F.B. Brokken.
+\newblock {Bisonc++ (Version 4.09.01) User Guide [online]. Center for
+  Information Technology, University of Groningen, The Netherlands}, [cit.
+  2014-05-21].
+\newblock Dostupn\'e na:
+  $<$\url{http://bisoncpp.sourceforge.net/bisonc++.html}$>$.
+
+\bibitem{flexc++}
+F.B. Brokken, J.P. van Oosten, and R.~Berendsen (until 0.5.3).
+\newblock {Flexc++ (Version 2.01.00) User Guide [online]. University of
+  Groningen, The Netherlands}, [cit. 2014-05-21].
+\newblock Dostupn\'e na:
+  $<$\url{http://flexcpp.sourceforge.net/flexc++.html}$>$.
+
 \bibitem{CAV-2011}
 R.~Grosu, G.~Batt, F.H. Fenton, J.~Glimm, C.~Le Guernic, S.A. Smolka, and
   E.~Bartocci.
@@ -63,6 +78,13 @@ R.~Grosu, G.~Batt, F.H. Fenton, J.~Glimm, C.~Le Guernic, S.A. Smolka, and
 \newblock {\em In Proceedings of CAV'11, the 23rd International Conference on
   Computer Aided Verification, Lecture Notes in Computer Science},
   6806:396--411. Springer, July 2011.
+
+\bibitem{Jaros-thesis}
+M.~Jaro\v{s}.
+\newblock P\v{r}evod formul\'i ltl na automaty [online].
+\newblock Diplomov\'a pr\'aca, {Fakulta informatiky Masarykovej univerzity,
+  Brno, \v{C}esk\'a republika}, 2004 [cit. 2014-05-19].
+\newblock Dostupn\'e na : $<$\url{http://is.muni.cz/th/4017/fi_m/}$>$.
 
 \bibitem{Clarke:MC:LTL}
 E.M.~Clarke Jr., O.~Grumberg, and D.A. Peled.
@@ -107,13 +129,13 @@ J.P. Keener and J.~Sneyd.
 
 \bibitem{mpt}
 M.~Kvasnica, P.~Grieder, and M.~Baoti\'{c}.
-\newblock {Multi-Parametric Toolbox (MPT)}, [cit. 17. m\'aja 2014].
+\newblock {Multi-Parametric Toolbox (MPT) [online]}, [cit. 2014-05-17].
 \newblock Dostupn\'e na: $<$\url{http://control.ee.ethz.ch/~mpt/}$>$.
 
 \bibitem{paradise}
-{Laborat\'orium paraleln\'ych a distribuovan\'ych syst\'emov, Fakulta
-  informatiky Masarykovej univerzity, Brno, \v Cesk\'a republika}, [cit. 17.
-  m\'aja 2014].
+{Laborat\'orium paraleln\'ych a distribuovan\'ych syst\'emov [online]. Fakulta
+  informatiky Masarykovej univerzity, Brno, \v Cesk\'a republika}, [cit.
+  2014-05-17].
 \newblock Dostupn\'e na: $<$\url{http://paradise.fi.muni.cz/index.html}$>$.
 
 \bibitem{CURVES}
@@ -122,14 +144,19 @@ J.C. Perez and E.~Vidal.
 \newblock {\em Pattern Recognition Letters}, 15(8):743--750. Elsevier Science
   Inc., August 1994.
 
+\bibitem{MPI}
+M.~Snir, S.W. Otto, D.W. Walker, J.~Dongarra, and S.~Huss-Lederman.
+\newblock {\em MPI: The Complete Reference}.
+\newblock MIT Press, 1995.
+
 \bibitem{sybila}
-{Laborat\'orium syst\'emovej biol\'ogie, Fakulta informatiky Masarykovej
-  univerzity, Brno, \v Cesk\'a republika}, [cit. 17. m\'aja 2014].
+{Laborat\'orium syst\'emovej biol\'ogie [online]. Fakulta informatiky
+  Masarykovej univerzity, Brno, \v Cesk\'a republika}, [cit. 2014-05-17].
 \newblock Dostupn\'e na: $<$\url{http://sybila.fi.muni.cz/home}$>$.
 
 \bibitem{sybila-biodivine}
-{N\'astroj {BioDiVinE} 1.0, Fakulta informatiky Masarykovej univerzity, Brno,
-  \v Cesk\'a republika}, [cit. 17. m\'aja 2014].
+{N\'astroj {BioDiVinE} 1.0 [online]. Fakulta informatiky Masarykovej
+  univerzity, Brno, \v{C}esk\'a republika}, [cit. 2014-05-17].
 \newblock Dostupn\'e na:
   $<$\url{http://sybila.fi.muni.cz/tools/biodivine/v1/index}$>$.
 
@@ -142,8 +169,8 @@ G.~Teschl.
 
 \bibitem{step}
 E.W. Weisstein.
-\newblock {Heaviside Step Function, From MathWorld--A Wolfram Web Resource},
-  [cit. 17. m\'aja 2014].
+\newblock {Heaviside Step Function, From MathWorld--A Wolfram Web Resource
+  [online]}, [cit. 2014-05-17].
 \newblock Dostupn\'e na:
   $<$\url{http://mathworld.wolfram.com/HeavisideStepFunction.html}$>$.
 

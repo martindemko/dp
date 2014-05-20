@@ -52,6 +52,7 @@ je potrebn\' e vysvetli\v t na po\v ciatku nieko\v lko pojmov. Tieto sa v pr\' a
 pred\' ideme nepochopite\v lnosti textu. Je tie\v z d\^ ole\v zit\'e poznamena\v t, \v ze t\'ato kapitola je z ve\v lkej miery doslovne citovan\'a
 zo zdrojov uveden\'ych v\v zdy na konci ka\v zdej podkapitoly.
 
+%-------------------------------------------------------------------------------------------
 \section{LTL - Line\' arna Tempor\' alna Logika}
 \label{sec:logika}
 Tempor\' alna logika obecne je \v speci\' alna vetva logiky zaoberaj\' uca sa logickou \v strukt\' urou v\' yrokov v \v case. 
@@ -119,6 +120,7 @@ Napriek tomu, \v ze je LTL tou najprimit\' ivnej\v sou tempor\'alnou logikou, je
 exponenci\' alne zlo\v zit\' y. D\^ ovod tohto prevodu bude vysvetlen\' y v kapitole \ref{sec:modelChecking}. 
 \cite{Clarke:MC:LTL}
 
+%-------------------------------------------------------------------------------------------
 \section{B\"uchiho automat}	%kniha Model checking str. 121
 \label{sec:buchi}
 Automat obecne je matematick\' y model stroja s kone\v cn\' ym mno\v zstvom pam\" ate spracov\' avaj\' uci vstup o nezn\' amej ve\v lkosti. 
@@ -153,6 +155,7 @@ nedeterministick\'eho kone\v cn\'eho automatu  na deterministick\'y, ale iba nad
 	\label{fig:buchi}
 \end{figure}
 
+%-------------------------------------------------------------------------------------------
 \section{Z\'akon o mass action kinetike}
 \label{sec:massAction}
 Tento z\'akon vyjadruje z\'akladn\'e pravidlo fungovania chemick\'ych reakci\'i. Konkr\'etne r\'ychlos\v t s akou chemick\'e substancie, \v ci u\v z 
@@ -179,6 +182,7 @@ je potom r\'ychlostn\'a kon\v stanta (z \textit{ang.} rate constant) tejto reakc
 V skuto\v cnosti nejde o z\'akon ako tak\'y. Nie je to neporu\v site\v ln\'e pravidlo ako Newtonov gravita\v cn\'y z\'akon, ale sk\^ or ve\v lmi 
 u\v zito\v cn\'y model, ktor\'y v\v sak nemus\'i by\v t vo v\v setk\'ych pr\'ipadoch validn\'y. \cite{Keener:1998:MP:MassAction}
 
+%-------------------------------------------------------------------------------------------
 \section{Michaelis-Mentenovej a Hillova kinetika}
 \label{kinetiky}
 %[odkaz na wiki a LectureNotes.pdf]
@@ -360,7 +364,8 @@ v pr\'ipade $n = 1$ zodpoved\'a Hillova kinetika Michaelis"~Mentenovej kinetike,
 	\caption{Faktor $n$ Hillovej kinetiky pre ve\v lkosti $1, 2$ a $4.5$ ($K_m = 2$)}
 	\label{fig:factor}
 \end{figure}
- 
+
+%------------------------------------------------------------------------------------------- 
 \section{Model checking}
 \label{sec:modelChecking}
 Model checking alebo overovanie modelov je automatizovan\'a technika form\'alnej verifik\'acie \v specifikovan\'ych vlastnost\'i kone\v cn\'eho stavov\'eho 
@@ -421,6 +426,7 @@ To znamen\'a, \v ze v mnoh\'ych pr\'ipadoch m\^ o\v zeme vyvr\'ati\v t splnite\v
 automatu modelu n\'ajden\'im prv\'eho protipr\'ikladu. \v Co zna\v cne \v setr\'i \v cas a priestor. T\'ato technika sa naz\'yva overovanie modelu za behu (z \textit{ang.} on"~the"~fly model checking).
 \cite{Clarke:MC:BA}
 
+%-------------------------------------------------------------------------------------------
 \subsection{Prevod LTL do BA}
 \label{sec:ltltoba}
 Ako sme u\v z predt\'ym nieko\v lko kr\'at spomenuli, prevod LTL formule na B\"uchiho automat nie je primit\'ivny algoritmus. V skuto\v cnosti je pr\'ili\v s
@@ -448,7 +454,7 @@ zis\v tujeme, \v ci model nesp\'l\v na opak vlastnosti. D\^ ovodom k tomu je, \v
 ako vytvori\v t komplement automatu z p\^ ovodnej vlastnosti, ktor\'y by mohol ma\v t a\v z dvojn\'asobne exponenci\'alnu priestorov\'u zlo\v zitos\v t.
 \cite{Clarke:MC:LTLtoBA}
 
-
+%-------------------------------------------------------------------------------------------
 \subsection{Farebn\' y model checking}
 \label{sec:coloredMC}
 Farebn\'y model checking alebo tie\v z paraleln\'y sa sna\v z\'i vysporiada\v t s parametriz\'aciou form\'alneho modelu, ktor\'a ho roz\v siruje o nov\'y
@@ -592,12 +598,14 @@ Uva\v zujme $\Omega$ ako \v cas\v t modelu $\mathcal{M}$ tak, \v ze $\Omega = \p
 $g : \mathbb{R}^n \rightarrow \mathbb{R}^+$ je vtedy po \v castiach multi"~afinn\'a, ak je multi"~afinn\'a na ka\v zdom $n$-dimenzion\'alnom intervale
 $(\theta_{j_1}^1,\theta_{j_1 + 1}^1)\times \dots{} \times (\theta_{j_n}^n,\theta_{j_n + 1}^n)$, kde $(j_1,\dots{},j_n) \in \Omega$ a z\'arove\v n 
 $\forall{}i, 1 \leq i \leq n, j_i < max_i$. Potom dost\'avame $n$-dimenzion\'alny PMA model pozost\'avaj\'uci z funkci\'i $f$ v nasleduj\'ucom tvare:
-\begin{align*}
+\begin{align}
+\label{eq:equationDescribtion}
 f_i(x) = \sum (s\underset{j \in I}\prod{\rho_i^j(x)}),
-\end{align*}
+\end{align}
 kde $i \in \{1,\dots{},n\}$, $s \in \{-1,1\}$, $I$ je nepr\'azdna podmno\v zina kone\v cnej mno\v ziny indexov v\v setk\'ych pou\v zit\'ych regula\v cn\'ych
 funkci\'i a $\rho_i^j$ je pr\'islu\v sn\'a regula\v cn\'a funkcia, ktor\'a m\^ o\v ze nadob\'uda\v t tieto hodnoty:
-\begin{align*}
+\begin{align}
+\label{eq:regulatingFunctions}
 \rho(x_t) = 
 \left\{ \begin{array}{cl}
 c, &c \in \mathbb{R}\\
@@ -610,7 +618,7 @@ s^*inv(x_k,e,\theta_m^k,a,b),\\
 hill^*(x_k,\theta_m^k,d,a,b), &d \in \mathbb{R}^+\\
 h^*(x_k,theta_m^k,a,b)
 \end{array} \right. ,
-\end{align*}
+\end{align}
 kde $* \in \{+,-\}$. Ak $\rho_i^{j_1}, \rho_i^{j_2}$ s\'u regula\v cn\'e funkcie, ktor\'e patria do jednoho produktu $s\underset{j \in I}\prod\rho_i^j(x)$,
 tak \v ze $j_1, j_2 \in I$, mus\'i plati\v t $dep(\rho_i^{j_1})\ \cap\ dep(\rho_i^{j_2}) = \emptyset$, kde $dep(\rho)$ je mno\v zina premenn\'ych $x$,
 na ktor\'ych je $\rho$ z\'avysl\'a.
@@ -624,7 +632,7 @@ hranice musia by\v t z mno\v ziny $\{ \theta_1^i,\dots{},\theta_{\eta_i}^i \}$.
 Takto vytvoren\'y model je prakticky pou\v zite\v ln\'y pre \v lubovoln\'y biologick\'y syst\'em.
 \cite{HIBI-2009}\cite{HIBI-2010}
 
-
+%-------------------------------------------------------------------------------------------
 \section{Abstrakcia}
 \label{sec:abstraction}
 
@@ -699,11 +707,13 @@ mozno dorobit obrazok podobne ako v \cite{BIODIVINE} pomocou latex/picture
 %====================================NASTROJE===============================================
 \chapter{V\'ychodiskov\'y stav a podobn\' e n\'astroje}
 
+%-------------------------------------------------------------------------------------------
 \section{BioDiVinE 1.0}
+\label{sec:biodivine}
 P\^ ovodn\'y n\'astroj BioDiVinE bol vyvinut\'y v laborat\'oriu syst\'emovej biol\'ogie (SyBiLa)\cite{sybila} v spolupr\'aci s laborat\'oriom paraleln\'ych 
 a distribuovan\'ych syst\'emov (ParaDiSe)\cite{paradise}. Obe s\'idlom na fakulte informatiky Masarykovej univerzity. 
 
-BioDiVinE 1.0 je n\'astroj vytvoren\'y pre verifik\'aciu vlastnost\'i biochemick\'ych syst\'emov zadan\'ych ako syst\'em ODE (vi\v d kapitolu \ref{sec:model}).
+BioDiVinE 1.0 je n\'astroj vytvoren\'y pre verifik\'aciu vlastnost\'i biochemick\'ych modelov zadan\'ych ako syst\'em ODE (vi\v d kapitolu \ref{sec:model}).
 Je to nadstavba n\'astroja DiVinE \cite{divine}, ur\v cen\'eho na model checking (vi\v d kapitolu \ref{sec:modelChecking}). K tomuto 
 \'u\v celu pon\'uka nieko\v lko odli\v sn\'ych algoritmov.
 
@@ -722,9 +732,10 @@ jedn\'ym v\'yvoj\'arskym t\'imom.
 Cel\'y n\'astroj BioDiVinE pritom obsahuje zbyto\v cne ve\v la \v dal\v s\'ich roz\v s\'iren\'i pre in\'e typy modelov, preto\v ze p\^ ovodn\'y n\'astroj 
 DiVinE bol prevzat\'y ako celok aj s t\'ymito predch\'adzaj\'ucimi roz\v s\'ireniami.
 
-Kv\^ oli vy\v s\v sie spomenut\'ym d\^ ovodom sme si dali za cie\v l okrem roz\v s\'irenia vstupn\'eho modelu aj refaktoriz\'aciu star\'eho n\'astroja.
+Kv\^ oli vy\v s\v sie spomenut\'ym d\^ ovodom sme si dali za cie\v l okrem roz\v s\'irenia vstupn\'eho modelu a abstrakcie aj refaktoriz\'aciu star\'eho n\'astroja.
 \cite{BIODIVINE}
 
+%-------------------------------------------------------------------------------------------
 \section{PEPMC}
 N\'astroj vyvinut\'y v laborat\'oriu syst\'emovej biol\'ogie (SYBILA)\cite{sybila} pre overovanie modelov s oh\v ladom na odhad parametrov (z \textit{ang.}
 Parameter Estimation by Parallel Model Checking, skr\'atene PEPMC). Funguje na princ\'ipe paraleln\'eho overovania modelov alebo tie\v z farebn\'eho 
@@ -736,30 +747,224 @@ Existuje my\v slienka zl\'u\v ci\v t tieto dva n\'astroje, br\'ani tomu v\v sak 
 programov. Nebudeme tu v\v sak tento probl\'em \v dalej rozobera\v t, preto\v ze nie je s\'u\v cas\v tou na\v sej t\'emy.
 \cite{HIBI-2010}
 
+%-------------------------------------------------------------------------------------------
 \section{RoVerGeNe}
 RoVerGeNe je podobne ako PEPMC n\'astroj pre anal\'yzu genetick\'ych regula\v cn\'ych siet\'i s neur\v cit\'ymi parametrami. Model siete je zap\'isan\'y ako
 po \v castiach multi"~afinn\'y syst\'em diferenci\'alnych rovn\'ic. Vlastnosti, proti ktor\'ym sa model overuje, maj\'u formu LTL formule a prametre s\'u 
 zadan\'e ako intervaly. N\'astroj sa sna\v z\'i overi\v t, \v ci model sp\'l\v na dan\'u vlastnos\v t pre v\v setky parametre.
 
-Na rozdiel od PEPMC v\v sak RoVerGeNe dok\'a\v ze pracova\v t aj s line\'arnymi kombin\'aciami parametrov. To v praxi znamen\'a, \v ze RATS u neho nie je
-pou\v zite\v ln\'y, preto\v ze vy\v zaduje, aby $n$-dimenzion\'alne \v stvoruholn\'iky s ktor\'ymi pracuje, boli ortogon\'alne, \v ci\v ze obd\'l\v zniky.
+Na rozdiel od PEPMC v\v sak RoVerGeNe dok\'a\v ze pracova\v t aj s line\'arnymi kombin\'aciami parametrov. To v praxi znamen\'a, \v ze obd\'l\v znikov\'a
+abstrakcia (vi\v d \ref{sec:abstraction}.B) u neho nie je
+pou\v zite\v ln\'a, preto\v ze vy\v zaduje, aby $n$-dimen\-zion\'alne \v stvoruholn\'iky s ktor\'ymi pracuje, boli ortogon\'alne, \v ci\v ze obd\'l\v zniky.
 Namiesto toho pou\v z\'iva tento n\'astroj \v standardn\'e polyhedr\'alne oper\'acie bal\'ika MPT \cite{mpt} a cel\'y je naprogramovan\'y v Matlabe.
 \cite{rovergene}
 \cite{rovergene-site}
 
-
+%-------------------------------------------------------------------------------------------
 \chapter{BioDiVinE 1.1}
+V kapitole \ref{sec:biodivine} boli predstaven\'e niektor\'e nedostatky p\^ ovodn\'eho n\'astroja BioDiVinE 1.0, ktor\'e sme si dali za cie\v l odstr\'ani\v t.
+S\'u\v casne bol z\'aujem o~roz\v s\'irenie jeho funkcionality a odstr\'anenie nadbyto\v cn\'ych \v cast\'i k\'odu. 
 
+Prvotn\'y impulz spo\v c\'ival v zov\v seobecnen\'i vstupn\'eho modelu, aby poskytoval \v sir\v s\'i z\'aber mo\v znost\'i. Aby nebol obmedzen\'y iba na mass 
+action kinetiku (vi\v d \ref{sec:massAction}) a s t\'ym s\'uvisiace neline\'arne diferenci\'alne rovnice. Do \'uvahy prich\'adzali samozrejme najbe\v znej\v sie 
+pou\v z\'ivan\'e Michaelis"~Mente\-novej kinetika a Hillova kinetika (vi\v d \ref{kinetiky}), ale aj Heavisidove funkcie \cite{step}, sigmoid\'alne funkcie z
+konferencie CAV 2011 \cite{CAV-2011} a obecn\'e rampov\'e funkcie (vi\v d \ref{sec:model}.B), ktor\'e sl\'u\v zia aj ako produkt optim\'alnej line\'arnej abstrakcie (vi\v d 
+\ref{sec:abstraction}.A).
 
+T\'ym sme nak\'usli \v dal\v siu nov\'u funkcionalitu. Zl\'u\v cenie nov\'eho roz\v s\'iren\'eho vstupn\'eho modelu (vi\v d \ref{sec:model}) a p\^ ovodne 
+pou\v z\'ivanej obd\'l\v znikovej abstrakcie (vi\v d \ref{sec:abstraction}.B). Prechodom medzi t\'ym je pr\'ave vy\v s\v sie spomenut\'a op\-ti\-m\'al\-na 
+line\'arna abstrakcia, ktor\'a prevedie novozaveden\'e nemulti"~afin\-n\'e funk\-cie na po \v castiach multi"~afinn\'e, presne ako je potrebn\'e pre 
+obd\'l\v znikov\'u abstrakciu.
+
+Pri z\'apise jednotliv\'ych rovn\'ic modelu sme sa chceli vyhn\'u\v t oper\'acii delenia, preto sme sa rozhodli v\v setky prid\'avan\'e funkcie zapisova\v t
+v podstate unifikovan\'ym sp\^ osobom, ktor\'y jasne ur\v cuje o ak\'y typ funkcie sa jedn\'a, \v ci je rast\'uca alebo klesaj\'uca a \v dalej parametre 
+nevyhnutn\'e pre jej vy\v c\'islenie. Tak isto sme pridali p\'ar noviniek ako definovanie pomenovan\'ych kon\v st\'ant a volite\v ln\'e, u\v z\'ivate\v lom 
+zad\'avan\'e parametre pre line\'arnu abstrakciu. Konkr\'etne ide o po\v cet bodov, v ktor\'ych maj\'u by\v t funkcie evaluovan\'e a o po\v cet segmentov, 
+na ktor\'e maj\'u by\v t funkcie rozdelen\'e a linearizovan\'e.
+
+Z t\'ychto d\^ ovodov sme sa rozhodli vytvori\v t \'uplne nov\'y parser a s\'u\v casne s n\'im aj nov\'y datov\'y model pre uchovanie nov\'ych d\'at. Niektor\'e
+prvky boli s\'ice zhodn\'e so star\'ym BioDiVinE-om, ale sp\^ osob ak\'ym boli naimplementovan\'e v starej verzii, bol ve\v lmi zle roz\v s\'irite\v ln\'y. 
+Za\v ca\v t v t\'ychto bodoch od znova n\'am pri\v slo jednoduch\v sie a preh\v ladnej\v sie. 
+
+Av\v sak k\'od star\'eho n\'astroja bol hodne rozsiahly a skladal
+sa z ve\v lk\'eho mno\v zstva r\^ oznych tried, z ktor\'ych mnoh\'e u\v z pre na\v se \'u\v cely neboli potrebn\'e. Preto bolo nutn\'e najsk\^ or cel\'y k\'od
+postupne prech\'adza\v t a debuggova\v t aby sme mu lep\v sie porozumeli. Na z\'aklade toho sme boli schopn\'y eliminova\v t neu\v zito\v cn\'e a 
+nepou\v z\'ivan\'e \v casti k\'odu. Odstr\'anili sme tak po\v cas f\'aze refactoringu asi polovicu tried.
+/* treba ich aj vymenovat? */
+
+Samotn\'e pripojenie na\v sich nov\'ych tried pre parser a datov\'y model, ale nebolo trivi\'alne. K tomu v\v setk\'emu sme 
+potrebovali zachova\v t \v cas\v t star\'eho parseru, ktor\'a mala za \'ulohu na\v c\'ita\v t B\"uchiho automat (vi\v d \ref{sec:buchi}) so sk\'umanou 
+vlastnos\v tou.
+
+Overovacie algoritmy boli na\v stastie nap\'isan\'e dostato\v cne obecne, tak\v ze po \'uspe\v snom zaveden\'i nov\'ych tried do star\'ych sa nevyskytlo ve\v la 
+probl\'emov. Najd\^ ole\v zitej\v sie pre ucelenie cel\'eho n\'astroja v\v sak bolo vytvorenie konzolov\'eho u\v z\'ivate\v lsk\'eho prostredia (\v dalej len 
+CLI), ktor\'e do jednoho pr\'ikazu ukryje to, \v co by inak bolo nutn\'e spravi\v t v troch krokoch (vi\v d kapitolu \ref{sec:biodivine}). Okrem toho automaticky over\'i v\v setky vlastnosti 
+zadan\'e vo vstupnom s\'ubore s t\'ymito vlastnos\v tami a n\'asledne zma\v ze do\v casn\'e s\'ubory. 
+
+Vstupom pre CLI je n\'azov vybran\'eho overovacieho algoritmu (owcty, distr\_map, owcty\_reversed), volite\v ln\'e prep\'ina\v ce a dva s\'ubory. Jedn\'ym 
+je cesta k s\'uboru s modelom s pr\'iponou .bio a druh\'ym je cesta k s\'uboru s jednou alebo viacer\'ymi vlastnos\v tami zap\'isan\'ymi ako LTL formule 
+(vi\v d \ref{sec:logika}) s~pr\'iponou .ltl. 
+
+Bohu\v zial sme boli don\'uten\'y odstr\'ani\v t GUI z p\^ ovodn\'eho n\'astroja, ktor\'e sl\'u\v zilo na vytv\'aranie a ukladanie modelov a vizualiz\'aciu v\'ysledkov, 
+preto\v ze sa uk\'azalo nezlu\v cite\v ln\'e s nov\'ymi roz\v s\'ireniami a bolo by  nutn\'e vytvori\v t \'uplne nov\'u verziu. T\'ato \v cinnos\v t je 
+ponechan\'a pre bud\'uce mo\v znosti roz\v s\'irenia.
+
+P\^ ovodn\'y BioDiVinE disponoval aj mo\v znos\v tou paralelne distribuovan\'eho spracov\'avania prostredn\'ictvom protokolu MPI (z \textit{ang.} Message 
+Passing Interface) \cite{MPI}. T\'ato mo\v znos\v t zostala zachovan\'a v r\'amci v\v setk\'ych p\^ ovodn\'ych \v cast\'i zdrojov\'eho k\'odu.
+
+Kv\^ oli lep\v siemu a celistvej\v siemu preh\v ladu v\v setk\'eho vy\v s\v sie zmienen\'eho pon\'ukame poh\v lad na architekt\'uru n\'astroja BioDiVinE 1.1 
+v diagrame \ref{fig:diagram}, kde je \v cervenou farbou zv\'yraznen\'a oblas\v t ve\v lkej \v casti na\v sej pr\'ace.
+
+\begin{figure}[h]
+\label{fig:diagram}
+\centering
+\includegraphics[width=1\textwidth]{BiodivineArchitecture2.pdf}
+\caption{Diagram architekt\'ury n\'astroja BioDiVinE 1.1. V \v cervenej oblasti je zhrnut\'y n\'a\v s pr\'inos}
+\end{figure}
+
+%-------------------------------------------------------------------------------------------
+\section{Vstupn\'y s\'ubor s modelom}
+Hlavnou n\'apl\v nou tejto podkapitoly je zozn\'ami\v t bli\v z\v sie u\v z\'ivate\v la so syn\-taxou vstupn\'eho modelu. T\'ym sa mysl\'i s\'ubor s pr\'iponou
+.bio a vyzer\'a nasledovne:
+%Syntax s\'uboru s modelom vyzer\'a nasledovne:
+\begin{itemize}
+\item VARS : \ \textit{premenn\'a1{\bf,} premenn\'a2{\bf,} \dots{}}
+\item CONSTS : \ \textit{kon\v stanta1{\bf,} hodnota1{\bf;} kon\v stanta2{\bf,} hodnota2 {\bf;} \dots{}}
+\item EQ : \ \textit{premenn\'a1 = rovnica1}
+\item EQ : \ \textit{premenn\'a2 = rovnica2}
+\item THRES : \ \textit{premenn\'a1{\bf:} prah1{\bf,} prah2{\bf,} prah3{\bf,} \dots{}}
+\item THRES : \ \textit{premenn\'a2{\bf:} prah1{\bf,} prah2{\bf,} \dots{}}
+\item VAR\_POINTS : \ \textit{premenn\'a1{\bf:} po\v cet\_bodov{\bf,} po\v cet\_segmentov{\bf;} premenn\'a2{\bf:} po\v cet\_bodov{\bf,} po\v cet\_segmentov}
+\item INIT : \ \textit{premenn\'a1{\bf:} od{\bf,} do{\bf;} premenn\'a2{\bf:} od{\bf,} do}
+\item system async;
+\end{itemize}
+Nieko\v lko vysvetliviek a obmedzen\'i:
+\begin{enumerate}
+\item V\v setko, \v co je p\'isan\'e neskosen\'ym p\'ismom, mus\'i zosta\v t zachovan\'e. Naopak to, \v co je nap\'isan\'e skosen\'ym p\'ismom, treba 
+nahradi\v t vlastn\'ymi hodnotami.
+\item Biele znaky s\'u kompletne ignorovan\'e, d\^ ole\v zit\'e s\'u iba odde\v lova\v ce vyzna\v cen\'e hrub\'ym p\'ismom (: ; , =). Na koncoch riadkov sa 
+nikdy odde\v lova\v c nesmie nach\'adza\v t s v\'ynimkou posledn\'eho riadku (system async;).
+\item N\'azvy premenn\'ych a kon\v st\'ant musia ako prv\'y znak obsahova\v t p\'ismeno nasledovan\'e \v lubovolnou kombin\'aciou p\'ismen, \v c\'isel a 
+znakov \_\ \textasciitilde{}\ \{\ \}.
+\item \v C\'isla maj\'u tvar cel\'ych alebo desatinn\'ych \v c\'isel s desatinnou bodkou.
+\item Riadok (CONSTS) nie je povinn\'y. Je tie\v z mo\v zn\'e pou\v z\'iva\v t iba nepomenovan\'e kon\v stanty (\v ci\v ze \v c\'isla).
+\item Riadky (VARS) a (CONSTS) sa musia nach\'adza\v t pred ostatn\'ymi riadkami -- s\'u \'uvodn\'e.
+\item Riadok (VAR\_POINTS) nie je povinn\'y a \textit{po\v cet\_bodov} znamen\'a po\v cet bodov, v ktor\'ych bud\'u evaluovan\'e regula\v cn\'e funkcie 
+pre dan\'u premenn\'u, a {\it po\v cet\_segmentov} ur\v cuje po\v cet r\'amp, na ktor\'e sa tieto funkcie preved\'u.
+\item Hodnoty {\it od} a {\it do} v riadku (INIT) musia by\v t niektor\'e z hodn\^ ot v pr\'islu\v snom riadku (THRES) pre dan\'u premenn\'u, pre ktor\'e
+mus\'i plati\v t {\it od} $<$ {\it do}.
+\item Ka\v zd\'a premenn\'a ma povinn\'y vlastn\'y riadok (EQ) a (THRES) a mus\'i sa nach\'adza\v t aj v riadku (INIT) s pr\'islu\v sn\'ymi hodnotami.
+\item Riadok (system async;) je povinn\'y a mus\'i sa nach\'adza\v t na konci s\'uboru z historick\'ych d\^ ovodov.
+\item Rovnica v riadku (EQ) je matematicky pop\'isan\'a v kapitole \ref{sec:model}.B konkr\'etne v z\'apise \ref{eq:equationDescribtion} a v be\v znom jazyku 
+ni\v z\v sie:
+\begin{itemize}
+\item Parser podporuje un\'arnu oper\'aciu $-$, bin\'arne oper\'acie $+$, $-$ a $*$ a gu\v lat\'e z\'atvorky, ktor\'e m\^ o\v zu by\v t vnoren\'e \v lubovolne
+ve\v la kr\'at.
+\item Rovnica m\^ o\v ze okrem oper\'aci\'i a z\'atvoriek obsahova\v t pomenovan\'e aj nepomenovan\'e kon\v stanty, premenn\'e a nasleduj\'uce regula\v cn\'e 
+funkcie (vi\v d z\'apis \ref{eq:regulatingFunctions}):
+\begin{itemize}
+\item rpcoor(premenn\'a, prah1, prah2, hodnota1, hodnota2), \\rmcoor(premenn\'a, prah1, prah2, hodnota1, hodnota2),
+\item rp(premenn\'a, prah1, prah2, parameter1, parameter2),\\rm(premenn\'a, prah1, prah2, parameter1, parameter2),
+\item hp(premenn\'a, prah, parameter1, parameter2),\\hm(premenn\'a, prah, parameter1, parameter2),
+\item sp(premenn\'a, faktor, prah, parameter1, parameter2),\\sm(premenn\'a, faktor, prah, parameter1, parameter2),
+\item spinv(premenn\'a, faktor, prah, parameter1, parameter2),\\sminv(premenn\'a, faktor, prah, parameter1, parameter2),
+\item hillp(premenn\'a, prah, faktor, parameter1, parameter2),\\hillm(premenn\'a, prah, faktor, parameter1, parameter2),
+\end{itemize}
+\item \' Uvodn\'e znaky (r, h, s) m\^ o\v zu by\v t zadan\'e aj ako ve\v lk\'e p\'ismen\'a.
+\item Znak (p) resp. (m) znamen\'a (+) resp. (--) v zmysle rast\'ucej resp. klesaj\'ucej funkcie.
+\item Premenn\'a mus\'i by\v t jedna zo sk\^ or uveden\'ych premenn\'ych v riadku (VARS).
+\item Hodnoty (prah, faktor, hodnota, parameter) m\^ o\v zu by\v t zadan\'e ako pomenovan\'e alebo nepomenovan\'e kon\v stanty.
+\item Prah mus\'i by\v t jednou z prahov\'ych hodn\^ ot premennej.
+\item \textbf{Nie je mo\v zn\'e n\'asobi\v t spolu rovnak\'e premenn\'e ani premenn\'u s regula\v cn\'ymi funkciami z\'avysl\'imi od tejto premennej ani
+samotn\'e regula\v cn\'e funkcie z\'avysl\'e na rovnakej premennej.} Bolo by to poru\v senie pravidla o stupni premennej z kapitoly \ref{sec:model}.A.
+\end{itemize}
+\end{enumerate}
+
+%-------------------------------------------------------------------------------------------
+\section{Vstupn\'y s\'ubor s vlastnos\v tou}
+S\'ubor s vlastnos\v tou alebo vlastnos\v tami je detailne pop\'isan\'y v pr\'aci \cite{Jaros-thesis}. Tu si iba v kr\'atkosti zhrnieme syntax. S\'ubor 
+s pr\'iponou .ltl m\^ o\v ze obsahova\v t nasleduj\'uce riadky:
+\begin{itemize}
+\item \#define \ {\it n\'azov\_premennej \ hodnota\_premennej}
+\item \#property \ {\it vlastnos\v t\_vo\_forme\_ltl\_formule}
+\end{itemize}
+a platia pre ne nasleduj\'uce pravidl\'a:
+\begin{enumerate}
+\item S\'ubor m\^ o\v ze obsahova\v t \v lubovoln\'y po\v cet defin\'ici\'i (riadok \#define), mali by sa v\v sak odli\v sova\v t v n\'azve premennej. Ten m\^ o\v ze obsahova\v t
+mal\'e p\'ismen\'a, \v c\'isla a znak \_. Za\v c\'ina\v t ale musia bu\v d p\'ismenom alebo znakom \_.
+\item Hodnota premennej je v podstate v\'yraz s logickou hodnotou (\v ci\v ze atomick\'a propoz\'icia, AP (vi\v d kapitolu \ref{sec:logika})). T\'a m\^ o\v ze 
+ma\v t bu\v d priamo
+hodnotu {\it true} alebo {\it false} alebo m\^ o\v ze by\v t tvoren\'a re\v tazcom obsahuj\'ucim meno nejakej premennej z modelu, rela\v cn\'y oper\'ator (<, >, <=, >=) a \v c\'iseln\'u 
+hodnotu (cel\'u alebo re\'alnu), ktor\'a sa mus\'i nach\'adza\v t medzi prahov\'ymi hodnotami premennej z modelu.
+\item Po\v cet riadkov (\#property) tie\v z nie je obmedzen\'y, ale u\v z\'ivate\v l by mal vedie\v t, \v ze ka\v zd\'y tak\'yto riadok znamen\'a nov\'u 
+vlastnos\v t, ktor\'a sa bude testova\v t na modeli a to znamen\'a v\'ypo\v ctov\'u r\'e\v ziu.
+\item Samotn\'a formula {\it vlastnos\v t\_vo\_forme\_ltl\_formule} m\^ o\v ze by\v t tvoren\'a nasleduj\'ucimi hodnotami:
+\begin{itemize}
+\item Un\'arnymi tempor\'alnymi oper\'atormi ({\bf X}$\phi$, {\bf F}$\phi$, {\bf G}$\phi$) a bin\'arnymi tempor\'alnymi oper\'atormi ($\phi${\bf R}$\psi$, 
+$\phi${\bf U}$\psi$)(vi\v d kapitolu \ref{sec:logika}), kde $\phi$ a $\psi$ s\'u v\'yrazy s logickou hodnotou.
+\item V\'yrazmi s logickou hodnotou, ktor\'e s\'u \v dalej tvoren\'e logick\'ymi oper\'atormi ({\bf !} -- neg\'acia, {\bf \&\&} -- konjunkcia, {\bf ||} -- 
+disjunkcia, {\bf ->} -- implik\'acia, {\bf <->} -- ekvivalencia) a premenn\'ymi definovan\'ymi na za\v ciatku s\'uboru.
+\item Syntax podporuje aj \v lubovolne vnoren\'e gu\v lat\'e  z\'atvorky.
+\end{itemize}
+\item Pre \'uplnos\v t treba doda\v t, \v ze t\'ato syntax podporuje aj p\'ar \v dals\'ich, roz\v s\'iren\'ych oper\'atorov a takmer ku ka\v zd\'emu e\v ste
+druh\'y mo\v zn\'y z\'apis, ale n\'a\v s v\'ypo\v cet je dostato\v cn\'y pre z\'apis \v lubovolnej LTL formule.
+\end{enumerate}
+
+%-------------------------------------------------------------------------------------------
+\section{Priebeh procesu}
+Po zavolan\'i CLI spolu so zadan\'ymi vstupn\'ymi parametrami sa najsk\^ or skontroluje ich po\v cet. Ak je tento men\v s\'i, program vyp\'i\v se \textit{help}
+ponuku /*odkaz na obrazok s nou*/. V opa\v cnom pr\'ipade skontroluje existenciu vstupn\'ych s\'uborov a pred\'a ich pomocn\'emu n\'astroju {\it divine.combine}.
+Ten zist\'i po\v cet vlastnost\'i a pre ka\v zd\'u z nich vytvor\'i nov\'y s\'ubor a z\'arove\v n prevedie vlastnos\v t z LTL formule na B\"uchiho automat. 
+Tento v\'ystupn\'y s\'ubor m\'a tie\v z koncovku .bio, ale je iba pomocn\'y a pred ukon\v cen\'im CLI bude zmazan\'y. \v Dalej sa zist\'i po\v zadovan\'y 
+overovac\'i algoritmus. M\^ o\v ze \'is\v t o algoritmy {\it owcty}, {\it distr\_map} alebo {\it owcty\_reversed}. \v Ziadne in\'e nie s\'u pr\'ipustn\'e.
+
+Vybran\'y algoritmus sa spust\'i pre ka\v zd\'y novovytvoren\'y s\'ubor .bio ako n\'astroj {\it divine.n\'azov\_algoritmu} a predaj\'u sa mu pr\'ipadn\'e 
+parametre. Potom sa vstup pred\'a triede s parserom a vytvor\'i sa datov\'y model, ktor\'y prejde line\'arnou aproxim\'aciou, ak je to potrebn\'e. T\'ym sa
+mysl\'i pr\'ipad, ke\v d rovnice modelu obsahuj\'u aspo\v n jednu Hillovu funkciu alebo aspo\v n jednu sigmoid\'alnu funkciu. Heavisidove funkcie sa 
+upravuj\'u zvl\'a\v s\v t hne\v d po na\v c\'itan\'i, preto\v ze ich mo\v zno previes\v t na jedin\'u rampu a teda line\'arna aproxim\'acia pre ne nem\'a 
+zmysel. 
+
+Prahov\'e hodnoty vygenerovan\'e aproxim\'aciou aj prevodom Heavisidov\'ych funkci\'i sa ulo\v zia medzi ostatn\'e. To na jednu stranu zvy\v suje 
+v\'ypo\v ctov\'u r\'e\v ziu, preto\v ze sa zv\" a\v c\v suje stavov\'y priestor generovan\'y nasleduj\'ucou obd\'l\v znikovou aproxim\'aciou. A to line\'arne 
+k po\v ctu nov\'ych prahov\'ych hodn\^ ot. No na strane druhej sa t\'ym zlep\v suje presnos\v t tejto aproxim\'acie a cel\'eho v\'ypo\v ctu, preto\v ze sa 
+abstrahovan\'y model pribli\v zuje skuto\v cn\'emu spojit\'emu modelu.
+
+U\v z spomenut\'a obd\'l\v znikov\'a aproxim\'acia vygeneruje RATS (vi\v d \ref{sec:abstraction}.B), \v ci\v ze diskr\'etny syst\'em p\^ ovodne spojit\'eho 
+modelu, ktor\'y sa overuje proti vlastnosti v podobe automatu. Ak ju RATS sp\'l\v na, potom mo\v zno s istotou tvrdi\v t, \v ze aj p\^ ovodn\'y model t\'uto
+vlastnos\v t sp\'l\v na. Naopak, ak je vygenerovan\'y protipr\'iklad, tento v\^ obec nemus\'i zodpoveda\v t protipr\'ikladu v skuto\v cnom spojitom modeli.
+Av\v sak st\'ale plat\'i, \v ze model, \v ci u\v z abstrahovan\'y alebo skuto\v cn\'y dan\'u vlastnos\v t nesp\'l\v na. \cite{BIODIVINE}
+/*dalo by sa este spomenut, ze owcty a owcty\_reversed dokazu skumat aj samostatne reachabilitu*/
+
+%-------------------------------------------------------------------------------------------
 \chapter{Implement\' acia}
+/*asi by sa hodilo napisat v com som pisal parser a scanner a jake su tam subory, dalej popisat triedy datoveho modelu a CLI*/
 
+\section{Parser}
+Na \'uvod je treba poveda\v t, \v ze za v\'yrazom parser sa ukr\'yva aj druh\'y pomocn\'y n\'astroj tzv. scanner. Samotn\'y parser je n\'astroj na syntaktick\'u 
+anal\'yzu vstupu a v niektor\'ych jednoduch\'ych pr\'ikladoch m\^ o\v ze by\v t dostato\v cn\'y, ale nie v na\v som. Aby bolo parsovanie \'uspe\v sn\'e mus\'i
+mu predch\'adza\v t e\v ste lexik\'alna anal\'yza a t\'u m\'a na starosti pr\'ave scanner, ktor\'y zjednodu\v sene povedan\'e na\v c\'itava "slov\'a". Tie potom
+posiela parseru, ktor\'y z nich sklad\'a "vety", respekt\'ive vzory. Akon\'ahle je nejak\'y vzor rozpoznan\'y, in\v strukcie parseru povedia, ak\'u akciu
+m\'a s d\'atami vykona\v t.
 
+Pre vytvorenie parseru a scanneru s\'u k dispoz\'icii sestersk\'e programy. Najstar\v sie z nich s\'u {\it flex} a {\it bison}. Tie sa v\v sak uk\'azali by\v t
+a\v z pr\'ili\v s zastaran\'e a neschopn\'e vytvori\v t jednoduch\'u \v strukt\'uru typu trieda, ktor\'a by sa dala \v lahko za\v cleni\v t do u\v z 
+existuj\'uceho k\'odu. \v Dal\v sou mo\v znos\v tou, ktor\'u sme zva\v zovali, boli programy {\it flex++} a {\it bison++}. Tie \'udajne podporuj\'u triedy, 
+ale n\'ajs\v t k nim pou\v zite\v ln\'y u\v z\'ivate\v lsk\'y manu\'al sa uk\'azalo by\v t nemo\v zn\'e. Naopak programy {\it flexc++} \cite{flexc++} a 
+{\it bisonc++} \cite{bisonc++} s\'u preh\v ladne zdokumentovan\'e a ve\v lmi dobre za\v clenite\v ln\'e do zdrojov\'eho k\'odu v jazyku c++, preto sa 
+uk\'azali by\v t tou najlep\v sou vo\v lbou.
+/*mozno opisat este detailnejsie subory ktorych a to tyka a co priblizne obsahuju*/
+
+\section{D\'atov\'y model}
+
+\section{Konzolov\'e u\v z\'ivate\v lsk\'e prostredie CLI}
+
+%-------------------------------------------------------------------------------------------
 \chapter{Pou\v zitie programu}
 
-
+%-------------------------------------------------------------------------------------------
 \chapter{Case study}
 
-
+%-------------------------------------------------------------------------------------------
 \chapter{Z\' aver}
 
 

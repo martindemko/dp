@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.26)  18 MAY 2014 00:43
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.26)  21 MAY 2014 01:01
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -383,109 +383,109 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 Kapitola 1.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 49.
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 78.
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 79.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsppl.fd
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 78.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 79.
  [3
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 82--86
+Underfull \hbox (badness 10000) in paragraph at lines 83--87
 
  []
 
-[4] <images/buchi1.png, id=160, 243.91125pt x 131.49126pt>
+[4] <images/buchi1.png, id=190, 243.91125pt x 131.49126pt>
 File: images/buchi1.png Graphic file (type png)
 
 <use images/buchi1.png>
-Package pdftex.def Info: images/buchi1.png used on input line 150.
+Package pdftex.def Info: images/buchi1.png used on input line 152.
 (pdftex.def)             Requested size: 144.53778pt x 77.92024pt.
  [5] [6 <./images/buchi1.png>]
-Overfull \hbox (3.16002pt too wide) in paragraph at lines 185--190
+Overfull \hbox (3.16002pt too wide) in paragraph at lines 189--194
 []\T1/ppl/m/n/10.95 Je nutné za-£a´ od en-zý-mo-vej ki-ne-tiky, pre-toºe práve 
 tá bola hlav-ným kataly-
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 214--216
+Underfull \hbox (badness 10000) in paragraph at lines 218--220
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 217--220
+Underfull \hbox (badness 10000) in paragraph at lines 221--224
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 244--248
+Underfull \hbox (badness 10000) in paragraph at lines 248--252
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 249--252
+Underfull \hbox (badness 10000) in paragraph at lines 253--256
 
  []
 
 
-Overfull \hbox (1.28783pt too wide) in paragraph at lines 253--257
+Overfull \hbox (1.28783pt too wide) in paragraph at lines 257--261
 \T1/ppl/m/n/10.95 cia kvá-zis-ta-ci-onár-neho stavu (z \T1/ppl/m/it/10.95 ang. 
 \T1/ppl/m/n/10.95 Quasi-steady state ap-ro-xi-ma-tion), ktorá
  []
 
 
-Overfull \hbox (2.22923pt too wide) in paragraph at lines 253--257
+Overfull \hbox (2.22923pt too wide) in paragraph at lines 257--261
 \T1/ppl/m/n/10.95 Hal-dane pred-po-kla-dali, ºe rých-los´ tvorby en-zým[]substr
 átového kom-plexu
  []
 
 [8]
-Underfull \hbox (badness 10000) in paragraph at lines 294--298
+Underfull \hbox (badness 10000) in paragraph at lines 298--302
 
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 299--302
+Underfull \hbox (badness 10000) in paragraph at lines 303--306
 
  []
 
-[10] <images/hill_factor.png, id=245, 1003.75pt x 552.0625pt>
+[10] <images/hill_factor.png, id=275, 1003.75pt x 552.0625pt>
 File: images/hill_factor.png Graphic file (type png)
 
 <use images/hill_factor.png>
-Package pdftex.def Info: images/hill_factor.png used on input line 359.
+Package pdftex.def Info: images/hill_factor.png used on input line 363.
 (pdftex.def)             Requested size: 361.34999pt x 198.74234pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (4.74751pt too wide) in paragraph at lines 366--369
+Overfull \hbox (4.74751pt too wide) in paragraph at lines 371--374
 \T1/ppl/m/n/10.95 mál-nej ve-ri-fi-ká-cie ²pe-ci-fi-ko-va-ných vlast-ností ko-n
 e£-ného sta-vo-vého sys-tému.
  []
 
 
-Overfull \hbox (2.95226pt too wide) in paragraph at lines 373--376
+Overfull \hbox (2.95226pt too wide) in paragraph at lines 378--381
 \T1/ppl/m/n/10.95 neho ma-te-ma-tic-kého mo-delu, ktorý bude ak-cep-to-vaný vy-
 bra-ným ove-
  []
 
 [11]
-Overfull \hbox (0.31358pt too wide) in paragraph at lines 381--383
+Overfull \hbox (0.31358pt too wide) in paragraph at lines 386--388
 \T1/ppl/m/n/10.95 ci-fi-ká-cii, ale ne-do-káºe roz-hod-nú´, £i daná ²pe-ci-fi-k
 á-cia po-krýva v²etky
  []
 
 
-Overfull \hbox (4.87949pt too wide) in paragraph at lines 381--383
+Overfull \hbox (4.87949pt too wide) in paragraph at lines 386--388
 \T1/ppl/m/n/10.95 vlast-nosti, kto-rým skú-maný sys-tém vy-ho-vuje. Toto je ve©
 mi vý-znamný
  []
 
 [12 <./images/hill_factor.png>]
-Overfull \hbox (3.32639pt too wide) in paragraph at lines 406--410
+Overfull \hbox (3.32639pt too wide) in paragraph at lines 411--415
 [][]\T1/ppl/m/n/10.95 Toto tvr-de-nie mô-ºeme pre-for-mu-lo-va´. Nech $[]$ je k
 om-ple-ment k $[]$,
  []
@@ -493,52 +493,52 @@ om-ple-ment k $[]$,
 [13] [14] [15]
 Kapitola 2.
 
-Underfull \hbox (badness 10000) in paragraph at lines 474--476
+Underfull \hbox (badness 10000) in paragraph at lines 480--482
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 477--480
+Underfull \hbox (badness 10000) in paragraph at lines 483--486
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 495--500
+Underfull \hbox (badness 10000) in paragraph at lines 501--506
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--504
+Underfull \hbox (badness 10000) in paragraph at lines 507--510
 
  []
 
 [16
 
 ] [17] [18] [19]
-Underfull \hbox (badness 10000) in paragraph at lines 631--634
+Underfull \hbox (badness 10000) in paragraph at lines 639--642
 
  []
 
-<images/abstractNO.png, id=325, 1003.75pt x 552.0625pt>
+<images/abstractNO.png, id=357, 1003.75pt x 552.0625pt>
 File: images/abstractNO.png Graphic file (type png)
 
 <use images/abstractNO.png>
-Package pdftex.def Info: images/abstractNO.png used on input line 660.
+Package pdftex.def Info: images/abstractNO.png used on input line 668.
 (pdftex.def)             Requested size: 361.34999pt x 198.74234pt.
 
-<images/abstractYES.png, id=326, 1003.75pt x 552.0625pt>
+<images/abstractYES.png, id=358, 1003.75pt x 552.0625pt>
 File: images/abstractYES.png Graphic file (type png)
 
 <use images/abstractYES.png>
-Package pdftex.def Info: images/abstractYES.png used on input line 661.
+Package pdftex.def Info: images/abstractYES.png used on input line 669.
 (pdftex.def)             Requested size: 361.34999pt x 198.74234pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 666--670
+ [20]
+Underfull \hbox (badness 10000) in paragraph at lines 674--678
 
  []
 
-[20]
-Underfull \hbox (badness 10000) in paragraph at lines 671--674
+
+Underfull \hbox (badness 10000) in paragraph at lines 679--682
 
  []
 
@@ -546,60 +546,93 @@ Underfull \hbox (badness 10000) in paragraph at lines 671--674
 Kapitola 3.
 [23
 
-]
-Overfull \hbox (1.10117pt too wide) in paragraph at lines 744--749
-\T1/ppl/m/n/10.95 rými pra-cuje, boli or-to-go-nálne, £iºe ob-d¨º-niky. Na-mies
-to toho po-u-ºíva tento
- []
-
-[24]
+] [24]
 Kapitola 4.
 [25
 
 ]
+
+pdfTeX warning: pdflatex (file ./images/BiodivineArchitecture2.pdf): PDF inclus
+ion: found PDF version <1.5>, but at most version <1.4> allowed
+<images/BiodivineArchitecture2.pdf, id=435, 851.60156pt x 933.58784pt>
+File: images/BiodivineArchitecture2.pdf Graphic file (type pdf)
+
+<use images/BiodivineArchitecture2.pdf>
+Package pdftex.def Info: images/BiodivineArchitecture2.pdf used on input line 8
+21.
+(pdftex.def)             Requested size: 361.34999pt x 396.13567pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[26] [27]
+Overfull \hbox (11.94302pt too wide) in paragraph at lines 875--876
+[][]\T1/ppl/m/n/10.95 Premenná musí by´ jedna zo skôr uve-de-ných pre-men-ných 
+v riadku
+ []
+
+[28]
+
+Package hyperref Warning: Composite letter `\textasciicaron+t'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 884.
+
+[29] [30] [31 <./images/BiodivineArchitecture2.pdf>]
 Kapitola 5.
-[26
+
+Package hyperref Warning: Composite letter `\textasciicaron+l'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 959.
+
+[32
 
 ]
 Kapitola 6.
-[27
+[33
 
 ]
 Kapitola 7.
-[28
+[34
 
 ]
 Kapitola 8.
-(./dp1.sk.bbl [29
+(./dp1.sk.bbl [35
 
 ]
 LaTeX Font Info:    Try loading font information for T1+pcr on input line 50.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-[30
+[36
 
-] [31]) [32]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 772.
- [33
+] [37]) [38]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 977.
+ [39
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 772.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 977.
  (./dp1.sk.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 772.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 772.
-Package rerunfilecheck Info: File `dp1.sk.out' has not changed.
-(rerunfilecheck)             Checksum: 867862863D0A4D2253EDFDC7249D05BE;1218.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 772.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 977.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 977.
+
+
+Package rerunfilecheck Warning: File `dp1.sk.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `dp1.sk.out':
+(rerunfilecheck)             Before: 183435FDFCC36FC9AA205444AAE8B3DB;1651
+(rerunfilecheck)             After:  735341E8B32F473434CBD66051B291ED;1655.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 977.
  ) 
 Here is how much of TeX's memory you used:
- 7125 strings out of 494998
- 98591 string characters out of 6180421
- 187558 words of memory out of 5000000
- 10102 multiletter control sequences out of 15000+600000
+ 7186 strings out of 494998
+ 99352 string characters out of 6180421
+ 187906 words of memory out of 5000000
+ 10127 multiletter control sequences out of 15000+600000
  33114 words of font info for 66 fonts, out of 8000000 for 9000
  24 hyphenation exceptions out of 8191
- 29i,16n,28p,347b,463s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,16n,31p,347b,497s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc} <./fi-logo.514pk>
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/
@@ -618,9 +651,9 @@ b></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share
 mf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
 palatino/uplri8a.pfb>
-Output written on dp1.sk.pdf (38 pages, 416700 bytes).
+Output written on dp1.sk.pdf (44 pages, 1019413 bytes).
 PDF statistics:
- 578 PDF objects out of 1000 (max. 8388607)
- 123 named destinations out of 1000 (max. 500000)
- 173 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 702 PDF objects out of 1000 (max. 8388607)
+ 158 named destinations out of 1000 (max. 500000)
+ 226 words of extra memory for PDF output out of 10000 (max. 10000000)
 
