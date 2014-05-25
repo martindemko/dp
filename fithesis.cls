@@ -261,7 +261,7 @@ literaturu, kter\'{e} jsem p\v{r}i vypracov\'{a}n\'{i} pou\v{z}\'{i}val\@w\ nebo
 \v{c}erpal\@w, v~pr\'{a}ci \v{r}\'{a}dn\v{e} cituji s~uveden\'{i}m \'{u}pln\'{e}ho odkazu na p\v{r}\'{i}slu\v{s}n\'{y}
 zdroj.}
 \def\DeclarationTextsk{%
-Prehlasujem, \v{z}e t\'{a}to \expandafter\lowecasewrapper\@thesissubtitle{}
+Vyhlasujem, \v{z}e t\'{a}to \expandafter\lowecasewrapper\@thesissubtitle{}
 je moj\'{i}m p^^f4vodn\'{y}m autorsk\'{y}m
 dielom, ktor\'{e} som vypracoval\@w\ samostatne. V\v{s}etky zdroje, pramene a
 literat\'{u}ru, ktor\'{e} som pri vypracovan\'{i} pou\v{z}\'{i}val\@w\ alebo z~nich
@@ -278,7 +278,7 @@ Prohl\'{a}\v{s}en\'{i}
 }
 
 \def\DeclarationTitlesk{%
-Prehl\'{a}senie
+Vyhl\'{a}senie
 }
 
 \def\DeclarationTitleen{%

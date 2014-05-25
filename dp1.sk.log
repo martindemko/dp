@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.26)  25 MAY 2014 18:50
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.26)  25 MAY 2014 23:32
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -673,31 +673,25 @@ LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
 ] [3
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 49--52
+Underfull \hbox (badness 10000) in paragraph at lines 48--51
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--52
+Underfull \hbox (badness 10000) in paragraph at lines 48--51
 
  []
 
 [4
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 64--66
+Underfull \hbox (badness 10000) in paragraph at lines 63--65
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--66
+Underfull \hbox (badness 10000) in paragraph at lines 63--65
 
- []
-
-
-Overfull \hbox (10.57262pt too wide) in paragraph at lines 67--70
-[]\T1/ppl/m/n/10.95 ordinary dif-fe-ren-tial equ-ati-ons, pie-ce-wise multi[]af
-fine ODE mo-del, non[]linear
  []
 
 [5
@@ -718,162 +712,167 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \tf@toc=\write5
 \openout5 = `dp1.sk.toc'.
 
- [2] [3
+ [2]
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 88.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+) [3
 
 ]
 Kapitola 1.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 80.
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 110.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 91.
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 121.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsppl.fd
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 110.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 121.
  [4
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 114--118
+Underfull \hbox (badness 10000) in paragraph at lines 125--129
 
  []
 
 [5] [6] [7] [8]
-Underfull \hbox (badness 10000) in paragraph at lines 257--259
+Underfull \hbox (badness 10000) in paragraph at lines 268--270
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 260--263
+Underfull \hbox (badness 10000) in paragraph at lines 271--274
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 287--291
+Underfull \hbox (badness 10000) in paragraph at lines 298--302
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 292--295
+Underfull \hbox (badness 10000) in paragraph at lines 303--306
 
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 337--341
+Underfull \hbox (badness 10000) in paragraph at lines 348--352
 
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 342--345
+Underfull \hbox (badness 10000) in paragraph at lines 353--356
 
  []
 
-[11] <images/hill_factor_2.png, id=359, 1003.75pt x 552.0625pt>
+[11] <images/hill_factor_2.png, id=363, 1003.75pt x 552.0625pt>
 File: images/hill_factor_2.png Graphic file (type png)
 
 <use images/hill_factor_2.png>
-Package pdftex.def Info: images/hill_factor_2.png used on input line 406.
+Package pdftex.def Info: images/hill_factor_2.png used on input line 417.
 (pdftex.def)             Requested size: 361.34999pt x 198.74234pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [12]
-Overfull \hbox (0.31358pt too wide) in paragraph at lines 429--431
+Overfull \hbox (0.31358pt too wide) in paragraph at lines 440--442
 \T1/ppl/m/n/10.95 ci-fi-ká-cii, ale ne-do-káºe roz-hod-nú´, £i daná ²pe-ci-fi-k
 á-cia po-krýva v²etky
  []
 
 [13 <./images/hill_factor_2.png>]
-Overfull \hbox (3.32639pt too wide) in paragraph at lines 454--458
+Overfull \hbox (3.32639pt too wide) in paragraph at lines 465--469
 [][]\T1/ppl/m/n/10.95 Toto tvr-de-nie mô-ºeme pre-for-mu-lo-va´. Nech $[]$ je k
 om-ple-ment k $[]$,
  []
 
-[14] [15] <images/paramKripke.pdf, id=397, 298.11375pt x 257.96375pt>
+[14] [15] <images/paramKripke.pdf, id=401, 298.11375pt x 257.96375pt>
 File: images/paramKripke.pdf Graphic file (type pdf)
 
 <use images/paramKripke.pdf>
-Package pdftex.def Info: images/paramKripke.pdf used on input line 522.
+Package pdftex.def Info: images/paramKripke.pdf used on input line 533.
 (pdftex.def)             Requested size: 252.94388pt x 218.87659pt.
  [16] [17 <./images/paramKripke.pdf>]
 Kapitola 2.
 
-Underfull \hbox (badness 10000) in paragraph at lines 531--533
+Underfull \hbox (badness 10000) in paragraph at lines 542--544
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 534--537
+Underfull \hbox (badness 10000) in paragraph at lines 545--548
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 552--557
+Underfull \hbox (badness 10000) in paragraph at lines 563--568
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 558--561
+Underfull \hbox (badness 10000) in paragraph at lines 569--572
 
  []
 
 [18
 
 ] [19] [20]
-Underfull \hbox (badness 10000) in paragraph at lines 648--655
+Underfull \hbox (badness 10000) in paragraph at lines 659--666
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 656--659
+Underfull \hbox (badness 10000) in paragraph at lines 667--670
 
  []
 
 [21]
-Underfull \hbox (badness 10000) in paragraph at lines 728--731
+Underfull \hbox (badness 10000) in paragraph at lines 739--742
 
  []
 
 [22]
-Underfull \hbox (badness 10000) in paragraph at lines 766--770
+Underfull \hbox (badness 10000) in paragraph at lines 777--781
 
  []
 
 [23]
-Underfull \hbox (badness 10000) in paragraph at lines 771--774
+Underfull \hbox (badness 10000) in paragraph at lines 782--785
 
  []
 
-<images/partition2.pdf, id=478, 750.805pt x 548.0475pt>
+<images/partition2.pdf, id=482, 750.805pt x 548.0475pt>
 File: images/partition2.pdf Graphic file (type pdf)
 
 <use images/partition2.pdf>
-Package pdftex.def Info: images/partition2.pdf used on input line 800.
+Package pdftex.def Info: images/partition2.pdf used on input line 811.
 (pdftex.def)             Requested size: 162.60638pt x 118.68925pt.
 
-<images/partition3.pdf, id=479, 728.7225pt x 548.0475pt>
+<images/partition3.pdf, id=483, 728.7225pt x 548.0475pt>
 File: images/partition3.pdf Graphic file (type pdf)
 
 <use images/partition3.pdf>
-Package pdftex.def Info: images/partition3.pdf used on input line 804.
+Package pdftex.def Info: images/partition3.pdf used on input line 815.
 (pdftex.def)             Requested size: 162.60638pt x 122.28513pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/abstractNO.png, id=480, 1003.75pt x 552.0625pt>
+<images/abstractNO.png, id=484, 1003.75pt x 552.0625pt>
 File: images/abstractNO.png Graphic file (type png)
 
 <use images/abstractNO.png>
-Package pdftex.def Info: images/abstractNO.png used on input line 812.
+Package pdftex.def Info: images/abstractNO.png used on input line 823.
 (pdftex.def)             Requested size: 289.08109pt x 158.99893pt.
 
-<images/abstractYES.png, id=481, 1003.75pt x 552.0625pt>
+<images/abstractYES.png, id=485, 1003.75pt x 552.0625pt>
 File: images/abstractYES.png Graphic file (type png)
 
 <use images/abstractYES.png>
-Package pdftex.def Info: images/abstractYES.png used on input line 813.
+Package pdftex.def Info: images/abstractYES.png used on input line 824.
 (pdftex.def)             Requested size: 289.08109pt x 158.99893pt.
 
 
@@ -896,19 +895,19 @@ Kapitola 4.
 
 pdfTeX warning: pdflatex (file ./images/BiodivineArchitecture2.pdf): PDF inclus
 ion: found PDF version <1.5>, but at most version <1.4> allowed
-<images/BiodivineArchitecture2.pdf, id=567, 851.60156pt x 933.58784pt>
+<images/BiodivineArchitecture2.pdf, id=571, 851.60156pt x 933.58784pt>
 File: images/BiodivineArchitecture2.pdf Graphic file (type pdf)
 
 <use images/BiodivineArchitecture2.pdf>
 Package pdftex.def Info: images/BiodivineArchitecture2.pdf used on input line 9
-45.
+57.
 (pdftex.def)             Requested size: 361.34999pt x 396.13567pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [30] [31]
-Overfull \hbox (2.89847pt too wide) in paragraph at lines 1000--1001
+Overfull \hbox (2.89847pt too wide) in paragraph at lines 1012--1013
 [][]\T1/ppl/m/n/10.95 Premenná musí by´ jedna zo skôr uve-de-ných pre-men-ných 
 v riad-
  []
@@ -917,18 +916,24 @@ v riad-
 
 Package hyperref Warning: Composite letter `\textasciicaron+t'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1009.
+(hyperref)                removing `\textasciicaron' on input line 1021.
 
 
-Overfull \hbox (1.00323pt too wide) in paragraph at lines 1027--1028
+Overfull \hbox (1.00323pt too wide) in paragraph at lines 1039--1040
 [][]\T1/ppl/m/n/10.95 Samotná for-mula \T1/ppl/m/it/10.95 vlast-nos´_vo_forme_l
 tl_formuly \T1/ppl/m/n/10.95 môºe by´ tvo-rená na-
  []
 
-[33] [34] [35 <./images/BiodivineArchitecture2.pdf>]
+[33]
+Overfull \hbox (1.13432pt too wide) in paragraph at lines 1071--1075
+\T1/ppl/m/n/10.95 vy-ge-ne-ro-vaný pro-tip-rí-klad, ne-musí vô-bec zod-po-ve-da
+´ pro-tip-rí-kladu v sku-
+ []
+
+[34] [35 <./images/BiodivineArchitecture2.pdf>]
 Kapitola 5.
 
-Overfull \hbox (0.94821pt too wide) in paragraph at lines 1091--1097
+Overfull \hbox (0.94821pt too wide) in paragraph at lines 1103--1109
 [][]\T1/ppl/m/n/10.95 Obidva prog-ramy ge-ne-rujú nie-ko©ko sú-bo-rov pre vlast
 nú po-trebu, ktoré
  []
@@ -937,11 +942,7 @@ nú po-trebu, ktoré
 
 ] [37] [38] [39] [40]
 Kapitola 6.
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 1202.
 
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
 Underfull \vbox (badness 5091) has occurred while \output is active []
 
  [41
@@ -966,33 +967,8 @@ Underfull \hbox (badness 1701) in paragraph at lines 66--72
 [48]) [49]
 Dodatok A.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1358--1359
+Underfull \hbox (badness 10000) in paragraph at lines 1371--1372
 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1360--1362
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1364--1366
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1367--1369
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1370--1372
-
- []
-
-
-Overfull \hbox (6.56956pt too wide) in paragraph at lines 1373--1375
-[]\T1/pcr/m/n/10.95 EQ: pRB = k1*Hillp(E2F1,0.5,1,0,1)*Hillm(pRB,0.5,1,1,0)- 
  []
 
 
@@ -1001,12 +977,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 1373--1375
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1376--1378
+Underfull \hbox (badness 10000) in paragraph at lines 1377--1379
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1379--1382
+Underfull \hbox (badness 10000) in paragraph at lines 1380--1382
 
  []
 
@@ -1016,7 +992,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 1383--1385
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1386--1389
+Overfull \hbox (6.56956pt too wide) in paragraph at lines 1386--1388
+[]\T1/pcr/m/n/10.95 EQ: pRB = k1*Hillp(E2F1,0.5,1,0,1)*Hillm(pRB,0.5,1,1,0)- 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1386--1388
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1389--1391
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1392--1395
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1396--1398
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1399--1402
 
  []
 
@@ -1027,40 +1028,40 @@ Dodatok B.
 
 Package hyperref Warning: Composite letter `\textasciicaron+t'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1390.
+(hyperref)                removing `\textasciicaron' on input line 1403.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1390.
+(hyperref)                removing `\textasciicaron' on input line 1403.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1392--1394
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1395--1397
+Underfull \hbox (badness 10000) in paragraph at lines 1405--1407
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1399--1401
+Underfull \hbox (badness 10000) in paragraph at lines 1408--1410
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1402--1405
+Underfull \hbox (badness 10000) in paragraph at lines 1412--1414
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1408--1409
+Underfull \hbox (badness 10000) in paragraph at lines 1415--1418
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1410--1470
+Underfull \hbox (badness 10000) in paragraph at lines 1421--1422
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1423--1483
 
  []
 
@@ -1070,30 +1071,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 1410--1470
 
 Package hyperref Warning: Composite letter `\textasciicaron+C'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1471.
+(hyperref)                removing `\textasciicaron' on input line 1484.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+t'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1471.
+(hyperref)                removing `\textasciicaron' on input line 1484.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1473--1474
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1475--1494
+Underfull \hbox (badness 10000) in paragraph at lines 1486--1487
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1497--1498
+Underfull \hbox (badness 10000) in paragraph at lines 1488--1507
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1499--1527
+Underfull \hbox (badness 10000) in paragraph at lines 1510--1512
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1513--1515
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1516--1544
 
  []
 
@@ -1102,40 +1108,40 @@ Dodatok C.
 
 Package hyperref Warning: Composite letter `\textasciicaron+t'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1529.
+(hyperref)                removing `\textasciicaron' on input line 1546.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1529.
+(hyperref)                removing `\textasciicaron' on input line 1546.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1531--1533
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1534--1536
+Underfull \hbox (badness 10000) in paragraph at lines 1548--1550
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1538--1540
+Underfull \hbox (badness 10000) in paragraph at lines 1551--1553
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1541--1544
+Underfull \hbox (badness 10000) in paragraph at lines 1555--1557
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1547--1548
+Underfull \hbox (badness 10000) in paragraph at lines 1558--1561
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1549--1609
+Underfull \hbox (badness 10000) in paragraph at lines 1564--1565
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1566--1626
 
  []
 
@@ -1145,20 +1151,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 1549--1609
 
 Package hyperref Warning: Composite letter `\textasciicaron+C'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1610.
+(hyperref)                removing `\textasciicaron' on input line 1627.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+t'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1610.
+(hyperref)                removing `\textasciicaron' on input line 1627.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1612--1613
+Underfull \hbox (badness 10000) in paragraph at lines 1629--1630
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1614--1629
+Underfull \hbox (badness 10000) in paragraph at lines 1631--1646
 
  []
 
@@ -1167,35 +1173,35 @@ Dodatok D.
 
 Package hyperref Warning: Composite letter `\textasciicaron+t'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1630.
+(hyperref)                removing `\textasciicaron' on input line 1647.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1630.
+(hyperref)                removing `\textasciicaron' on input line 1647.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1632--1633
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1635--1638
+Underfull \hbox (badness 10000) in paragraph at lines 1649--1650
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1639--1641
+Underfull \hbox (badness 10000) in paragraph at lines 1652--1655
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1646--1647
+Underfull \hbox (badness 10000) in paragraph at lines 1656--1658
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1648--1708
+Underfull \hbox (badness 10000) in paragraph at lines 1663--1664
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1665--1725
 
  []
 
@@ -1205,20 +1211,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 1648--1708
 
 Package hyperref Warning: Composite letter `\textasciicaron+C'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1710.
+(hyperref)                removing `\textasciicaron' on input line 1727.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+t'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1710.
+(hyperref)                removing `\textasciicaron' on input line 1727.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1712--1713
+Underfull \hbox (badness 10000) in paragraph at lines 1729--1730
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1714--1734
+Underfull \hbox (badness 10000) in paragraph at lines 1731--1751
 
  []
 
@@ -1227,35 +1233,35 @@ Dodatok E.
 
 Package hyperref Warning: Composite letter `\textasciicaron+t'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1735.
+(hyperref)                removing `\textasciicaron' on input line 1752.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+c'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1735.
+(hyperref)                removing `\textasciicaron' on input line 1752.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1737--1738
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1740--1742
+Underfull \hbox (badness 10000) in paragraph at lines 1754--1755
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1743--1745
+Underfull \hbox (badness 10000) in paragraph at lines 1757--1759
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1750--1751
+Underfull \hbox (badness 10000) in paragraph at lines 1760--1762
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1752--1812
+Underfull \hbox (badness 10000) in paragraph at lines 1767--1768
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1769--1829
 
  []
 
@@ -1265,39 +1271,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 1752--1812
 
 Package hyperref Warning: Composite letter `\textasciicaron+C'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1814.
+(hyperref)                removing `\textasciicaron' on input line 1831.
 
 
 Package hyperref Warning: Composite letter `\textasciicaron+t'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 1814.
+(hyperref)                removing `\textasciicaron' on input line 1831.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1816--1817
+Underfull \hbox (badness 10000) in paragraph at lines 1833--1834
 
  []
 
 [62]
-Underfull \hbox (badness 10000) in paragraph at lines 1818--1840
+Underfull \hbox (badness 10000) in paragraph at lines 1835--1857
 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1841.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1858.
 [63]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1841.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1858.
  (./dp1.sk.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1841.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1841.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1858.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1858.
 
 Package rerunfilecheck Info: File `dp1.sk.out' has not changed.
 (rerunfilecheck)             Checksum: 52AB409190CA36C7360B155B752166EB;2588.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1841.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1858.
  ) 
 Here is how much of TeX's memory you used:
- 17560 strings out of 494998
- 313551 string characters out of 6180421
- 400207 words of memory out of 5000000
- 20219 multiletter control sequences out of 15000+600000
+ 17562 strings out of 494998
+ 313576 string characters out of 6180421
+ 400270 words of memory out of 5000000
+ 20221 multiletter control sequences out of 15000+600000
  33114 words of font info for 66 fonts, out of 8000000 for 9000
  24 hyphenation exceptions out of 8191
  56i,16n,68p,429b,892s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1319,9 +1325,9 @@ b></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share
 mf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
 palatino/uplri8a.pfb>
-Output written on dp1.sk.pdf (68 pages, 1126567 bytes).
+Output written on dp1.sk.pdf (68 pages, 1128376 bytes).
 PDF statistics:
- 976 PDF objects out of 1000 (max. 8388607)
+ 979 PDF objects out of 1000 (max. 8388607)
  213 named destinations out of 1000 (max. 500000)
  376 words of extra memory for PDF output out of 10000 (max. 10000000)
 

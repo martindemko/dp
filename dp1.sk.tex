@@ -35,7 +35,7 @@
 \end{ThesisDeclaration}
 
 \begin{ThesisThanks}
-R\'ad by som po\v dakoval RNDr. Davidovi \v Safr\'ankovi, Ph.D. za jeho \v cas a trpezlivos\v t pri osvetlovan\'i problematiky, a za jeho cenn\'e rady a 
+R\'ad by som po\v dakoval RNDr. Davidovi \v Safr\'ankovi, Ph.D. za jeho \v cas a trpezlivos\v t pri osvet\v lovan\'i problematiky a za jeho cenn\'e rady a 
 podnety.
 Z\'arove\v n by som chcel po\v dakova\v t aj rodine a svojej priate\v lke za ich mor\'alnu podporu a pomoc s nejednou jazykovou dilemou.
 \end{ThesisThanks}
@@ -43,19 +43,19 @@ Z\'arove\v n by som chcel po\v dakova\v t aj rodine a svojej priate\v lke za ich
 \begin{ThesisAbstract}
 Pr\'aca sa venuje roz\v s\'ireniu n\'astroja BioDiVinE 1.0 o nov\'y obecnej\v s\'i popis vstupn\'eho modelu podporuj\'uceho aj neline\'arne funkcie 
 preva\v zne sigmoid\'alneho charakteru. Z\'arove\v n s t\'ym mus\'i nov\'a verzia tohto programu poskytova\v t aj prechod od neline\'arneho vstupn\'eho
-modelu k multi"~afinn\'emu, aby sa mohol nov\'y n\'astroj vyu\v z\'iva\v t k p\^ ovodn\'emu \'u\v celu a s\'ice k overovaniu vlastnost\'i modelov.
+modelu k multi"~afinn\'emu, aby sa mohol nov\'y n\'astroj vyu\v z\'iva\v t k p\^ ovodn\'emu \'u\v celu, a s\'ice k overovaniu vlastnost\'i modelov.
 
 Ke\v d\v ze sa v skuto\v cnosti jedn\'a o sadu n\'astrojov a nie o ucelen\'y program, dali sme si za \'ulohu zmeni\v t t\'uto skuto\v cnos\v t a vytvori\v t
-pre u\v z\'ivate\v la jednoduch\'u ale pou\v zite\v ln\'u konzolov\'u aplik\'aciu, ktor\'a bude zah\'r\v na\v t p\^ ovodn\'u funkcionalitu.\\\\
+pre u\v z\'ivate\v la jednoduch\'u, ale pou\v zite\v ln\'u konzolov\'u aplik\'aciu, ktor\'a bude zah\'r\v na\v t p\^ ovodn\'u funkcionalitu.\\\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\noindent
-This thesis is about extension of the BioDiVinE 1.0 tool by new general description of input model that would facilitate even non-linear functions such as 
-sigmoidal functions. This extension must propose with it a conversion of non-linear input model to multi-affine ones so that the new version of tool will 
-be still able of model checking.
+%\noindent
+%This thesis is about extension of the BioDiVinE 1.0 tool by new general description of input model that would facilitate even non-linear functions such as 
+%sigmoidal functions. This extension must propose with it a conversion of non-linear input model to multi-affine ones so that the new version of tool will 
+%be still able of model checking.
 
-Because of fact that Biodivine 1.0 is a toolset rather than a simple tool we had the task to change this fact and create simplier and more user-friendly
-command-line interface that will offer the most of origin functionalities.
+%Because of fact that Biodivine 1.0 is a toolset rather than a simple tool we had the task to change this fact and create simplier and more user-friendly
+%command-line interface that will offer the most of origin functionalities.
 
 \end{ThesisAbstract}
 
@@ -63,9 +63,9 @@ command-line interface that will offer the most of origin functionalities.
 ordin\'arne diferenci\'alne rovnice, po \v castiach multi"~afinn\'y ODE model, neline\'arne regula\v cn\'e funkcie, overovanie modelov, LTL, 
 Michaelis"~Mentenovej kinetika, Hillova kinetika\\\\
 
-\noindent
-ordinary differential equations, piecewise multi"~affine ODE model, non"~linear regulatory functions, model checking, LTL, Michaelis"~Menten kinetics,
-Hill equation
+%\noindent
+%ordinary differential equations, piecewise multi"~affine ODE model, non"~linear regulatory functions, model checking, LTL, Michaelis"~Menten kinetics,
+%Hill equation
 \end{ThesisKeyWords}
 
 %====================================OBSAH==================================================
@@ -73,7 +73,19 @@ Hill equation
 \tableofcontents
 %====================================UVOD===================================================
 \chapter*{\' Uvod}
+Biologick\'e syst\'emy s\'u obvykle zlo\v zit\'e komplexn\'e siete obrovsk\'ych rozmerov. Pr\'aca bioinformatikov a syst\'emov\'ych biol\'ogov v\v sak 
+dokazuje, 
+\v ze sa tieto siete skladaj\'u z ve\v lk\'eho po\v ctu drobnej\v s\'ich \v cast\'i, tzv. mot\'ivov. Tie s\'u ove\v la jednoduch\v sie na pozorovanie, aj 
+ke\v d sa \v casto ukazuje, \v ze m\^ o\v zu aj pri svojej jednoduchosti vykazova\v t zauj\'imav\'e emergentn\'e vlastnosti.
 
+Pre praktick\'e sk\'umanie dynamiky tak\'ychto mot\'ivov alebo stredne ve\v lk\'ych syst\'emov je vhodnou technikou overovanie modelov (vi\v d kapitolu
+\ref{sec:modelChecking}). Existuje mno\v zstvo n\'astrojov a aplik\'aci\'i sl\'u\v ziacich k tomuto \'u\v celu (vi\v d kapitolu \ref{sec:similarTools}). Jedn\'ym z nich
+je aj n\'astroj BioDiVinE 1.0 vyvinut\'y v Laborat\'oriu syst\'emovej biol\'ogie na Fakulte informatiky Masarykovej univerzity v~Brne. Bohu\v zia\v l je u\v z
+mierne zastaran\'y a z\'arove\v n nie je vhodn\'y pre ve\v lk\'u \v sk\'alu modelov. 
+
+V r\'amci neust\'aleho technick\'eho pokroku vznikol n\'avrh tieto chyby 
+odstr\'ani\v t a nov\'y n\'astroj otestova\v t a poskytn\'u\v t \v sir\v sej verejnosti. O teoretick\'ych podkladoch, postupe pr\'ace, samotnej 
+implement\'acii a praktick\'ych pr\'ikladoch hovoria nasleduj\'uce kapitoly. Hotov\'y n\'astroj bude vo\v lne k dispoz\'icii na \url{https://github.com/martindemko/BioDiVinE-1.1}.
 
 %================================ZAKLADNE=POJMY=============================================
 \chapter{Z\' akladn\' e pojmy}
@@ -559,7 +571,7 @@ n\'a\v s spojit\'y stavov\'y priestor $\mathcal{D}$ e\v ste viac. A s\'ice na $n
 \\
 
 Multi"~afinn\'y syst\'em diferenci\'alnych rovn\'ic dok\'a\v ze pokry\v t skoro cel\'u mass~action kinetiku s jedinou v\'ynimkou. A tou s\'u 
-homodim\'ery a reakcie s nimi spojen\'e. D\^ ovodom je predch\'adzaj\'uce obmedzenie multi"~afinn\'ych funkci\'i $f_1,\dots{},f_n$ s oh\v ladom 
+homodim\'ery a reakcie s~nimi spojen\'e. D\^ ovodom je predch\'adzaj\'uce obmedzenie multi"~afinn\'ych funkci\'i $f_1,\dots{},f_n$ s oh\v ladom 
 na stupe\v n premenn\'ych $x_1,\dots{},x_n$.
 
 Teoreticky sme schopn\'i  pop\'isa\v t ak\' yko\v lvek biochemick\'y model pomocou pravidiel tejto kinetiky. V skuto\v cnosti, ak sa pok\'usime formulova\v t 
@@ -645,9 +657,9 @@ po\v ciato\v cn\'e koncentr\'acie jednotliv\'ych l\'atok. Tie nie s\'u vyjadren\
 hranice musia by\v t z mno\v ziny $\{ \theta_1^i,\dots{},\theta_{\eta_i}^i \}$.
 
 V pr\'ipade, \v ze sa pou\v zij\'u v modeli iba kon\v stantn\'e a line\'arne funckie, dost\'avame automatick\'y oby\v cajn\'y multi"~afinn\'y model tak, ako
-je uveden\'y v kapitole \ref{sec:model}.A. V opa\v cnom pr\'ipade mus\'i by\v t na tento model aplikovan\'a optim\'alna line\'arna abstrakcia (vi\v d 
+je uveden\'y v~kapitole \ref{sec:model}.A. V opa\v cnom pr\'ipade mus\'i by\v t na tento model aplikovan\'a optim\'alna line\'arna abstrakcia (vi\v d 
 kapitolu \ref{sec:abstraction}.A), aby sme 
-dostali potrebn\'y multi"~afinn\'y model. Tentokr\'at v\v sak po \v castiach multi"~afinn\'y. Z t\'ychto d\^ ovodov je takto definovann\'y model prakticky 
+dostali potrebn\'y multi"~afinn\'y model. Tentokr\'at v\v sak po \v castiach multi"~afinn\'y. Z t\'ych\-to d\^ ovodov je takto definovann\'y model prakticky 
 pou\v zite\v ln\'y pre \v lubovoln\'y biologick\'y syst\'em.
 \cite{HIBI-2009}\cite{HIBI-2010}
 \\
@@ -772,7 +784,7 @@ U\v z\'ivate\v l mus\'i nastavi\v t po\v zadovan\'y po\v cet s\'am, to mu v\v sa
 \\
 
 V\'yhodou multi"~afinn\'eho syst\'emu je, \v ze ho mo\v zno abstrahova\v t do podoby obd\'l\v znikov\'eho prechodov\'eho syst\'emu (z~angl. \textit{
-Rectangular Abstraction Transition System}, skr\'atene RATS) \cite{RATS}. K tomu je potreba p\^ ovodn\'y $n$-dimenzion\'alny syst\'em, kde $n$ je po\v cet 
+Rectangular Abstraction Transition System}, skr\'atene RATS) \cite{RATS}. K tomu je potreba p\^ ovodn\'y $n$"~di\-men\-zion\'alny syst\'em, kde $n$ je po\v cet 
 premenn\'ych, najsk\^ or rozdeli\v t na men\v sie $n$-dimenzion\'alne oddiely. Ka\v zd\'a premenn\'a m\'a priraden\'u mno\v zinu prahov\'ych hodn\^ ot alebo
 thresholdov, ktor\'e vyjadruj\'u v\'yznamn\'e, \v ci zauj\'imav\'e koncentra\v cn\'e hladiny. Ka\v zdej premennej s\'u priraden\'e aspo\v n dve tak\'eto 
 hodnoty, a to minim\'alna a maxim\'alna. \v Dal\v sie m\^ o\v zu by\v t zadefinovan\'e vo vstupnom modeli alebo m\^ o\v zu poch\'adza\v t z predch\'adzaj\'ucej
@@ -810,7 +822,7 @@ Je zn\'amy fakt, \v ze obd\'l\v znikov\'a abstrakcia je nadaproxim\'aciou vzh\v 
     \centering
     \includegraphics[width=0.80\textwidth]{abstractNO}
     \includegraphics[width=0.80\textwidth]{abstractYES}
-    \caption{Tri krivky s popisom. V prvom pr\'ipade bez pou\v zitia abstrakcie a v druhom preveden\'e na s\'ustavu r\'amp po pou\v zit\'i abstrakcie 
+    \caption{Tri krivky s popisom. V prvom pr\'ipade bez pou\v zitia abstrakcie a v~druhom preveden\'e na s\'ustavu r\'amp po pou\v zit\'i abstrakcie 
     s parametrami: diskretiza\v cn\'ych bodov $500$, po\v zadovan\'y po\v cet segmentov $7$.}
 	\label{fig:noabstract}
 \end{figure}
@@ -828,12 +840,13 @@ Viacero AP mo\v zno sp\'aja\v t logick\'ymi spojkami.
 
 %====================================NASTROJE===============================================
 \chapter{V\'ychodiskov\'y stav a podobn\' e n\'astroje}
+\label{sec:similarTools}
 
 %-------------------------------------------------------------------------------------------
 \section{BioDiVinE 1.0}
 \label{sec:biodivine}
-P\^ ovodn\'y n\'astroj BioDiVinE bol vyvinut\'y v laborat\'oriu syst\'emovej biol\'ogie (SYBILA)\footnote{http://sybila.fi.muni.cz/home} v spolupr\'aci 
-s laborat\'oriom paraleln\'ych a distribuovan\'ych syst\'emov (ParaDiSe)\footnote{http://paradise.fi.muni.cz/index.html}. Obe s\'idlom na fakulte 
+P\^ ovodn\'y n\'astroj BioDiVinE bol vyvinut\'y v Laborat\'oriu syst\'emovej biol\'ogie (SYBILA)\footnote{http://sybila.fi.muni.cz/home} v spolupr\'aci 
+s Laborat\'oriom paraleln\'ych a distribuovan\'ych syst\'emov (ParaDiSe)\footnote{http://paradise.fi.muni.cz/index.html}. Obe s\'idlom na Fakulte 
 informatiky Masarykovej univerzity. 
 
 BioDiVinE 1.0 je n\'astroj vytvoren\'y pre verifik\'aciu vlastnost\'i biochemick\'ych modelov zadan\'ych ako syst\'em ODE (vi\v d kapitolu \ref{sec:model}).
@@ -861,7 +874,7 @@ Kv\^ oli vy\v s\v sie spomenut\'ym d\^ ovodom sme si dali za cie\v l okrem roz\v
 %-------------------------------------------------------------------------------------------
 \section{PEPMC}
 \label{sec:pepmc}
-N\'astroj vyvinut\'y v laborat\'oriu syst\'emovej biol\'ogie (SYBILA)\footnote{http://sybila.fi.muni.cz/home} pre overovanie modelov s oh\v ladom na odhad 
+N\'astroj vyvinut\'y v Laborat\'oriu syst\'emovej biol\'ogie (SYBILA)\footnote{http://sybila.fi.muni.cz/home} pre overovanie modelov s oh\v ladom na odhad 
 parametrov (z~angl. \textit{
 Parameter Estimation by Parallel Model Checking}, skr\'atene PEPMC). Funguje na princ\'ipe paralelizovan\'eho farebn\'eho overovania modelov 
 (vi\v d kapitolu \ref{sec:coloredMC}). Modelom je syst\'em ODE podobne ako v n\'astroji BioDiVinE 1.0, ale roz\v s\'iren\'y o mo\v znos\v t
@@ -1027,8 +1040,8 @@ vlastnos\v t, ktor\'a sa bude testova\v t na modeli, a to znamen\'a v\'ypo\v cto
 \begin{itemize}
 \item Un\'arnymi tempor\'alnymi oper\'atormi ({\bf X}$\phi$, {\bf F}$\phi$, {\bf G}$\phi$) a bin\'arnymi tempor\'alnymi oper\'atormi ($\phi${\bf R}$\psi$, 
 $\phi${\bf U}$\psi$)(vi\v d kapitolu \ref{sec:logika}), kde $\phi$ a $\psi$ s\'u v\'yrazy s logickou hodnotou.
-\item V\'yrazmi s logickou hodnotou, ktor\'e s\'u \v dalej tvoren\'e logick\'ymi oper\'atormi ({\bf !} -- neg\'acia, {\bf \&\&} -- konjunkcia, {\bf ||} -- 
-disjunkcia, {\bf ->} -- implik\'acia, {\bf <->} -- ekvivalencia) a premenn\'ymi definovan\'ymi na za\v ciatku s\'uboru.
+\item V\'yrazmi s logickou hodnotou, ktor\'e s\'u \v dalej tvoren\'e logick\'ymi oper\'atormi ({\bf !} (neg\'acia), {\bf \&\&} (konjunkcia), {\bf ||} (
+disjunkcia), {\bf ->} (implik\'acia), {\bf <->} (ekvivalencia)) a premenn\'ymi definovan\'ymi na za\v ciatku s\'uboru.
 \item Syntax podporuje aj \v lubovolne vnoren\'e gu\v lat\'e  z\'atvorky.
 \end{itemize}
 \item Pre \'uplnos\v t treba doda\v t, \v ze t\'ato syntax podporuje aj p\'ar \v dals\'ich, roz\v s\'iren\'ych oper\'atorov a takmer ku ka\v zd\'emu e\v ste
@@ -1056,8 +1069,8 @@ k po\v ctu nov\'ych prahov\'ych hodn\^ ot. No na strane druhej sa t\'ym zlep\v s
 abstrahovan\'y model pribli\v zuje skuto\v cn\'emu spojit\'emu modelu.
 
 U\v z spomenut\'a obd\'l\v znikov\'a aproxim\'acia vygeneruje RATS (vi\v d kapitolu \ref{sec:abstraction}.B), \v ci\v ze diskr\'etny syst\'em p\^ ovodne spojit\'eho 
-modelu, ktor\'y sa overuje proti vlastnosti v podobe automatu. Ak ju RATS sp\'l\v na, potom mo\v zno s istotou tvrdi\v t, \v ze aj p\^ ovodn\'y model t\'uto
-vlastnos\v t sp\'l\v na. Naopak, ak je vygenerovan\'y protipr\'iklad, nemus\'i v\^ obec zodpoveda\v t protipr\'ikladu v skuto\v cnom spojitom modeli.
+modelu, ktor\'y sa overuje proti vlastnosti v podobe automatu. Ak ju RATS sp\'l\v na, potom mo\v zno s~istotou tvrdi\v t, \v ze aj p\^ ovodn\'y model t\'uto
+vlastnos\v t sp\'l\v na. Naopak, ak je vygenerovan\'y protipr\'iklad, nemus\'i v\^ obec zodpoveda\v t protipr\'ikladu v~skuto\v cnom spojitom modeli.
 Av\v sak st\'ale plat\'i, \v ze model, \v ci u\v z abstrahovan\'y alebo skuto\v cn\'y, dan\'u vlastnos\v t nesp\'l\v na. \cite{BIODIVINE}
 
 %================================IMPLEMENTACIA===============================================
@@ -1131,14 +1144,14 @@ rovnica \ = \ clen1 + clen2 + (-1)clen3 + clen4 \dots{}
 \end{equation}
 
 Pre potrebu \'upravy pri parsovan\'i uklad\'ame ka\v zd\'y jednotliv\'y \v clen ako in\v stanciu triedy {\it Entite} do z\'asobn\'ika. Nazvime ju entita.
-Obsahuje vektor \v clenov \v ci\v ze in\v stanci\'i triedy {\it Summember}. Potom pri na\v c\'itan\'i znamienka $*$ (kr\'at) sa rekurz\'ivne z dvoch 
+Obsahuje vektor \v clenov \v ci\v ze in\v stanci\'i triedy {\it Summember}. Potom pri na\v c\'itan\'i znamienka kr\'at ($*$) sa rekurz\'ivne z dvoch 
 posledn\'ych na\v c\'itan\'ych ent\'it v z\'asobn\'iku (ka\v z\-d\'a obsahuj\'uca jeden \v clen) stane entita jedna (obsahuj\'uca jeden \v clen tvoren\'y 
 n\'asobkom \v clenov z p\^ ovodn\'ych ent\'it). Dve posledn\'e in\v stancie zahod\'ime a navrch z\'asobn\'iku ulo\v z\'ime t\'uto nov\'u.
 
-Pri na\v c\'itan\'i znamienka $+$ (plus) sa rekurz\'ivne z dvoch posledn\'ych ent\'it v z\'asobn\'iku (ka\v zd\'a obsahuj\'uca jeden \v clen) stane jedna nov\'a 
+Pri na\v c\'itan\'i znamienka plus ($+$) sa rekurz\'ivne z dvoch posledn\'ych ent\'it v z\'asobn\'iku (ka\v zd\'a obsahuj\'uca jeden \v clen) stane jedna nov\'a 
 entita, tentokr\'at v\v sak obsahuj\'uca \v cleny dva. Star\'e entity sa zahodia, nov\'a sa op\"a\v t ulo\v z\'i. Obecne mo\v zno poveda\v t, \v ze pri 
-s\v citovan\'i m\'a v\'ysledn\'a entita to\v lko \v clenov, ko\v lko mali \v clenov dohromady p\^ ovodn\'e entity. Pri na\v c\'itan\'i znamienka $-$ 
-(m\'inus) sa najsk\^ or \v cleny druhej entity preved\'u na z\'aporn\'e a potom sa pokra\v cuje rovnako ako pri s\v citovan\'i.
+s\v citovan\'i m\'a v\'ysledn\'a entita to\v lko \v clenov, ko\v lko mali \v clenov dohromady p\^ ovodn\'e entity. Pri na\v c\'itan\'i znamienka m\'inus ($-$) 
+sa najsk\^ or \v cleny druhej entity preved\'u na z\'aporn\'e a potom sa pokra\v cuje rovnako ako pri s\v citovan\'i.
 
 \v Speci\'alne treba spomen\'u\v t pr\'ipad, ke\v d entity pri n\'asoben\'i obsahuj\'u ka\v zd\'a nieko\v lko \v clenov. V\'ysledkom bude entita jedna 
 obsahuj\'uca to\v lko \v clenov, ko\v lko tvor\'i n\'asobok po\v ctu \v clenov p\^ ovodn\'ych ent\'it. Toto v\v setko je regul\'erne v~zmys\-le roz\v s\'irenia be\v znej 
@@ -1286,7 +1299,7 @@ Prepis tohto modelu pomocou Hillovej kinetiky vyzer\'a:
 \frac{d[pRB]}{dt} &= k_1 \frac{[E2F1]}{K_{m_1} + [E2F1]}\frac{K_{m_2}}{K_{m_2} + [pRB]} - \gamma_{pRB}[pRB],\\
 \frac{d[E2F1]}{dt} &= k_p + k_2 \frac{a^2 + [E2F1]^2}{K_{m_3}^2 + [E2F1]^2}\frac{K_{m_4}}{K_{m_4} + [pRB]} - \gamma_{E2F1}[E2F1].
 \end{align}
-Hodnoty v\v setk\'ych kon\v st\'ant s\'u zvolen\'e tak, aby odr\'a\v zali experiment\'alne chovanie. Poch\'adzj\'u z \v cl\'anku \cite{Swat:2004} a 
+Hodnoty v\v setk\'ych kon\v st\'ant s\'u zvolen\'e tak, aby odr\'a\v zali experiment\'alne chovanie. Poch\'adzaj\'u z \v cl\'anku \cite{Swat:2004} a 
 vyzeraj\'u nasledovne:
 \begin{align}
 &K_{m_1} = 0.5,& &K_{m_2} = 0.5,& &K_{m_3} = 4,& &K_{m_4} = 5,\\
@@ -1294,14 +1307,15 @@ vyzeraj\'u nasledovne:
 & & &\gamma_{pRB} = 0.005,& &\gamma_{E2F1} = 0.1.& & &
 \end{align}
 
-Tento model je zauj\'imav\'y t\'ym, \v ze vykazuje zn\'amky bistability k \v comu mu pom\'aha fakt, \v ze faktor $E2F1$ je pozit\'ivne autoregulovan\'y. 
-Pok\'usime sa toto tvrdenie otestova\v t na na\v som n\'astroji. Vlastnosti, ktor\'e by mali zodpoveda\v t tomuto chovaniu s\'u prebran\'e z \v cl\'anku
+Tento model je zauj\'imav\'y t\'ym, \v ze vykazuje zn\'amky bistability, k \v comu mu pom\'aha fakt, \v ze faktor $E2F1$ je pozit\'ivne autoregulovan\'y. 
+Pok\'usime sa toto tvrdenie otestova\v t na na\v som n\'astroji. Vlastnosti, ktor\'e by mali zodpoveda\v t tomuto chovaniu, s\'u prebran\'e z \v cl\'anku
 \cite{TCBB-2010} a nach\'adzaj\'u sa v pr\'iloh\'ach \ref{sec:caseProp1File}, \ref{sec:caseProp2File} a \ref{sec:caseProp3File}. Samotn\'y model je pop\'isan\'y 
 v pr\'ilohe \ref{sec:caseStudyFile}. Vo v\v setk\'ych pr\'ipadoch budeme vola\v t algoritmus {\it distr\_map} s parametrami {\it -Srt}.
 \begin{itemize}
 \item Vlastnos\v t \v c\'islo jedna $(G(E2F1 < 2))$ (vi\v d pr\'iloha \ref{sec:caseProp1File}), ktor\'a mala dokazova\v t, \v ze ak po\v ciato\v cn\'a 
-koncentr\'acia faktora $E2F1$ bude n\'izka, tak n\'izka aj zostane, sa n\'am podarilo vyvr\'ati\v t (vi\v d protipr\'iklad v 
-pr\'ilohe \ref{sec:prop1trail}). M\^ o\v ze to by\v t v\v sak sp\^ osoben\'e nevhodnou kombin\'aciou
+koncentr\'acia faktora $E2F1$ bude n\'izka, tak n\'izka aj zostane, sa n\'am podarilo vyvr\'ati\v t. Protipr\'iklad (vi\v d pr\'ilohu \ref{sec:prop1trail})
+n\'am ukazuje, \v ze po\v ciato\v cn\'a n\'izka koncentr\'acia $pRB$ nesta\v c\'i dostato\v cne potl\'a\v ca\v t produkciu $E2F1$, ktor\'a rastie k maximu. 
+M\^ o\v ze to by\v t sp\^ osoben\'e nevhodnou kombin\'aciou
 parametrov, preto\v ze ich hodnoty sme prebrali z rozsiahlej\v sieho modelu v \cite{Swat:2004} a vlastnosti zase z modelu v~\cite{TCBB-2010} ur\v cen\'eho 
 pre testovanie parametriz\'acie v programe PEPMC (vi\v d kapitolu \ref{sec:pepmc}). V\'ypo\v cet trval vy\v se tridsa\v t min\'ut a podrobn\'u spr\'avu 
 z~priebehu procesu vidno v pr\'ilohe \ref{sec:prop1report}. Okrem toho priklad\'ame aj \v cas\v t v\'ystupu programu s u\v zito\v cn\'ymi inform\'aciami 
@@ -1309,19 +1323,19 @@ z~priebehu procesu vidno v pr\'ilohe \ref{sec:prop1report}. Okrem toho priklad\'
 \item Vlastnos\v t \v c\'islo dva $(G(E2F1 >= 2))$ (vi\v d pr\'iloha \ref{sec:caseProp2File}) je sp\'l\v nan\'a uk\'a\v zkov\'ym modelom. Z toho vypl\'yva, 
 \v ze ke\v d m\'a raz transkrip\v cn\'y faktor $E2F1$ vysok\'u koncentr\'aciu, tak u\v z do n\'izkych hodn\^ ot neklesne. Pravdepodobne to vych\'adza 
 zo silnej pozit\'ivnej autoregul\'acie, ktor\'u nedok\'a\v ze potla\v ci\v t ani inhib\'icia supresorom $pRB$. Inici\'alna koncentr\'acia $E2F1$ bola 
-nastaven\'a na interval $\langle4,6\rangle$. V\'ypo\v cet trval len necel\'ych desa\v t min\'ut z \v coho \v ses\v t a pol min\'uty trvala optim\'alna 
+nastaven\'a na interval $\langle4,6\rangle$. V\'ypo\v cet trval len necel\'ych desa\v t min\'ut, z \v coho \v ses\v t a pol min\'uty trvala optim\'alna 
 line\'arna aproxim\'acia (vi\v d kapitolu \ref{sec:abstraction}.A). Podrobnej\v siu spr\'avu mo\v zno n\'ajs\v t v~pr\'ilohe \ref{sec:prop2report} a 
 \v cas\v t v\'ypisu programu v~pr\'ilohe \ref{sec:prop2output}.
 \item Tretia vlastnos\v t $((E2F1 < 2) \rightarrow F G(E2F1 >= 2))$ (vi\v d pr\'ilohu \ref{sec:caseProp3File}) mala dok\'aza\v t, \v ze aj ke\v d bude ma\v t 
 transkrip\v cn\'y faktor $E2F1$ na po\v ciatku n\'izku koncentr\'aciu, dok\'a\v ze prekona\v t hranicu (v tomto pr\'ipade $2$) a natrvalo udr\v zat svoju 
 koncentr\'aciu na vy\v s\v sej hladine, ne\v z je t\'ato hranica. Uk\'azalo sa, \v ze model t\'uto vlastnos\v t sp\'l\v na a d\^ ovodom bude op\"a\v t 
-pravdepodobne siln\'a pozit\'ivna autoregul\'acia a naopak slab\'a inhib\'icia. V\'ypo\v cet trvalo vy\v se dvadsa\v tp\"a\v t min\'ut, z \v coho op\"a\v t
+pravdepodobne siln\'a pozit\'ivna autoregul\'acia a naopak slab\'a inhib\'icia. V\'ypo\v cet trval vy\v se dvadsa\v tp\"a\v t min\'ut, z \v coho op\"a\v t
 \v ses\v t a \v stvr\v t min\'uty trvala line\'arna aproxim\'acia. Spr\'ava z priebehu procesu sa nach\'adza v pr\'ilohe \ref{sec:prop3report} a \v cas\v t
-v\'ystupu programu zase v pr\'ilohe \ref{sec:prop3output}.
+v\'ystupu programu zase v~pr\'ilohe \ref{sec:prop3output}.
 \end{itemize}
 
 Na z\'aklade z\'iskan\'ych \'udajov sa domnievame, \v ze koncentr\'acia transkrip\v cn\'eho faktora $E2F1$ 
-rastie nad v\v setky medze. Aby sme si to mohli potvrdi\v t rozhodli sme sa otestova\v t \v dal\v siu vlastnos\v t (vi\v d pr\'ilohu \ref{sec:caseProp4File}).
+rastie nad v\v setky medze. Aby sme si to mohli potvrdi\v t, rozhodli sme sa otestova\v t \v dal\v siu vlastnos\v t (vi\v d pr\'ilohu \ref{sec:caseProp4File}).
 T\'a mala dok\'aza\v t, \v ze aj ke\v d bude ma\v t faktor $E2F1$ na po\v ciatku n\'izku koncentr\'aciu, rovnak\'u ako pri testovan\'i tretej vlastnosti,
 tak nakoniec dosiahne naozaj vysokej hodnoty (v tomto pr\'ipade a\v z $8$).
 
@@ -1389,7 +1403,7 @@ system async;\\
 \chapter{Vlastnos\v t \v c. 1}
 \label{sec:caseProp1File}
 Pre \'uplnos\v t treba doda\v t, \v ze sme vykonali zmenu v s\'ubore s modelom. Treba prep\'isa\v t na riadku za\v c\'inaj\'ucom 
-{\tt INIT:} hodnoty pre {E2F1} na hodnoty 0, 1\\
+{\tt INIT:} hodnoty pre {E2F1} na hodnoty 0, 1.\\
 
 \noindent
 Obsah s\'uboru {\tt prop1.ltl}:\\
@@ -1493,6 +1507,10 @@ Accepting cycle found!\\
 
 \section{Protipr\'iklad}
 \label{sec:prop1trail}
+Prv\'y s\'tlpec vyjadruje koncentr\'aciu transkrip\v cn\'eho faktora $E2F1$ a druh\'y koncentr\'aciu n\'adorov\'eho supresora $pRB$. V z\'atvork\'ach s\'u 
+udan\'e \v c\'isla stavov. Tie v\v sak u\v z\'ivate\v la zauj\'ima\v t nemusia.\\
+
+\noindent
 Obsah s\'uboru {\tt tcbb1.prop1.bio.trail}:\\
 
 {\tt\noindent
@@ -1527,7 +1545,7 @@ pre-initial\\
 
 \chapter{Vlastnos\v t \v c. 2}
 \label{sec:caseProp2File}
-Pre \'uplnos\v t treba doda\v t, \v ze druh\'a vlastnos\v t si vy\v zaduje zmenu s\'uboru s modelom. Treba prep\'isa\v t na riadku za\v c\'inaj\'ucom 
+Pre \'uplnos\v t treba doda\v t, \v ze druh\'a vlastnos\v t si vy\v zaduje zmenu s\'uboru s~modelom. Treba prep\'isa\v t na riadku za\v c\'inaj\'ucom 
 {\tt INIT:} hodnoty pre {E2F1} tak, aby men\v sia z nich bola v\"a\v c\v sia ako 2.\\
 
 \noindent
