@@ -5,8 +5,7 @@ J.~Barnat, L.~Brim, A.~Krej\v c\'i, D.~\v{S}afr\'anek, A.~Streck, M.~Vejn\'ar,
   and T.~Vejpustek.
 \newblock On parameter synthesis by parallel model checking.
 \newblock {\em IEEE/ACM Transactions on Computational Biology and
-  Bioinformatics (TCBB)}, 9(3):693--705. IEEE Computer Society Press, May-June
-  2012.
+  Bioinformatics (TCBB)}, 9(3):693--705. IEEE Computer Society Press, 2012.
 
 \bibitem{RATS}
 J.~Barnat, L.~Brim, I.~\v{C}ern\'{a}, S.~Dra\v{z}an, J.~Fabrikov\'{a}, and
@@ -19,7 +18,7 @@ J.~Barnat, L.~Brim, I.~\v{C}ern\'{a}, S.~Dra\v{z}an, J.~Fabrikov\'{a}, and
 J.~Barnat, L.~Brim, I.~\v{C}ern\'{a}, and P.~\v{S}ime\v{c}ek.
 \newblock {D}i{V}in{E} -- {T}he {D}istributed {V}erification {E}nvironment.
 \newblock In {\em Proceedings of 4th International Workshop on Parallel and
-  Distributed Methods in verifiCation}, pages 89--94, July 2005.
+  Distributed Methods in verifiCation}, pages 89--94, 2005.
 
 \bibitem{BIODIVINE}
 J.~Barnat, L.~Brim, I.~\v{C}ern\'a, S.~Dra\v zan, J.~Fabrikov\'a, J.~L\'an\'ik,
@@ -42,11 +41,18 @@ J.~Barnat, L.~Brim, D.~\v{S}afr\'anek, and M.~Vejn\'ar.
 \newblock {\em In Proceedings of High performance computational systems Biology
   (HiBi 2010)}, pages 95--104. IEEE Computer Society Press, 2010.
 
+\bibitem{sybila-biodivine}
+J.~Barnat, L.~Brim, S.~Dra\v zan, J.~Fabrikov\'a, and D.~\v{S}afr\'anek.
+\newblock {BioDiVinE 1.0, Tool Page [online]. Faculty of informatics Masaryk
+  university, Brno, Czech republic}, [cit. 2014-05-17].
+\newblock Available at
+  $<$\url{http://sybila.fi.muni.cz/tools/biodivine/v1/index}$>$.
+
 \bibitem{rovergene-site}
 G.~Batt and C.~Belta.
-\newblock {RoVerGeNe: A tool for the Robust Verification of Gene Networks
-  [online]}, [cit. 2014-05-17].
-\newblock Dostupn\'e na:
+\newblock {RoVerGeNe: A tool for the Robust Verification of Gene Networks, Tool
+  Page [online]}, [cit. 2014-05-17].
+\newblock Available at
   $<$\url{http://iasi.bu.edu/~batt/rovergene/rovergene.htm}$>$.
 
 \bibitem{rovergene}
@@ -58,18 +64,17 @@ G.~Batt, C.~Belta, and R.~Weiss.
 
 \bibitem{bisonc++}
 F.B. Brokken.
-\newblock {Bisonc++ (Version 4.09.01) User Guide [online]. Center for
+\newblock {Bisonc++ (Version 4.09.01), User Guide [online]. Center for
   Information Technology, University of Groningen, The Netherlands}, [cit.
   2014-05-21].
-\newblock Dostupn\'e na:
+\newblock Available at
   $<$\url{http://bisoncpp.sourceforge.net/bisonc++.html}$>$.
 
 \bibitem{flexc++}
 F.B. Brokken, J.P. van Oosten, and R.~Berendsen (until 0.5.3).
-\newblock {Flexc++ (Version 2.01.00) User Guide [online]. University of
+\newblock {Flexc++ (Version 2.01.00), User Guide [online]. University of
   Groningen, The Netherlands}, [cit. 2014-05-21].
-\newblock Dostupn\'e na:
-  $<$\url{http://flexcpp.sourceforge.net/flexc++.html}$>$.
+\newblock Available at $<$\url{http://flexcpp.sourceforge.net/flexc++.html}$>$.
 
 \bibitem{CAV-2011}
 R.~Grosu, G.~Batt, F.H. Fenton, J.~Glimm, C.~Le Guernic, S.A. Smolka, and
@@ -77,14 +82,14 @@ R.~Grosu, G.~Batt, F.H. Fenton, J.~Glimm, C.~Le Guernic, S.A. Smolka, and
 \newblock From cardiac cells to genetic regulatory networks.
 \newblock {\em In Proceedings of CAV'11, the 23rd International Conference on
   Computer Aided Verification, Lecture Notes in Computer Science},
-  6806:396--411. Springer, July 2011.
+  6806:396--411. Springer, 2011.
 
 \bibitem{Jaros-thesis}
 M.~Jaro\v{s}.
 \newblock P\v{r}evod formul\'i ltl na automaty [online].
-\newblock Diplomov\'a pr\'aca, {Fakulta informatiky Masarykovej univerzity,
-  Brno, \v{C}esk\'a republika}, 2004 [cit. 2014-05-19].
-\newblock Dostupn\'e na : $<$\url{http://is.muni.cz/th/4017/fi_m/}$>$.
+\newblock Master thesis, {Faculty of informatics Masaryk university, Brno,
+  Czech republic}, 2004 [cit. 2014-05-19].
+\newblock Available at $<$\url{http://is.muni.cz/th/4017/fi_m/}$>$.
 
 \bibitem{Clarke:MC:LTL}
 E.M.~Clarke Jr., O.~Grumberg, and D.A. Peled.
@@ -130,35 +135,24 @@ J.P. Keener and J.~Sneyd.
 \bibitem{mpt}
 M.~Kvasnica, P.~Grieder, and M.~Baoti\'{c}.
 \newblock {Multi-Parametric Toolbox (MPT) [online]}, [cit. 2014-05-17].
-\newblock Dostupn\'e na: $<$\url{http://control.ee.ethz.ch/~mpt/}$>$.
-
-\bibitem{paradise}
-{Laborat\'orium paraleln\'ych a distribuovan\'ych syst\'emov [online]. Fakulta
-  informatiky Masarykovej univerzity, Brno, \v Cesk\'a republika}, [cit.
-  2014-05-17].
-\newblock Dostupn\'e na: $<$\url{http://paradise.fi.muni.cz/index.html}$>$.
+\newblock Available at $<$\url{http://control.ee.ethz.ch/~mpt/}$>$.
 
 \bibitem{CURVES}
 J.C. Perez and E.~Vidal.
 \newblock Optimum polygonal approximation of digitized curves.
 \newblock {\em Pattern Recognition Letters}, 15(8):743--750. Elsevier Science
-  Inc., August 1994.
+  Inc., 1994.
 
 \bibitem{MPI}
 M.~Snir, S.W. Otto, D.W. Walker, J.~Dongarra, and S.~Huss-Lederman.
 \newblock {\em MPI: The Complete Reference}.
 \newblock MIT Press, 1995.
 
-\bibitem{sybila}
-{Laborat\'orium syst\'emovej biol\'ogie [online]. Fakulta informatiky
-  Masarykovej univerzity, Brno, \v Cesk\'a republika}, [cit. 2014-05-17].
-\newblock Dostupn\'e na: $<$\url{http://sybila.fi.muni.cz/home}$>$.
-
-\bibitem{sybila-biodivine}
-{N\'astroj {BioDiVinE} 1.0 [online]. Fakulta informatiky Masarykovej
-  univerzity, Brno, \v{C}esk\'a republika}, [cit. 2014-05-17].
-\newblock Dostupn\'e na:
-  $<$\url{http://sybila.fi.muni.cz/tools/biodivine/v1/index}$>$.
+\bibitem{Swat:2004}
+M.~Swat, A.~Kel, and H.~Herzel.
+\newblock {Bifurcation Analysis of the Regulatory Modules of the Mammalian G1/S
+  Transition}.
+\newblock {\em Bioinformatics}, 20(10):1506--1511, 2004.
 
 \bibitem{ODE}
 G.~Teschl.
@@ -171,7 +165,7 @@ G.~Teschl.
 E.W. Weisstein.
 \newblock {Heaviside Step Function, From MathWorld--A Wolfram Web Resource
   [online]}, [cit. 2014-05-17].
-\newblock Dostupn\'e na:
+\newblock Available at
   $<$\url{http://mathworld.wolfram.com/HeavisideStepFunction.html}$>$.
 
 \end{thebibliography}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.26)  21 MAY 2014 01:01
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.26)  25 MAY 2014 18:50
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -235,6 +235,24 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
+(/usr/share/texmf/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/share/texmf/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texmf/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texmf/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks23
+)
+(/usr/share/texmf/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box28
+
+(/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(/usr/share/texmf/tex/generic/pgf/utilities/pgfrcs.code.tex
+Package: pgfrcs 2010/10/25 v2.10 (rcs-revision 1.24)
+))
+Package: pgf 2008/01/15 v2.10 (rcs-revision 1.12)
+
+(/usr/share/texmf/tex/latex/pgf/basiclayer/pgfcore.sty
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -256,13 +274,309 @@ File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 \Gin@req@height=\dimen118
 \Gin@req@width=\dimen119
 )
+(/usr/share/texmf/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2010/06/30 v2.10 (rcs-revision 1.37)
+
+(/usr/share/texmf/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks24
+\pgfkeys@temptoks=\toks25
+
+(/usr/share/texmf/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks26
+))
+\pgf@x=\dimen120
+\pgf@y=\dimen121
+\pgf@xa=\dimen122
+\pgf@ya=\dimen123
+\pgf@xb=\dimen124
+\pgf@yb=\dimen125
+\pgf@xc=\dimen126
+\pgf@yc=\dimen127
+\w@pgf@writea=\write3
+\r@pgf@reada=\read1
+\c@pgf@counta=\count111
+\c@pgf@countb=\count112
+\c@pgf@countc=\count113
+\c@pgf@countd=\count114
+
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Package pgfsys Info: Driver file for pgf: pgfsys-pdftex.def on input line 900.
+
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2009/05/22  (rcs-revision 1.26)
+
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2008/05/19  (rcs-revision 1.10)
+)))
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2008/07/18  (rcs-revision 1.7)
+\pgfsyssoftpath@smallbuffer@items=\count115
+\pgfsyssoftpath@bigbuffer@items=\count116
+)
+(/usr/share/texmf/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+))
+(/usr/share/texmf/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/etc/texmf/tex/latex/config/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2010/04/11 v2.10 (rcs-revision 1.7)
+
+(/usr/share/texmf/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen128
+\pgfmath@count=\count117
+\pgfmath@box=\box29
+\pgfmath@toks=\toks27
+\pgfmath@stack@operand=\toks28
+\pgfmath@stack@operation=\toks29
+)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.random.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.base.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.round.code.tex)
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex)))
+(/usr/share/texmf/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count118
+))
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2010/04/09  (rcs-revision 1.20)
+\pgf@picminx=\dimen129
+\pgf@picmaxx=\dimen130
+\pgf@picminy=\dimen131
+\pgf@picmaxy=\dimen132
+\pgf@pathminx=\dimen133
+\pgf@pathmaxx=\dimen134
+\pgf@pathminy=\dimen135
+\pgf@pathmaxy=\dimen136
+\pgf@xx=\dimen137
+\pgf@xy=\dimen138
+\pgf@yx=\dimen139
+\pgf@yy=\dimen140
+\pgf@zx=\dimen141
+\pgf@zy=\dimen142
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2010/08/03  (rcs-revision 1.24)
+\pgf@path@lastx=\dimen143
+\pgf@path@lasty=\dimen144
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2008/04/22  (rcs-revision 1.12)
+\pgf@shorten@end@additional=\dimen145
+\pgf@shorten@start@additional=\dimen146
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2010/09/08  (rcs-revision 1.34)
+\pgfpic=\box30
+\pgf@hbox=\box31
+\pgf@layerbox@main=\box32
+\pgf@picture@serial@count=\count119
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2008/04/22  (rcs-revision 1.9)
+\pgflinewidth=\dimen147
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2009/06/10  (rcs-revision 1.11)
+\pgf@pt@x=\dimen148
+\pgf@pt@y=\dimen149
+\pgf@pt@temp=\dimen150
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2008/10/09  (rcs-revision 1.8)
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2008/04/23  (rcs-revision 1.11)
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2008/11/23  (rcs-revision 1.13)
+\pgf@max=\dimen151
+\pgf@sys@shading@range@num=\count120
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2010/03/25  (rcs-revision 1.16)
+
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2010/09/01  (rcs-revision 1.17)
+\pgfexternal@startupbox=\box33
+))
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2010/08/27  (rcs-revision 1.2)
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2008/01/17  (rcs-revision 1.2)
+)
+(/usr/share/texmf/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2009/07/02  (rcs-revision 1.3)
+)))
+(/usr/share/texmf/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2010/09/09  (rcs-revision 1.13)
+\pgfnodeparttextbox=\box34
+)
+(/usr/share/texmf/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2010/10/22  (rcs-revision 1.8)
+)
+(/usr/share/texmf/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2007/07/03 v2.10 (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen152
+\pgf@nodesepend=\dimen153
+)
+(/usr/share/texmf/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2007/07/23 v2.10 (rcs-revision 1.1)
+))
+(/usr/share/texmf/tex/latex/pgf/utilities/pgffor.sty
+(/usr/share/texmf/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/share/texmf/tex/generic/pgf/utilities/pgfkeys.code.tex))
+(/usr/share/texmf/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2010/03/23 v2.10 (rcs-revision 1.18)
+\pgffor@iter=\dimen154
+\pgffor@skip=\dimen155
+\pgffor@stack=\toks30
+\pgffor@toks=\toks31
+))
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2010/10/13 v2.10 (rcs-revision 1.76)
+
+(/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2010/05/31 v2.10 (rcs-revision 1.15)
+\pgf@plot@mark@count=\count121
+\pgfplotmarksize=\dimen156
+)
+\tikz@lastx=\dimen157
+\tikz@lasty=\dimen158
+\tikz@lastxsaved=\dimen159
+\tikz@lastysaved=\dimen160
+\tikzleveldistance=\dimen161
+\tikzsiblingdistance=\dimen162
+\tikz@figbox=\box35
+\tikz@tempbox=\box36
+\tikztreelevel=\count122
+\tikznumberofchildren=\count123
+\tikznumberofcurrentchild=\count124
+\tikz@fig@count=\count125
+
+(/usr/share/texmf/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2010/08/24  (rcs-revision 1.4)
+\pgfmatrixcurrentrow=\count126
+\pgfmatrixcurrentcolumn=\count127
+\pgf@matrix@numberofcolumns=\count128
+)
+\tikz@expandcount=\count129
+
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopat
+hs.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v2.10 (rcs-revision 1.2)
+)))
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryautom
+ata.code.tex
+File: tikzlibraryautomata.code.tex 2008/07/14 v2.10 (rcs-revision 1.3)
+
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshape
+s.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
+
+(/usr/share/texmf/tex/generic/pgf/libraries/shapes/pgflibraryshapes.multipart.c
+ode.tex
+File: pgflibraryshapes.multipart.code.tex 2010/01/07 v2.10 (rcs-revision 1.2)
+\pgfnodepartlowerbox=\box37
+\pgfnodeparttwobox=\box38
+\pgfnodepartthreebox=\box39
+\pgfnodepartfourbox=\box40
+\pgfnodeparttwentybox=\box41
+\pgfnodepartnineteenbox=\box42
+\pgfnodeparteighteenbox=\box43
+\pgfnodepartseventeenbox=\box44
+\pgfnodepartsixteenbox=\box45
+\pgfnodepartfifteenbox=\box46
+\pgfnodepartfourteenbox=\box47
+\pgfnodepartthirteenbox=\box48
+\pgfnodeparttwelvebox=\box49
+\pgfnodepartelevenbox=\box50
+\pgfnodeparttenbox=\box51
+\pgfnodepartninebox=\box52
+\pgfnodeparteightbox=\box53
+\pgfnodepartsevenbox=\box54
+\pgfnodepartsixbox=\box55
+\pgfnodepartfivebox=\box56
+)))
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryposit
+ioning.code.tex
+File: tikzlibrarypositioning.code.tex 2008/10/06 v2.10 (rcs-revision 1.7)
+)
+(/usr/share/texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryarrow
+s.code.tex
+File: tikzlibraryarrows.code.tex 2008/01/09 v2.10 (rcs-revision 1.1)
+
+(/usr/share/texmf/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
+File: pgflibraryarrows.code.tex 2008/10/27 v2.10 (rcs-revision 1.9)
+\arrowsize=\dimen163
+))
+(/usr/share/texlive/texmf-dist/tex/latex/appendix/appendix.sty
+Package: appendix 2009/09/02 v1.2b extra appendix facilities
+\c@@pps=\count130
+\c@@ppsavesec=\count131
+\c@@ppsaveapp=\count132
+)
 (/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
-\wrapoverhang=\dimen120
-\WF@size=\dimen121
-\c@WF@wrappedlines=\count111
-\WF@box=\box28
-\WF@everypar=\toks23
+\wrapoverhang=\dimen164
+\WF@size=\dimen165
+\c@WF@wrappedlines=\count133
+\WF@box=\box57
+\WF@everypar=\toks32
 Package: wrapfig 2003/01/31  v 3.6
+)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen166
+\captionmargin@=\dimen167
+\captionwidth=\dimen168
+\caption@tempdima=\dimen169
+\caption@indent=\dimen170
+\caption@parindent=\dimen171
+\caption@hangindent=\dimen172
+)
+\c@ContinuedFloat=\count134
+Package caption Info: hyperref package is loaded.
+Package caption Info: wrapfig package is loaded.
+)
+\c@subfigure=\count135
+\c@subtable=\count136
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
@@ -279,38 +593,38 @@ Language: slovak 2008/07/06 v3.1a Slovak support from the babel system
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2013/12/03 3.9h Babel common definitions
-\babel@savecnt=\count112
-\U@D=\dimen122
+\babel@savecnt=\count137
+\U@D=\dimen173
 )
 Package babel Info: Making ^ an active character on input line 123.
 Package babel Info: Making " an active character on input line 126.
 Package babel Info: Making ' an active character on input line 129.
-\cs@wordlen=\count113
+\cs@wordlen=\count138
 Package babel Info: Making - an active character on input line 294.
 )) (./dp1.sk.aux)
 \openout1 = `dp1.sk.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Try loading font information for T1+ppl on input line 23.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 27.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
-\AtBeginShipoutBox=\box29
-Package hyperref Info: Link coloring OFF on input line 23.
+\AtBeginShipoutBox=\box58
+Package hyperref Info: Link coloring OFF on input line 27.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -318,50 +632,77 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count114
+\c@section@level=\count139
 )
-LaTeX Info: Redefining \ref on input line 23.
-LaTeX Info: Redefining \pageref on input line 23.
-LaTeX Info: Redefining \nameref on input line 23.
+LaTeX Info: Redefining \ref on input line 27.
+LaTeX Info: Redefining \pageref on input line 27.
+LaTeX Info: Redefining \nameref on input line 27.
 
 (./dp1.sk.out) (./dp1.sk.out)
-\@outlinefile=\write3
-\openout3 = `dp1.sk.out'.
+\@outlinefile=\write4
+\openout4 = `dp1.sk.out'.
 
-
+ ABD: EveryShipout initializing macros
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count115
-\scratchdimen=\dimen123
-\scratchbox=\box30
-\nofMPsegments=\count116
-\nofMParguments=\count117
-\everyMPshowfont=\toks24
-\MPscratchCnt=\count118
-\MPscratchDim=\dimen124
-\MPnumerator=\count119
-\makeMPintoPDFobject=\count120
-\everyMPtoPDFconversion=\toks25
+\scratchcounter=\count140
+\scratchdimen=\dimen174
+\scratchbox=\box59
+\nofMPsegments=\count141
+\nofMParguments=\count142
+\everyMPshowfont=\toks33
+\MPscratchCnt=\count143
+\MPscratchDim=\dimen175
+\MPnumerator=\count144
+\makeMPintoPDFobject=\count145
+\everyMPtoPDFconversion=\toks34
 )
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 25.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 29.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 25.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 29.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 30.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 34.
  [2
 
 ] [3
 
-] [4
+]
+Underfull \hbox (badness 10000) in paragraph at lines 49--52
 
-] [5
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--52
+
+ []
+
+[4
 
 ]
-(./dp1.sk.toc
+Underfull \hbox (badness 10000) in paragraph at lines 64--66
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--66
+
+ []
+
+
+Overfull \hbox (10.57262pt too wide) in paragraph at lines 67--70
+[]\T1/ppl/m/n/10.95 ordinary dif-fe-ren-tial equ-ati-ons, pie-ce-wise multi[]af
+fine ODE mo-del, non[]linear
+ []
+
+[5
+
+] (./dp1.sk.toc
 LaTeX Font Info:    Try loading font information for U+msa on input line 2.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -370,269 +711,596 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 2.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-))
-\tf@toc=\write4
-\openout4 = `dp1.sk.toc'.
-
- [1
+) [1
 
 
-] [2
+])
+\tf@toc=\write5
+\openout5 = `dp1.sk.toc'.
+
+ [2] [3
 
 ]
 Kapitola 1.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 49.
-LaTeX Font Info:    Try loading font information for OMS+ppl on input line 79.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 80.
+LaTeX Font Info:    Try loading font information for OMS+ppl on input line 110.
+
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsppl.fd
 File: omsppl.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 79.
- [3
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 110.
+ [4
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 83--87
+Underfull \hbox (badness 10000) in paragraph at lines 114--118
 
  []
 
-[4] <images/buchi1.png, id=190, 243.91125pt x 131.49126pt>
-File: images/buchi1.png Graphic file (type png)
-
-<use images/buchi1.png>
-Package pdftex.def Info: images/buchi1.png used on input line 152.
-(pdftex.def)             Requested size: 144.53778pt x 77.92024pt.
- [5] [6 <./images/buchi1.png>]
-Overfull \hbox (3.16002pt too wide) in paragraph at lines 189--194
-[]\T1/ppl/m/n/10.95 Je nutné za-£a´ od en-zý-mo-vej ki-ne-tiky, pre-toºe práve 
-tá bola hlav-ným kataly-
- []
-
-[7]
-Underfull \hbox (badness 10000) in paragraph at lines 218--220
+[5] [6] [7] [8]
+Underfull \hbox (badness 10000) in paragraph at lines 257--259
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 221--224
+Underfull \hbox (badness 10000) in paragraph at lines 260--263
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 248--252
+Underfull \hbox (badness 10000) in paragraph at lines 287--291
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 253--256
-
- []
-
-
-Overfull \hbox (1.28783pt too wide) in paragraph at lines 257--261
-\T1/ppl/m/n/10.95 cia kvá-zis-ta-ci-onár-neho stavu (z \T1/ppl/m/it/10.95 ang. 
-\T1/ppl/m/n/10.95 Quasi-steady state ap-ro-xi-ma-tion), ktorá
- []
-
-
-Overfull \hbox (2.22923pt too wide) in paragraph at lines 257--261
-\T1/ppl/m/n/10.95 Hal-dane pred-po-kla-dali, ºe rých-los´ tvorby en-zým[]substr
-átového kom-plexu
- []
-
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 298--302
+Underfull \hbox (badness 10000) in paragraph at lines 292--295
 
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 303--306
+Underfull \hbox (badness 10000) in paragraph at lines 337--341
 
  []
 
-[10] <images/hill_factor.png, id=275, 1003.75pt x 552.0625pt>
-File: images/hill_factor.png Graphic file (type png)
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 342--345
 
-<use images/hill_factor.png>
-Package pdftex.def Info: images/hill_factor.png used on input line 363.
+ []
+
+[11] <images/hill_factor_2.png, id=359, 1003.75pt x 552.0625pt>
+File: images/hill_factor_2.png Graphic file (type png)
+
+<use images/hill_factor_2.png>
+Package pdftex.def Info: images/hill_factor_2.png used on input line 406.
 (pdftex.def)             Requested size: 361.34999pt x 198.74234pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Overfull \hbox (4.74751pt too wide) in paragraph at lines 371--374
-\T1/ppl/m/n/10.95 mál-nej ve-ri-fi-ká-cie ²pe-ci-fi-ko-va-ných vlast-ností ko-n
-e£-ného sta-vo-vého sys-tému.
- []
-
-
-Overfull \hbox (2.95226pt too wide) in paragraph at lines 378--381
-\T1/ppl/m/n/10.95 neho ma-te-ma-tic-kého mo-delu, ktorý bude ak-cep-to-vaný vy-
-bra-ným ove-
- []
-
-[11]
-Overfull \hbox (0.31358pt too wide) in paragraph at lines 386--388
+[12]
+Overfull \hbox (0.31358pt too wide) in paragraph at lines 429--431
 \T1/ppl/m/n/10.95 ci-fi-ká-cii, ale ne-do-káºe roz-hod-nú´, £i daná ²pe-ci-fi-k
 á-cia po-krýva v²etky
  []
 
-
-Overfull \hbox (4.87949pt too wide) in paragraph at lines 386--388
-\T1/ppl/m/n/10.95 vlast-nosti, kto-rým skú-maný sys-tém vy-ho-vuje. Toto je ve©
-mi vý-znamný
- []
-
-[12 <./images/hill_factor.png>]
-Overfull \hbox (3.32639pt too wide) in paragraph at lines 411--415
+[13 <./images/hill_factor_2.png>]
+Overfull \hbox (3.32639pt too wide) in paragraph at lines 454--458
 [][]\T1/ppl/m/n/10.95 Toto tvr-de-nie mô-ºeme pre-for-mu-lo-va´. Nech $[]$ je k
 om-ple-ment k $[]$,
  []
 
-[13] [14] [15]
+[14] [15] <images/paramKripke.pdf, id=397, 298.11375pt x 257.96375pt>
+File: images/paramKripke.pdf Graphic file (type pdf)
+
+<use images/paramKripke.pdf>
+Package pdftex.def Info: images/paramKripke.pdf used on input line 522.
+(pdftex.def)             Requested size: 252.94388pt x 218.87659pt.
+ [16] [17 <./images/paramKripke.pdf>]
 Kapitola 2.
 
-Underfull \hbox (badness 10000) in paragraph at lines 480--482
+Underfull \hbox (badness 10000) in paragraph at lines 531--533
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 483--486
+Underfull \hbox (badness 10000) in paragraph at lines 534--537
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--506
+Underfull \hbox (badness 10000) in paragraph at lines 552--557
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--510
+Underfull \hbox (badness 10000) in paragraph at lines 558--561
 
  []
 
-[16
+[18
 
-] [17] [18] [19]
-Underfull \hbox (badness 10000) in paragraph at lines 639--642
+] [19] [20]
+Underfull \hbox (badness 10000) in paragraph at lines 648--655
 
  []
 
-<images/abstractNO.png, id=357, 1003.75pt x 552.0625pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 656--659
+
+ []
+
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 728--731
+
+ []
+
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 766--770
+
+ []
+
+[23]
+Underfull \hbox (badness 10000) in paragraph at lines 771--774
+
+ []
+
+<images/partition2.pdf, id=478, 750.805pt x 548.0475pt>
+File: images/partition2.pdf Graphic file (type pdf)
+
+<use images/partition2.pdf>
+Package pdftex.def Info: images/partition2.pdf used on input line 800.
+(pdftex.def)             Requested size: 162.60638pt x 118.68925pt.
+
+<images/partition3.pdf, id=479, 728.7225pt x 548.0475pt>
+File: images/partition3.pdf Graphic file (type pdf)
+
+<use images/partition3.pdf>
+Package pdftex.def Info: images/partition3.pdf used on input line 804.
+(pdftex.def)             Requested size: 162.60638pt x 122.28513pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/abstractNO.png, id=480, 1003.75pt x 552.0625pt>
 File: images/abstractNO.png Graphic file (type png)
 
 <use images/abstractNO.png>
-Package pdftex.def Info: images/abstractNO.png used on input line 668.
-(pdftex.def)             Requested size: 361.34999pt x 198.74234pt.
+Package pdftex.def Info: images/abstractNO.png used on input line 812.
+(pdftex.def)             Requested size: 289.08109pt x 158.99893pt.
 
-<images/abstractYES.png, id=358, 1003.75pt x 552.0625pt>
+<images/abstractYES.png, id=481, 1003.75pt x 552.0625pt>
 File: images/abstractYES.png Graphic file (type png)
 
 <use images/abstractYES.png>
-Package pdftex.def Info: images/abstractYES.png used on input line 669.
-(pdftex.def)             Requested size: 361.34999pt x 198.74234pt.
- [20]
-Underfull \hbox (badness 10000) in paragraph at lines 674--678
-
- []
+Package pdftex.def Info: images/abstractYES.png used on input line 813.
+(pdftex.def)             Requested size: 289.08109pt x 158.99893pt.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 679--682
+LaTeX Warning: `h' float specifier changed to `ht'.
 
- []
-
-[21] [22 <./images/abstractNO.png> <./images/abstractYES.png>]
+[24] [25 <./images/partition2.pdf> <./images/partition3.pdf>] [26 <./images/abs
+tractNO.png> <./images/abstractYES.png>]
 Kapitola 3.
-[23
 
-] [24]
+Overfull \vbox (9.59938pt too high) has occurred while \output is active []
+
+
+[27
+
+] [28]
 Kapitola 4.
-[25
+[29
 
 ]
 
 pdfTeX warning: pdflatex (file ./images/BiodivineArchitecture2.pdf): PDF inclus
 ion: found PDF version <1.5>, but at most version <1.4> allowed
-<images/BiodivineArchitecture2.pdf, id=435, 851.60156pt x 933.58784pt>
+<images/BiodivineArchitecture2.pdf, id=567, 851.60156pt x 933.58784pt>
 File: images/BiodivineArchitecture2.pdf Graphic file (type pdf)
 
 <use images/BiodivineArchitecture2.pdf>
-Package pdftex.def Info: images/BiodivineArchitecture2.pdf used on input line 8
-21.
+Package pdftex.def Info: images/BiodivineArchitecture2.pdf used on input line 9
+45.
 (pdftex.def)             Requested size: 361.34999pt x 396.13567pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[26] [27]
-Overfull \hbox (11.94302pt too wide) in paragraph at lines 875--876
+[30] [31]
+Overfull \hbox (2.89847pt too wide) in paragraph at lines 1000--1001
 [][]\T1/ppl/m/n/10.95 Premenná musí by´ jedna zo skôr uve-de-ných pre-men-ných 
-v riadku
+v riad-
  []
 
-[28]
+[32]
 
 Package hyperref Warning: Composite letter `\textasciicaron+t'
 (hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 884.
+(hyperref)                removing `\textasciicaron' on input line 1009.
 
-[29] [30] [31 <./images/BiodivineArchitecture2.pdf>]
+
+Overfull \hbox (1.00323pt too wide) in paragraph at lines 1027--1028
+[][]\T1/ppl/m/n/10.95 Samotná for-mula \T1/ppl/m/it/10.95 vlast-nos´_vo_forme_l
+tl_formuly \T1/ppl/m/n/10.95 môºe by´ tvo-rená na-
+ []
+
+[33] [34] [35 <./images/BiodivineArchitecture2.pdf>]
 Kapitola 5.
 
-Package hyperref Warning: Composite letter `\textasciicaron+l'
-(hyperref)                not defined in PD1 encoding,
-(hyperref)                removing `\textasciicaron' on input line 959.
+Overfull \hbox (0.94821pt too wide) in paragraph at lines 1091--1097
+[][]\T1/ppl/m/n/10.95 Obidva prog-ramy ge-ne-rujú nie-ko©ko sú-bo-rov pre vlast
+nú po-trebu, ktoré
+ []
 
-[32
-
-]
-Kapitola 6.
-[33
-
-]
-Kapitola 7.
-[34
-
-]
-Kapitola 8.
-(./dp1.sk.bbl [35
-
-]
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 50.
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
 [36
 
-] [37]) [38]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 977.
- [39
+] [37] [38] [39] [40]
+Kapitola 6.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 1202.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+Underfull \vbox (badness 5091) has occurred while \output is active []
+
+ [41
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 977.
+[42]
+Kapitola 7.
+[43
+
+] [44] [45]
+Kapitola 8.
+(./dp1.sk.bbl [46
+
+] [47
+
+]
+Underfull \hbox (badness 1701) in paragraph at lines 66--72
+\T1/ppl/m/n/10.95 ther-lands, [cit. 2014-05-21].  Avai-lable at $\OML/cmm/m/it/
+10.95 <$[]$\T1/pcr/m/n/10.95 http : / / bisoncpp .
+ []
+
+[48]) [49]
+Dodatok A.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1358--1359
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1360--1362
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1364--1366
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1367--1369
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1370--1372
+
+ []
+
+
+Overfull \hbox (6.56956pt too wide) in paragraph at lines 1373--1375
+[]\T1/pcr/m/n/10.95 EQ: pRB = k1*Hillp(E2F1,0.5,1,0,1)*Hillm(pRB,0.5,1,1,0)- 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1373--1375
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1376--1378
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1379--1382
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1383--1385
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1386--1389
+
+ []
+
+[50
+
+]
+Dodatok B.
+
+Package hyperref Warning: Composite letter `\textasciicaron+t'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 1390.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 1390.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1392--1394
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1395--1397
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1399--1401
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1402--1405
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1408--1409
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1410--1470
+
+ []
+
+[51
+
+] [52]
+
+Package hyperref Warning: Composite letter `\textasciicaron+C'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 1471.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+t'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 1471.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1473--1474
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1475--1494
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1497--1498
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1499--1527
+
+ []
+
+[53] [54]
+Dodatok C.
+
+Package hyperref Warning: Composite letter `\textasciicaron+t'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 1529.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 1529.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1531--1533
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1534--1536
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1538--1540
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1541--1544
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1547--1548
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1549--1609
+
+ []
+
+[55
+
+] [56]
+
+Package hyperref Warning: Composite letter `\textasciicaron+C'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 1610.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+t'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 1610.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1612--1613
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1614--1629
+
+ []
+
+[57]
+Dodatok D.
+
+Package hyperref Warning: Composite letter `\textasciicaron+t'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 1630.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 1630.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1632--1633
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1635--1638
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1639--1641
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1646--1647
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1648--1708
+
+ []
+
+[58
+
+] [59]
+
+Package hyperref Warning: Composite letter `\textasciicaron+C'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 1710.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+t'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 1710.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1712--1713
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1714--1734
+
+ []
+
+[60]
+Dodatok E.
+
+Package hyperref Warning: Composite letter `\textasciicaron+t'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 1735.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+c'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 1735.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1737--1738
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1740--1742
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1743--1745
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1750--1751
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1752--1812
+
+ []
+
+[61
+
+]
+
+Package hyperref Warning: Composite letter `\textasciicaron+C'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 1814.
+
+
+Package hyperref Warning: Composite letter `\textasciicaron+t'
+(hyperref)                not defined in PD1 encoding,
+(hyperref)                removing `\textasciicaron' on input line 1814.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1816--1817
+
+ []
+
+[62]
+Underfull \hbox (badness 10000) in paragraph at lines 1818--1840
+
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1841.
+[63]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1841.
  (./dp1.sk.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 977.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 977.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1841.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1841.
 
-
-Package rerunfilecheck Warning: File `dp1.sk.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `dp1.sk.out':
-(rerunfilecheck)             Before: 183435FDFCC36FC9AA205444AAE8B3DB;1651
-(rerunfilecheck)             After:  735341E8B32F473434CBD66051B291ED;1655.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 977.
+Package rerunfilecheck Info: File `dp1.sk.out' has not changed.
+(rerunfilecheck)             Checksum: 52AB409190CA36C7360B155B752166EB;2588.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1841.
  ) 
 Here is how much of TeX's memory you used:
- 7186 strings out of 494998
- 99352 string characters out of 6180421
- 187906 words of memory out of 5000000
- 10127 multiletter control sequences out of 15000+600000
+ 17560 strings out of 494998
+ 313551 string characters out of 6180421
+ 400207 words of memory out of 5000000
+ 20219 multiletter control sequences out of 15000+600000
  33114 words of font info for 66 fonts, out of 8000000 for 9000
  24 hyphenation exceptions out of 8191
- 29i,16n,31p,347b,497s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,16n,68p,429b,892s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc} <./fi-logo.514pk>
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/
 share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/
@@ -651,9 +1319,9 @@ b></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share
 mf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/
 palatino/uplri8a.pfb>
-Output written on dp1.sk.pdf (44 pages, 1019413 bytes).
+Output written on dp1.sk.pdf (68 pages, 1126567 bytes).
 PDF statistics:
- 702 PDF objects out of 1000 (max. 8388607)
- 158 named destinations out of 1000 (max. 500000)
- 226 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 976 PDF objects out of 1000 (max. 8388607)
+ 213 named destinations out of 1000 (max. 500000)
+ 376 words of extra memory for PDF output out of 10000 (max. 10000000)
 

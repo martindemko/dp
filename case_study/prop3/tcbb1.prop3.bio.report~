@@ -1,0 +1,84 @@
+File:examples/tcbb2010/tcbb1.bio.prop1.bio
+Algorithm:distr_map -S -c -r -t
+Problem:LTL MC
+Nodes:1
+Time:sum:1557.317334
+Time:avg:1557.317334
+Time:min:1557.317334
+Time:max:1557.317334
+Time:values:1557.317334
+VMSize:sum:95.527344
+VMSize:avg:95.527344
+VMSize:min:95.527344
+VMSize:max:95.527344
+VMSize:values:95.527344
+MsgSent:sum:21
+MsgSent:avg:21
+MsgSent:min:21
+MsgSent:max:21
+MsgSent:values:21
+MsgSentUser:sum:0
+MsgSentUser:avg:0
+MsgSentUser:min:0
+MsgSentUser:max:0
+MsgSentUser:values:0
+StatesStored:sum:185
+StatesStored:avg:185
+StatesStored:min:185
+StatesStored:max:185
+StatesStored:values:185
+SuccsCalls:sum:633
+SuccsCalls:avg:633
+SuccsCalls:min:633
+SuccsCalls:max:633
+SuccsCalls:values:633
+CrossTrans:sum:0
+CrossTrans:avg:0
+CrossTrans:min:0
+CrossTrans:max:0
+CrossTrans:values:0
+InitTime:sum:377.244623
+InitTime:avg:377.244623
+InitTime:min:377.244623
+InitTime:max:377.244623
+InitTime:values:377.244623
+States:sum:185
+States:avg:185
+States:min:185
+States:max:185
+States:values:185
+Trans:sum:427
+Trans:avg:427
+Trans:min:427
+Trans:max:427
+Trans:values:427
+CEGenerated:No
+IsValid:Yes
+ReporterCreated:Sun May 25 03:48:27 2014
+Workstations:demon-1215B
+
+ 0: Computation init:  377.245 s
+0: iteration nr. 1: shrinkA.size: 0
+0: iteration nr. 2: shrinkA.size: 8
+0: iteration nr. 3: shrinkA.size: 8
+0: iteration nr. 4: shrinkA.size: 6
+0: iteration nr. 5: shrinkA.size: 4
+0: iteration nr. 6: shrinkA.size: 1
+ 0: state size:		24
+ 0: appendix size:	56
+ 0: states generated:	185
+ 0: hashtable size:	65536
+ 0: get_succs called:	633
+ 0: trans. relaxed:	1392
+ 0: all memory used:	95.5273 MB
+ 0: Computation done:	1557.32 s
+ 0: --------------------
+ 0: Accepting cycle:	NO
+ 0: Number of iterations:	6
+============ distr_map DONE ============
+
+Removing file examples/tcbb2010/tcbb1.bio.prop1.bio
+==================================================
+-------- NewBioDiVinE successfully finish --------
+==================================================
+

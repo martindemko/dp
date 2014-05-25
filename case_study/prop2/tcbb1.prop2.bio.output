@@ -1,0 +1,19 @@
+ 0: Computation init:  390.049 s
+0: iteration nr. 1: shrinkA.size: 0
+ 0: state size:		24
+ 0: appendix size:	56
+ 0: states generated:	113
+ 0: hashtable size:	65536
+ 0: get_succs called:	113
+ 0: trans. relaxed:	208
+ 0: all memory used:	95.543 MB
+ 0: Computation done:	595.286 s
+ 0: --------------------
+ 0: Accepting cycle:	NO
+ 0: Number of iterations:	1
+============ distr_map DONE ============
+
+==================================================
+-------- NewBioDiVinE successfully finish --------
+==================================================
+

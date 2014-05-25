@@ -8,18 +8,34 @@
 \BOOKMARK [2][-]{subsection.1.5.2}{ Farebn\375 model checking}{section.1.5}% 8
 \BOOKMARK [0][-]{chapter.2}{Biochemick\375 dynamick\375 vstupn\375 model}{}% 9
 \BOOKMARK [1][-]{section.2.1}{ Abstrakcia}{chapter.2}% 10
-\BOOKMARK [0][-]{chapter.3}{V\375chodiskov\375 stav a podobn\351 n\341stroje}{}% 11
-\BOOKMARK [1][-]{section.3.1}{ BioDiVinE 1.0}{chapter.3}% 12
-\BOOKMARK [1][-]{section.3.2}{ PEPMC}{chapter.3}% 13
-\BOOKMARK [1][-]{section.3.3}{ RoVerGeNe}{chapter.3}% 14
-\BOOKMARK [0][-]{chapter.4}{BioDiVinE 1.1}{}% 15
-\BOOKMARK [1][-]{section.4.1}{ Vstupn\375 s\372bor s modelom}{chapter.4}% 16
-\BOOKMARK [1][-]{section.4.2}{ Vstupn\375 s\372bor s vlastnostou}{chapter.4}% 17
-\BOOKMARK [1][-]{section.4.3}{ Priebeh procesu}{chapter.4}% 18
-\BOOKMARK [0][-]{chapter.5}{Implement\341cia}{}% 19
-\BOOKMARK [1][-]{section.5.1}{ Parser}{chapter.5}% 20
-\BOOKMARK [1][-]{section.5.2}{ D\341tov\375 model}{chapter.5}% 21
-\BOOKMARK [1][-]{section.5.3}{ Konzolov\351 u\236\355vatelsk\351 prostredie CLI}{chapter.5}% 22
-\BOOKMARK [0][-]{chapter.6}{Pou\236itie programu}{}% 23
-\BOOKMARK [0][-]{chapter.7}{Case study}{}% 24
-\BOOKMARK [0][-]{chapter.8}{Z\341ver}{}% 25
+\BOOKMARK [1][-]{section.2.2}{ Vlastnosti modelu}{chapter.2}% 11
+\BOOKMARK [0][-]{chapter.3}{V\375chodiskov\375 stav a podobn\351 n\341stroje}{}% 12
+\BOOKMARK [1][-]{section.3.1}{ BioDiVinE 1.0}{chapter.3}% 13
+\BOOKMARK [1][-]{section.3.2}{ PEPMC}{chapter.3}% 14
+\BOOKMARK [1][-]{section.3.3}{ RoVerGeNe}{chapter.3}% 15
+\BOOKMARK [0][-]{chapter.4}{BioDiVinE 1.1}{}% 16
+\BOOKMARK [1][-]{section.4.1}{ Vstupn\375 s\372bor s modelom}{chapter.4}% 17
+\BOOKMARK [1][-]{section.4.2}{ Vstupn\375 s\372bor s vlastnostou}{chapter.4}% 18
+\BOOKMARK [1][-]{section.4.3}{ Priebeh procesu}{chapter.4}% 19
+\BOOKMARK [0][-]{chapter.5}{Implement\341cia}{}% 20
+\BOOKMARK [1][-]{section.5.1}{ Parser}{chapter.5}% 21
+\BOOKMARK [1][-]{section.5.2}{ D\341tov\375 model}{chapter.5}% 22
+\BOOKMARK [1][-]{section.5.3}{ Line\341rna abstrakcia neline\341rnych funkci\355}{chapter.5}% 23
+\BOOKMARK [1][-]{section.5.4}{ CLI}{chapter.5}% 24
+\BOOKMARK [0][-]{chapter.6}{Pou\236itie programu}{}% 25
+\BOOKMARK [0][-]{chapter.7}{Pr\355padov\341 \235t\372dia}{}% 26
+\BOOKMARK [0][-]{chapter.8}{Z\341ver}{}% 27
+\BOOKMARK [0][-]{appendix.A}{Model}{}% 28
+\BOOKMARK [0][-]{appendix.B}{Vlastnost c. 1}{}% 29
+\BOOKMARK [1][-]{section.B.1}{ Spr\341va}{appendix.B}% 30
+\BOOKMARK [1][-]{section.B.2}{ Cast v\375stupu}{appendix.B}% 31
+\BOOKMARK [1][-]{section.B.3}{ Protipr\355klad}{appendix.B}% 32
+\BOOKMARK [0][-]{appendix.C}{Vlastnost c. 2}{}% 33
+\BOOKMARK [1][-]{section.C.1}{ Spr\341va}{appendix.C}% 34
+\BOOKMARK [1][-]{section.C.2}{ Cast v\375stupu}{appendix.C}% 35
+\BOOKMARK [0][-]{appendix.D}{Vlastnost c. 3}{}% 36
+\BOOKMARK [1][-]{section.D.1}{ Spr\341va}{appendix.D}% 37
+\BOOKMARK [1][-]{section.D.2}{ Cast v\375stupu}{appendix.D}% 38
+\BOOKMARK [0][-]{appendix.E}{Vlastnost c. 4}{}% 39
+\BOOKMARK [1][-]{section.E.1}{ Spr\341va}{appendix.E}% 40
+\BOOKMARK [1][-]{section.E.2}{ Cast v\375stupu}{appendix.E}% 41

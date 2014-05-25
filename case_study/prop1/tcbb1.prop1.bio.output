@@ -1,0 +1,19 @@
+0: Computation init:  406.197 s
+0: iteration nr. 1: shrinkA.size: 0
+0: iteration nr. 2: shrinkA.size: 11
+======================
+Accepting cycle found!
+======================
+ 0: state size:		24
+ 0: appendix size:	56
+ 0: states generated:	309
+ 0: hashtable size:	65536
+ 0: get_succs called:	489
+ 0: trans. relaxed:	1146
+ 0: all memory used:	95.9844 MB
+ 0: Computation done:	1858.76 s
+ 0: --------------------
+ 0: Accepting cycle:	YES
+ 0: Number of iterations:	2
+============ distr_map DONE ============
+

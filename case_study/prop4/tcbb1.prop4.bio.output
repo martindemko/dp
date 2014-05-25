@@ -1,0 +1,27 @@
+0: Computation init:  473.23 s
+0: iteration nr. 1: shrinkA.size: 0
+0: iteration nr. 2: shrinkA.size: 12
+0: iteration nr. 3: shrinkA.size: 25
+0: iteration nr. 4: shrinkA.size: 20
+0: iteration nr. 5: shrinkA.size: 17
+0: iteration nr. 6: shrinkA.size: 7
+0: iteration nr. 7: shrinkA.size: 1
+0: iteration nr. 8: shrinkA.size: 1
+ 0: state size:		24
+ 0: appendix size:	56
+ 0: states generated:	238
+ 0: hashtable size:	65536
+ 0: get_succs called:	994
+ 0: trans. relaxed:	2998
+ 0: all memory used:	95.5273 MB
+ 0: Computation done:	2559.15 s
+ 0: --------------------
+ 0: Accepting cycle:	NO
+ 0: Number of iterations:	8
+============ distr_map DONE ============
+
+Removing file examples/tcbb2010/tcbb1.bio.prop1.bio
+==================================================
+-------- NewBioDiVinE successfully finish --------
+==================================================
+
